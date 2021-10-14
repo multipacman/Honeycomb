@@ -1,6 +1,6 @@
 <p align="left"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
-<p align="center"><a href="https://graphql.org" target="_blank"><img src="https://graphql.org/img/logo.svg" width="400"></a></p>
-<p align="right"><a href="https://tailwindcss.com" target="_blank"><img src="https://refactoringui.nyc3.cdn.digitaloceanspaces.com/tailwind-logo-sticker.svg" width="400"></a></p>
+<p align="center"><a href="https://graphql.org" target="_blank"><img src="https://graphql.org/img/logo.svg" width="80"></a></p>
+<p align="right"><a href="https://tailwindcss.com" target="_blank"><img src="https://refactoringui.nyc3.cdn.digitaloceanspaces.com/tailwind-logo-sticker.svg" width="300"></a></p>
 
 #### Laravel
 <p align="center">
