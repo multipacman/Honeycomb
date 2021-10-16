@@ -1,9 +1,6 @@
-<p align="center">
-    <a href="https://vuejs.org" target="_blank"><img src="https://vuejs.org/images/logo.png" width="80" height="80"></a>&emsp; &emsp; &emsp; &emsp;
-<a href="https://tailwindcss.com" target="_blank"><img src="https://refactoringui.nyc3.cdn.digitaloceanspaces.com/tailwind-logo-sticker.svg" width="250" height="110"></a>
-    <a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" height="115"></a>
-<a href="https://graphql.org" target="_blank"><img src="https://graphql.org/img/logo.svg" width="80" height="100"></a>
-</p>
+| <img src="https://vuejs.org/images/logo.png" width="70" />  | <img src="https://refactoringui.nyc3.cdn.digitaloceanspaces.com/tailwind-logo-sticker.svg" width="170" />   | <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="180" />   |  <img src="https://graphql.org/img/logo.svg" width="70" />  |
+| ------------ | ------------ | ------------ | ------------ |
+| Vue.js  | Tailwind CSS  | Laravel  | GraphQL  |
 
 #### Laravel
 <p align="left">
