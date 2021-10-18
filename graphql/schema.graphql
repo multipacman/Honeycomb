@@ -10,6 +10,7 @@ type Query {
     user(id: ID @eq): User @find
 }
 
+"updated data"
 type User {
     id: ID!
     name: String!
