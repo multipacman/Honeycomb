@@ -408,12 +408,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "gql": () => (/* reexport safe */ graphql_tag__WEBPACK_IMPORTED_MODULE_4__["default"]),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! tslib */ "./node_modules/apollo-boost/node_modules/tslib/tslib.es6.js");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var apollo_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! apollo-client */ "./node_modules/apollo-client/bundle.esm.js");
 /* harmony import */ var apollo_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! apollo-link */ "./node_modules/apollo-link/lib/bundle.esm.js");
 /* harmony import */ var apollo_link__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! apollo-link */ "./node_modules/zen-observable-ts/lib/bundle.esm.js");
-/* harmony import */ var apollo_cache_inmemory__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! apollo-cache-inmemory */ "./node_modules/apollo-boost/node_modules/apollo-cache-inmemory/lib/bundle.esm.js");
-/* harmony import */ var apollo_link_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! apollo-link-http */ "./node_modules/apollo-boost/node_modules/apollo-link-http/lib/bundle.esm.js");
+/* harmony import */ var apollo_cache_inmemory__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! apollo-cache-inmemory */ "./node_modules/apollo-cache-inmemory/lib/bundle.esm.js");
+/* harmony import */ var apollo_link_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! apollo-link-http */ "./node_modules/apollo-link-http/lib/bundle.esm.js");
 /* harmony import */ var apollo_link_error__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! apollo-link-error */ "./node_modules/apollo-link-error/lib/bundle.esm.js");
 /* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! graphql-tag */ "./node_modules/graphql-tag/lib/index.js");
 /* harmony import */ var ts_invariant__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ts-invariant */ "./node_modules/ts-invariant/lib/invariant.esm.js");
@@ -546,10 +546,10 @@ var DefaultClient = (function (_super) {
 
 /***/ }),
 
-/***/ "./node_modules/apollo-boost/node_modules/apollo-cache-inmemory/lib/bundle.esm.js":
-/*!****************************************************************************************!*\
-  !*** ./node_modules/apollo-boost/node_modules/apollo-cache-inmemory/lib/bundle.esm.js ***!
-  \****************************************************************************************/
+/***/ "./node_modules/apollo-cache-inmemory/lib/bundle.esm.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/apollo-cache-inmemory/lib/bundle.esm.js ***!
+  \**************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -567,9 +567,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "defaultNormalizedCacheFactory": () => (/* binding */ defaultNormalizedCacheFactory$1),
 /* harmony export */   "enhanceErrorWithDocument": () => (/* binding */ enhanceErrorWithDocument)
 /* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! tslib */ "./node_modules/apollo-boost/node_modules/tslib/tslib.es6.js");
-/* harmony import */ var apollo_cache__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! apollo-cache */ "./node_modules/apollo-boost/node_modules/apollo-cache/lib/bundle.esm.js");
-/* harmony import */ var apollo_utilities__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! apollo-utilities */ "./node_modules/apollo-boost/node_modules/apollo-cache-inmemory/node_modules/apollo-utilities/lib/bundle.esm.js");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var apollo_cache__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! apollo-cache */ "./node_modules/apollo-cache/lib/bundle.esm.js");
+/* harmony import */ var apollo_utilities__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! apollo-utilities */ "./node_modules/apollo-utilities/lib/bundle.esm.js");
 /* harmony import */ var apollo_utilities__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! apollo-utilities */ "./node_modules/@wry/equality/lib/equality.esm.js");
 /* harmony import */ var optimism__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! optimism */ "./node_modules/optimism/lib/bundle.esm.js");
 /* harmony import */ var ts_invariant__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ts-invariant */ "./node_modules/ts-invariant/lib/invariant.esm.js");
@@ -1561,1001 +1561,10 @@ var InMemoryCache = (function (_super) {
 
 /***/ }),
 
-/***/ "./node_modules/apollo-boost/node_modules/apollo-cache-inmemory/node_modules/apollo-utilities/lib/bundle.esm.js":
-/*!**********************************************************************************************************************!*\
-  !*** ./node_modules/apollo-boost/node_modules/apollo-cache-inmemory/node_modules/apollo-utilities/lib/bundle.esm.js ***!
-  \**********************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "isEqual": () => (/* reexport safe */ _wry_equality__WEBPACK_IMPORTED_MODULE_2__.equal),
-/* harmony export */   "addTypenameToDocument": () => (/* binding */ addTypenameToDocument),
-/* harmony export */   "argumentsObjectFromField": () => (/* binding */ argumentsObjectFromField),
-/* harmony export */   "assign": () => (/* binding */ assign),
-/* harmony export */   "buildQueryFromSelectionSet": () => (/* binding */ buildQueryFromSelectionSet),
-/* harmony export */   "canUseWeakMap": () => (/* binding */ canUseWeakMap),
-/* harmony export */   "checkDocument": () => (/* binding */ checkDocument),
-/* harmony export */   "cloneDeep": () => (/* binding */ cloneDeep),
-/* harmony export */   "createFragmentMap": () => (/* binding */ createFragmentMap),
-/* harmony export */   "getDefaultValues": () => (/* binding */ getDefaultValues),
-/* harmony export */   "getDirectiveInfoFromField": () => (/* binding */ getDirectiveInfoFromField),
-/* harmony export */   "getDirectiveNames": () => (/* binding */ getDirectiveNames),
-/* harmony export */   "getDirectivesFromDocument": () => (/* binding */ getDirectivesFromDocument),
-/* harmony export */   "getEnv": () => (/* binding */ getEnv),
-/* harmony export */   "getFragmentDefinition": () => (/* binding */ getFragmentDefinition),
-/* harmony export */   "getFragmentDefinitions": () => (/* binding */ getFragmentDefinitions),
-/* harmony export */   "getFragmentQueryDocument": () => (/* binding */ getFragmentQueryDocument),
-/* harmony export */   "getInclusionDirectives": () => (/* binding */ getInclusionDirectives),
-/* harmony export */   "getMainDefinition": () => (/* binding */ getMainDefinition),
-/* harmony export */   "getMutationDefinition": () => (/* binding */ getMutationDefinition),
-/* harmony export */   "getOperationDefinition": () => (/* binding */ getOperationDefinition),
-/* harmony export */   "getOperationDefinitionOrDie": () => (/* binding */ getOperationDefinitionOrDie),
-/* harmony export */   "getOperationName": () => (/* binding */ getOperationName),
-/* harmony export */   "getQueryDefinition": () => (/* binding */ getQueryDefinition),
-/* harmony export */   "getStoreKeyName": () => (/* binding */ getStoreKeyName),
-/* harmony export */   "graphQLResultHasError": () => (/* binding */ graphQLResultHasError),
-/* harmony export */   "hasClientExports": () => (/* binding */ hasClientExports),
-/* harmony export */   "hasDirectives": () => (/* binding */ hasDirectives),
-/* harmony export */   "isDevelopment": () => (/* binding */ isDevelopment),
-/* harmony export */   "isEnv": () => (/* binding */ isEnv),
-/* harmony export */   "isField": () => (/* binding */ isField),
-/* harmony export */   "isIdValue": () => (/* binding */ isIdValue),
-/* harmony export */   "isInlineFragment": () => (/* binding */ isInlineFragment),
-/* harmony export */   "isJsonValue": () => (/* binding */ isJsonValue),
-/* harmony export */   "isNumberValue": () => (/* binding */ isNumberValue),
-/* harmony export */   "isProduction": () => (/* binding */ isProduction),
-/* harmony export */   "isScalarValue": () => (/* binding */ isScalarValue),
-/* harmony export */   "isTest": () => (/* binding */ isTest),
-/* harmony export */   "maybeDeepFreeze": () => (/* binding */ maybeDeepFreeze),
-/* harmony export */   "mergeDeep": () => (/* binding */ mergeDeep),
-/* harmony export */   "mergeDeepArray": () => (/* binding */ mergeDeepArray),
-/* harmony export */   "removeArgumentsFromDocument": () => (/* binding */ removeArgumentsFromDocument),
-/* harmony export */   "removeClientSetsFromDocument": () => (/* binding */ removeClientSetsFromDocument),
-/* harmony export */   "removeConnectionDirectiveFromDocument": () => (/* binding */ removeConnectionDirectiveFromDocument),
-/* harmony export */   "removeDirectivesFromDocument": () => (/* binding */ removeDirectivesFromDocument),
-/* harmony export */   "removeFragmentSpreadFromDocument": () => (/* binding */ removeFragmentSpreadFromDocument),
-/* harmony export */   "resultKeyNameFromField": () => (/* binding */ resultKeyNameFromField),
-/* harmony export */   "shouldInclude": () => (/* binding */ shouldInclude),
-/* harmony export */   "storeKeyNameFromField": () => (/* binding */ storeKeyNameFromField),
-/* harmony export */   "stripSymbols": () => (/* binding */ stripSymbols),
-/* harmony export */   "toIdValue": () => (/* binding */ toIdValue),
-/* harmony export */   "tryFunctionOrLogError": () => (/* binding */ tryFunctionOrLogError),
-/* harmony export */   "valueFromNode": () => (/* binding */ valueFromNode),
-/* harmony export */   "valueToObjectRepresentation": () => (/* binding */ valueToObjectRepresentation),
-/* harmony export */   "variablesInOperation": () => (/* binding */ variablesInOperation),
-/* harmony export */   "warnOnceInDevelopment": () => (/* binding */ warnOnceInDevelopment)
-/* harmony export */ });
-/* harmony import */ var graphql_language_visitor__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! graphql/language/visitor */ "./node_modules/graphql/language/visitor.mjs");
-/* harmony import */ var ts_invariant__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ts-invariant */ "./node_modules/ts-invariant/lib/invariant.esm.js");
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! tslib */ "./node_modules/apollo-boost/node_modules/tslib/tslib.es6.js");
-/* harmony import */ var fast_json_stable_stringify__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! fast-json-stable-stringify */ "./node_modules/fast-json-stable-stringify/index.js");
-/* harmony import */ var fast_json_stable_stringify__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(fast_json_stable_stringify__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _wry_equality__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wry/equality */ "./node_modules/@wry/equality/lib/equality.esm.js");
-/* provided dependency */ var process = __webpack_require__(/*! process/browser */ "./node_modules/process/browser.js");
-
-
-
-
-
-
-function isScalarValue(value) {
-    return ['StringValue', 'BooleanValue', 'EnumValue'].indexOf(value.kind) > -1;
-}
-function isNumberValue(value) {
-    return ['IntValue', 'FloatValue'].indexOf(value.kind) > -1;
-}
-function isStringValue(value) {
-    return value.kind === 'StringValue';
-}
-function isBooleanValue(value) {
-    return value.kind === 'BooleanValue';
-}
-function isIntValue(value) {
-    return value.kind === 'IntValue';
-}
-function isFloatValue(value) {
-    return value.kind === 'FloatValue';
-}
-function isVariable(value) {
-    return value.kind === 'Variable';
-}
-function isObjectValue(value) {
-    return value.kind === 'ObjectValue';
-}
-function isListValue(value) {
-    return value.kind === 'ListValue';
-}
-function isEnumValue(value) {
-    return value.kind === 'EnumValue';
-}
-function isNullValue(value) {
-    return value.kind === 'NullValue';
-}
-function valueToObjectRepresentation(argObj, name, value, variables) {
-    if (isIntValue(value) || isFloatValue(value)) {
-        argObj[name.value] = Number(value.value);
-    }
-    else if (isBooleanValue(value) || isStringValue(value)) {
-        argObj[name.value] = value.value;
-    }
-    else if (isObjectValue(value)) {
-        var nestedArgObj_1 = {};
-        value.fields.map(function (obj) {
-            return valueToObjectRepresentation(nestedArgObj_1, obj.name, obj.value, variables);
-        });
-        argObj[name.value] = nestedArgObj_1;
-    }
-    else if (isVariable(value)) {
-        var variableValue = (variables || {})[value.name.value];
-        argObj[name.value] = variableValue;
-    }
-    else if (isListValue(value)) {
-        argObj[name.value] = value.values.map(function (listValue) {
-            var nestedArgArrayObj = {};
-            valueToObjectRepresentation(nestedArgArrayObj, name, listValue, variables);
-            return nestedArgArrayObj[name.value];
-        });
-    }
-    else if (isEnumValue(value)) {
-        argObj[name.value] = value.value;
-    }
-    else if (isNullValue(value)) {
-        argObj[name.value] = null;
-    }
-    else {
-        throw  false ? 0 : new ts_invariant__WEBPACK_IMPORTED_MODULE_0__.InvariantError("The inline argument \"" + name.value + "\" of kind \"" + value.kind + "\"" +
-            'is not supported. Use variables instead of inline arguments to ' +
-            'overcome this limitation.');
-    }
-}
-function storeKeyNameFromField(field, variables) {
-    var directivesObj = null;
-    if (field.directives) {
-        directivesObj = {};
-        field.directives.forEach(function (directive) {
-            directivesObj[directive.name.value] = {};
-            if (directive.arguments) {
-                directive.arguments.forEach(function (_a) {
-                    var name = _a.name, value = _a.value;
-                    return valueToObjectRepresentation(directivesObj[directive.name.value], name, value, variables);
-                });
-            }
-        });
-    }
-    var argObj = null;
-    if (field.arguments && field.arguments.length) {
-        argObj = {};
-        field.arguments.forEach(function (_a) {
-            var name = _a.name, value = _a.value;
-            return valueToObjectRepresentation(argObj, name, value, variables);
-        });
-    }
-    return getStoreKeyName(field.name.value, argObj, directivesObj);
-}
-var KNOWN_DIRECTIVES = [
-    'connection',
-    'include',
-    'skip',
-    'client',
-    'rest',
-    'export',
-];
-function getStoreKeyName(fieldName, args, directives) {
-    if (directives &&
-        directives['connection'] &&
-        directives['connection']['key']) {
-        if (directives['connection']['filter'] &&
-            directives['connection']['filter'].length > 0) {
-            var filterKeys = directives['connection']['filter']
-                ? directives['connection']['filter']
-                : [];
-            filterKeys.sort();
-            var queryArgs_1 = args;
-            var filteredArgs_1 = {};
-            filterKeys.forEach(function (key) {
-                filteredArgs_1[key] = queryArgs_1[key];
-            });
-            return directives['connection']['key'] + "(" + JSON.stringify(filteredArgs_1) + ")";
-        }
-        else {
-            return directives['connection']['key'];
-        }
-    }
-    var completeFieldName = fieldName;
-    if (args) {
-        var stringifiedArgs = fast_json_stable_stringify__WEBPACK_IMPORTED_MODULE_1___default()(args);
-        completeFieldName += "(" + stringifiedArgs + ")";
-    }
-    if (directives) {
-        Object.keys(directives).forEach(function (key) {
-            if (KNOWN_DIRECTIVES.indexOf(key) !== -1)
-                return;
-            if (directives[key] && Object.keys(directives[key]).length) {
-                completeFieldName += "@" + key + "(" + JSON.stringify(directives[key]) + ")";
-            }
-            else {
-                completeFieldName += "@" + key;
-            }
-        });
-    }
-    return completeFieldName;
-}
-function argumentsObjectFromField(field, variables) {
-    if (field.arguments && field.arguments.length) {
-        var argObj_1 = {};
-        field.arguments.forEach(function (_a) {
-            var name = _a.name, value = _a.value;
-            return valueToObjectRepresentation(argObj_1, name, value, variables);
-        });
-        return argObj_1;
-    }
-    return null;
-}
-function resultKeyNameFromField(field) {
-    return field.alias ? field.alias.value : field.name.value;
-}
-function isField(selection) {
-    return selection.kind === 'Field';
-}
-function isInlineFragment(selection) {
-    return selection.kind === 'InlineFragment';
-}
-function isIdValue(idObject) {
-    return idObject &&
-        idObject.type === 'id' &&
-        typeof idObject.generated === 'boolean';
-}
-function toIdValue(idConfig, generated) {
-    if (generated === void 0) { generated = false; }
-    return (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)({ type: 'id', generated: generated }, (typeof idConfig === 'string'
-        ? { id: idConfig, typename: undefined }
-        : idConfig));
-}
-function isJsonValue(jsonObject) {
-    return (jsonObject != null &&
-        typeof jsonObject === 'object' &&
-        jsonObject.type === 'json');
-}
-function defaultValueFromVariable(node) {
-    throw  false ? 0 : new ts_invariant__WEBPACK_IMPORTED_MODULE_0__.InvariantError("Variable nodes are not supported by valueFromNode");
-}
-function valueFromNode(node, onVariable) {
-    if (onVariable === void 0) { onVariable = defaultValueFromVariable; }
-    switch (node.kind) {
-        case 'Variable':
-            return onVariable(node);
-        case 'NullValue':
-            return null;
-        case 'IntValue':
-            return parseInt(node.value, 10);
-        case 'FloatValue':
-            return parseFloat(node.value);
-        case 'ListValue':
-            return node.values.map(function (v) { return valueFromNode(v, onVariable); });
-        case 'ObjectValue': {
-            var value = {};
-            for (var _i = 0, _a = node.fields; _i < _a.length; _i++) {
-                var field = _a[_i];
-                value[field.name.value] = valueFromNode(field.value, onVariable);
-            }
-            return value;
-        }
-        default:
-            return node.value;
-    }
-}
-
-function getDirectiveInfoFromField(field, variables) {
-    if (field.directives && field.directives.length) {
-        var directiveObj_1 = {};
-        field.directives.forEach(function (directive) {
-            directiveObj_1[directive.name.value] = argumentsObjectFromField(directive, variables);
-        });
-        return directiveObj_1;
-    }
-    return null;
-}
-function shouldInclude(selection, variables) {
-    if (variables === void 0) { variables = {}; }
-    return getInclusionDirectives(selection.directives).every(function (_a) {
-        var directive = _a.directive, ifArgument = _a.ifArgument;
-        var evaledValue = false;
-        if (ifArgument.value.kind === 'Variable') {
-            evaledValue = variables[ifArgument.value.name.value];
-             false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(evaledValue !== void 0, "Invalid variable referenced in @" + directive.name.value + " directive.");
-        }
-        else {
-            evaledValue = ifArgument.value.value;
-        }
-        return directive.name.value === 'skip' ? !evaledValue : evaledValue;
-    });
-}
-function getDirectiveNames(doc) {
-    var names = [];
-    (0,graphql_language_visitor__WEBPACK_IMPORTED_MODULE_4__.visit)(doc, {
-        Directive: function (node) {
-            names.push(node.name.value);
-        },
-    });
-    return names;
-}
-function hasDirectives(names, doc) {
-    return getDirectiveNames(doc).some(function (name) { return names.indexOf(name) > -1; });
-}
-function hasClientExports(document) {
-    return (document &&
-        hasDirectives(['client'], document) &&
-        hasDirectives(['export'], document));
-}
-function isInclusionDirective(_a) {
-    var value = _a.name.value;
-    return value === 'skip' || value === 'include';
-}
-function getInclusionDirectives(directives) {
-    return directives ? directives.filter(isInclusionDirective).map(function (directive) {
-        var directiveArguments = directive.arguments;
-        var directiveName = directive.name.value;
-         false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(directiveArguments && directiveArguments.length === 1, "Incorrect number of arguments for the @" + directiveName + " directive.");
-        var ifArgument = directiveArguments[0];
-         false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(ifArgument.name && ifArgument.name.value === 'if', "Invalid argument for the @" + directiveName + " directive.");
-        var ifValue = ifArgument.value;
-         false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(ifValue &&
-            (ifValue.kind === 'Variable' || ifValue.kind === 'BooleanValue'), "Argument for the @" + directiveName + " directive must be a variable or a boolean value.");
-        return { directive: directive, ifArgument: ifArgument };
-    }) : [];
-}
-
-function getFragmentQueryDocument(document, fragmentName) {
-    var actualFragmentName = fragmentName;
-    var fragments = [];
-    document.definitions.forEach(function (definition) {
-        if (definition.kind === 'OperationDefinition') {
-            throw  false ? 0 : new ts_invariant__WEBPACK_IMPORTED_MODULE_0__.InvariantError("Found a " + definition.operation + " operation" + (definition.name ? " named '" + definition.name.value + "'" : '') + ". " +
-                'No operations are allowed when using a fragment as a query. Only fragments are allowed.');
-        }
-        if (definition.kind === 'FragmentDefinition') {
-            fragments.push(definition);
-        }
-    });
-    if (typeof actualFragmentName === 'undefined') {
-         false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(fragments.length === 1, "Found " + fragments.length + " fragments. `fragmentName` must be provided when there is not exactly 1 fragment.");
-        actualFragmentName = fragments[0].name.value;
-    }
-    var query = (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)((0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)({}, document), { definitions: (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__spreadArrays)([
-            {
-                kind: 'OperationDefinition',
-                operation: 'query',
-                selectionSet: {
-                    kind: 'SelectionSet',
-                    selections: [
-                        {
-                            kind: 'FragmentSpread',
-                            name: {
-                                kind: 'Name',
-                                value: actualFragmentName,
-                            },
-                        },
-                    ],
-                },
-            }
-        ], document.definitions) });
-    return query;
-}
-
-function assign(target) {
-    var sources = [];
-    for (var _i = 1; _i < arguments.length; _i++) {
-        sources[_i - 1] = arguments[_i];
-    }
-    sources.forEach(function (source) {
-        if (typeof source === 'undefined' || source === null) {
-            return;
-        }
-        Object.keys(source).forEach(function (key) {
-            target[key] = source[key];
-        });
-    });
-    return target;
-}
-
-function getMutationDefinition(doc) {
-    checkDocument(doc);
-    var mutationDef = doc.definitions.filter(function (definition) {
-        return definition.kind === 'OperationDefinition' &&
-            definition.operation === 'mutation';
-    })[0];
-     false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(mutationDef, 'Must contain a mutation definition.');
-    return mutationDef;
-}
-function checkDocument(doc) {
-     false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(doc && doc.kind === 'Document', "Expecting a parsed GraphQL document. Perhaps you need to wrap the query string in a \"gql\" tag? http://docs.apollostack.com/apollo-client/core.html#gql");
-    var operations = doc.definitions
-        .filter(function (d) { return d.kind !== 'FragmentDefinition'; })
-        .map(function (definition) {
-        if (definition.kind !== 'OperationDefinition') {
-            throw  false ? 0 : new ts_invariant__WEBPACK_IMPORTED_MODULE_0__.InvariantError("Schema type definitions not allowed in queries. Found: \"" + definition.kind + "\"");
-        }
-        return definition;
-    });
-     false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(operations.length <= 1, "Ambiguous GraphQL document: contains " + operations.length + " operations");
-    return doc;
-}
-function getOperationDefinition(doc) {
-    checkDocument(doc);
-    return doc.definitions.filter(function (definition) { return definition.kind === 'OperationDefinition'; })[0];
-}
-function getOperationDefinitionOrDie(document) {
-    var def = getOperationDefinition(document);
-     false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(def, "GraphQL document is missing an operation");
-    return def;
-}
-function getOperationName(doc) {
-    return (doc.definitions
-        .filter(function (definition) {
-        return definition.kind === 'OperationDefinition' && definition.name;
-    })
-        .map(function (x) { return x.name.value; })[0] || null);
-}
-function getFragmentDefinitions(doc) {
-    return doc.definitions.filter(function (definition) { return definition.kind === 'FragmentDefinition'; });
-}
-function getQueryDefinition(doc) {
-    var queryDef = getOperationDefinition(doc);
-     false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(queryDef && queryDef.operation === 'query', 'Must contain a query definition.');
-    return queryDef;
-}
-function getFragmentDefinition(doc) {
-     false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(doc.kind === 'Document', "Expecting a parsed GraphQL document. Perhaps you need to wrap the query string in a \"gql\" tag? http://docs.apollostack.com/apollo-client/core.html#gql");
-     false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(doc.definitions.length <= 1, 'Fragment must have exactly one definition.');
-    var fragmentDef = doc.definitions[0];
-     false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(fragmentDef.kind === 'FragmentDefinition', 'Must be a fragment definition.');
-    return fragmentDef;
-}
-function getMainDefinition(queryDoc) {
-    checkDocument(queryDoc);
-    var fragmentDefinition;
-    for (var _i = 0, _a = queryDoc.definitions; _i < _a.length; _i++) {
-        var definition = _a[_i];
-        if (definition.kind === 'OperationDefinition') {
-            var operation = definition.operation;
-            if (operation === 'query' ||
-                operation === 'mutation' ||
-                operation === 'subscription') {
-                return definition;
-            }
-        }
-        if (definition.kind === 'FragmentDefinition' && !fragmentDefinition) {
-            fragmentDefinition = definition;
-        }
-    }
-    if (fragmentDefinition) {
-        return fragmentDefinition;
-    }
-    throw  false ? 0 : new ts_invariant__WEBPACK_IMPORTED_MODULE_0__.InvariantError('Expected a parsed GraphQL query with a query, mutation, subscription, or a fragment.');
-}
-function createFragmentMap(fragments) {
-    if (fragments === void 0) { fragments = []; }
-    var symTable = {};
-    fragments.forEach(function (fragment) {
-        symTable[fragment.name.value] = fragment;
-    });
-    return symTable;
-}
-function getDefaultValues(definition) {
-    if (definition &&
-        definition.variableDefinitions &&
-        definition.variableDefinitions.length) {
-        var defaultValues = definition.variableDefinitions
-            .filter(function (_a) {
-            var defaultValue = _a.defaultValue;
-            return defaultValue;
-        })
-            .map(function (_a) {
-            var variable = _a.variable, defaultValue = _a.defaultValue;
-            var defaultValueObj = {};
-            valueToObjectRepresentation(defaultValueObj, variable.name, defaultValue);
-            return defaultValueObj;
-        });
-        return assign.apply(void 0, (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__spreadArrays)([{}], defaultValues));
-    }
-    return {};
-}
-function variablesInOperation(operation) {
-    var names = new Set();
-    if (operation.variableDefinitions) {
-        for (var _i = 0, _a = operation.variableDefinitions; _i < _a.length; _i++) {
-            var definition = _a[_i];
-            names.add(definition.variable.name.value);
-        }
-    }
-    return names;
-}
-
-function filterInPlace(array, test, context) {
-    var target = 0;
-    array.forEach(function (elem, i) {
-        if (test.call(this, elem, i, array)) {
-            array[target++] = elem;
-        }
-    }, context);
-    array.length = target;
-    return array;
-}
-
-var TYPENAME_FIELD = {
-    kind: 'Field',
-    name: {
-        kind: 'Name',
-        value: '__typename',
-    },
-};
-function isEmpty(op, fragments) {
-    return op.selectionSet.selections.every(function (selection) {
-        return selection.kind === 'FragmentSpread' &&
-            isEmpty(fragments[selection.name.value], fragments);
-    });
-}
-function nullIfDocIsEmpty(doc) {
-    return isEmpty(getOperationDefinition(doc) || getFragmentDefinition(doc), createFragmentMap(getFragmentDefinitions(doc)))
-        ? null
-        : doc;
-}
-function getDirectiveMatcher(directives) {
-    return function directiveMatcher(directive) {
-        return directives.some(function (dir) {
-            return (dir.name && dir.name === directive.name.value) ||
-                (dir.test && dir.test(directive));
-        });
-    };
-}
-function removeDirectivesFromDocument(directives, doc) {
-    var variablesInUse = Object.create(null);
-    var variablesToRemove = [];
-    var fragmentSpreadsInUse = Object.create(null);
-    var fragmentSpreadsToRemove = [];
-    var modifiedDoc = nullIfDocIsEmpty((0,graphql_language_visitor__WEBPACK_IMPORTED_MODULE_4__.visit)(doc, {
-        Variable: {
-            enter: function (node, _key, parent) {
-                if (parent.kind !== 'VariableDefinition') {
-                    variablesInUse[node.name.value] = true;
-                }
-            },
-        },
-        Field: {
-            enter: function (node) {
-                if (directives && node.directives) {
-                    var shouldRemoveField = directives.some(function (directive) { return directive.remove; });
-                    if (shouldRemoveField &&
-                        node.directives &&
-                        node.directives.some(getDirectiveMatcher(directives))) {
-                        if (node.arguments) {
-                            node.arguments.forEach(function (arg) {
-                                if (arg.value.kind === 'Variable') {
-                                    variablesToRemove.push({
-                                        name: arg.value.name.value,
-                                    });
-                                }
-                            });
-                        }
-                        if (node.selectionSet) {
-                            getAllFragmentSpreadsFromSelectionSet(node.selectionSet).forEach(function (frag) {
-                                fragmentSpreadsToRemove.push({
-                                    name: frag.name.value,
-                                });
-                            });
-                        }
-                        return null;
-                    }
-                }
-            },
-        },
-        FragmentSpread: {
-            enter: function (node) {
-                fragmentSpreadsInUse[node.name.value] = true;
-            },
-        },
-        Directive: {
-            enter: function (node) {
-                if (getDirectiveMatcher(directives)(node)) {
-                    return null;
-                }
-            },
-        },
-    }));
-    if (modifiedDoc &&
-        filterInPlace(variablesToRemove, function (v) { return !variablesInUse[v.name]; }).length) {
-        modifiedDoc = removeArgumentsFromDocument(variablesToRemove, modifiedDoc);
-    }
-    if (modifiedDoc &&
-        filterInPlace(fragmentSpreadsToRemove, function (fs) { return !fragmentSpreadsInUse[fs.name]; })
-            .length) {
-        modifiedDoc = removeFragmentSpreadFromDocument(fragmentSpreadsToRemove, modifiedDoc);
-    }
-    return modifiedDoc;
-}
-function addTypenameToDocument(doc) {
-    return (0,graphql_language_visitor__WEBPACK_IMPORTED_MODULE_4__.visit)(checkDocument(doc), {
-        SelectionSet: {
-            enter: function (node, _key, parent) {
-                if (parent &&
-                    parent.kind === 'OperationDefinition') {
-                    return;
-                }
-                var selections = node.selections;
-                if (!selections) {
-                    return;
-                }
-                var skip = selections.some(function (selection) {
-                    return (isField(selection) &&
-                        (selection.name.value === '__typename' ||
-                            selection.name.value.lastIndexOf('__', 0) === 0));
-                });
-                if (skip) {
-                    return;
-                }
-                var field = parent;
-                if (isField(field) &&
-                    field.directives &&
-                    field.directives.some(function (d) { return d.name.value === 'export'; })) {
-                    return;
-                }
-                return (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)((0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)({}, node), { selections: (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__spreadArrays)(selections, [TYPENAME_FIELD]) });
-            },
-        },
-    });
-}
-var connectionRemoveConfig = {
-    test: function (directive) {
-        var willRemove = directive.name.value === 'connection';
-        if (willRemove) {
-            if (!directive.arguments ||
-                !directive.arguments.some(function (arg) { return arg.name.value === 'key'; })) {
-                 false || ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant.warn('Removing an @connection directive even though it does not have a key. ' +
-                    'You may want to use the key parameter to specify a store key.');
-            }
-        }
-        return willRemove;
-    },
-};
-function removeConnectionDirectiveFromDocument(doc) {
-    return removeDirectivesFromDocument([connectionRemoveConfig], checkDocument(doc));
-}
-function hasDirectivesInSelectionSet(directives, selectionSet, nestedCheck) {
-    if (nestedCheck === void 0) { nestedCheck = true; }
-    return (selectionSet &&
-        selectionSet.selections &&
-        selectionSet.selections.some(function (selection) {
-            return hasDirectivesInSelection(directives, selection, nestedCheck);
-        }));
-}
-function hasDirectivesInSelection(directives, selection, nestedCheck) {
-    if (nestedCheck === void 0) { nestedCheck = true; }
-    if (!isField(selection)) {
-        return true;
-    }
-    if (!selection.directives) {
-        return false;
-    }
-    return (selection.directives.some(getDirectiveMatcher(directives)) ||
-        (nestedCheck &&
-            hasDirectivesInSelectionSet(directives, selection.selectionSet, nestedCheck)));
-}
-function getDirectivesFromDocument(directives, doc) {
-    checkDocument(doc);
-    var parentPath;
-    return nullIfDocIsEmpty((0,graphql_language_visitor__WEBPACK_IMPORTED_MODULE_4__.visit)(doc, {
-        SelectionSet: {
-            enter: function (node, _key, _parent, path) {
-                var currentPath = path.join('-');
-                if (!parentPath ||
-                    currentPath === parentPath ||
-                    !currentPath.startsWith(parentPath)) {
-                    if (node.selections) {
-                        var selectionsWithDirectives = node.selections.filter(function (selection) { return hasDirectivesInSelection(directives, selection); });
-                        if (hasDirectivesInSelectionSet(directives, node, false)) {
-                            parentPath = currentPath;
-                        }
-                        return (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)((0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)({}, node), { selections: selectionsWithDirectives });
-                    }
-                    else {
-                        return null;
-                    }
-                }
-            },
-        },
-    }));
-}
-function getArgumentMatcher(config) {
-    return function argumentMatcher(argument) {
-        return config.some(function (aConfig) {
-            return argument.value &&
-                argument.value.kind === 'Variable' &&
-                argument.value.name &&
-                (aConfig.name === argument.value.name.value ||
-                    (aConfig.test && aConfig.test(argument)));
-        });
-    };
-}
-function removeArgumentsFromDocument(config, doc) {
-    var argMatcher = getArgumentMatcher(config);
-    return nullIfDocIsEmpty((0,graphql_language_visitor__WEBPACK_IMPORTED_MODULE_4__.visit)(doc, {
-        OperationDefinition: {
-            enter: function (node) {
-                return (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)((0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)({}, node), { variableDefinitions: node.variableDefinitions.filter(function (varDef) {
-                        return !config.some(function (arg) { return arg.name === varDef.variable.name.value; });
-                    }) });
-            },
-        },
-        Field: {
-            enter: function (node) {
-                var shouldRemoveField = config.some(function (argConfig) { return argConfig.remove; });
-                if (shouldRemoveField) {
-                    var argMatchCount_1 = 0;
-                    node.arguments.forEach(function (arg) {
-                        if (argMatcher(arg)) {
-                            argMatchCount_1 += 1;
-                        }
-                    });
-                    if (argMatchCount_1 === 1) {
-                        return null;
-                    }
-                }
-            },
-        },
-        Argument: {
-            enter: function (node) {
-                if (argMatcher(node)) {
-                    return null;
-                }
-            },
-        },
-    }));
-}
-function removeFragmentSpreadFromDocument(config, doc) {
-    function enter(node) {
-        if (config.some(function (def) { return def.name === node.name.value; })) {
-            return null;
-        }
-    }
-    return nullIfDocIsEmpty((0,graphql_language_visitor__WEBPACK_IMPORTED_MODULE_4__.visit)(doc, {
-        FragmentSpread: { enter: enter },
-        FragmentDefinition: { enter: enter },
-    }));
-}
-function getAllFragmentSpreadsFromSelectionSet(selectionSet) {
-    var allFragments = [];
-    selectionSet.selections.forEach(function (selection) {
-        if ((isField(selection) || isInlineFragment(selection)) &&
-            selection.selectionSet) {
-            getAllFragmentSpreadsFromSelectionSet(selection.selectionSet).forEach(function (frag) { return allFragments.push(frag); });
-        }
-        else if (selection.kind === 'FragmentSpread') {
-            allFragments.push(selection);
-        }
-    });
-    return allFragments;
-}
-function buildQueryFromSelectionSet(document) {
-    var definition = getMainDefinition(document);
-    var definitionOperation = definition.operation;
-    if (definitionOperation === 'query') {
-        return document;
-    }
-    var modifiedDoc = (0,graphql_language_visitor__WEBPACK_IMPORTED_MODULE_4__.visit)(document, {
-        OperationDefinition: {
-            enter: function (node) {
-                return (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)((0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)({}, node), { operation: 'query' });
-            },
-        },
-    });
-    return modifiedDoc;
-}
-function removeClientSetsFromDocument(document) {
-    checkDocument(document);
-    var modifiedDoc = removeDirectivesFromDocument([
-        {
-            test: function (directive) { return directive.name.value === 'client'; },
-            remove: true,
-        },
-    ], document);
-    if (modifiedDoc) {
-        modifiedDoc = (0,graphql_language_visitor__WEBPACK_IMPORTED_MODULE_4__.visit)(modifiedDoc, {
-            FragmentDefinition: {
-                enter: function (node) {
-                    if (node.selectionSet) {
-                        var isTypenameOnly = node.selectionSet.selections.every(function (selection) {
-                            return isField(selection) && selection.name.value === '__typename';
-                        });
-                        if (isTypenameOnly) {
-                            return null;
-                        }
-                    }
-                },
-            },
-        });
-    }
-    return modifiedDoc;
-}
-
-var canUseWeakMap = typeof WeakMap === 'function' && !(typeof navigator === 'object' &&
-    navigator.product === 'ReactNative');
-
-var toString = Object.prototype.toString;
-function cloneDeep(value) {
-    return cloneDeepHelper(value, new Map());
-}
-function cloneDeepHelper(val, seen) {
-    switch (toString.call(val)) {
-        case "[object Array]": {
-            if (seen.has(val))
-                return seen.get(val);
-            var copy_1 = val.slice(0);
-            seen.set(val, copy_1);
-            copy_1.forEach(function (child, i) {
-                copy_1[i] = cloneDeepHelper(child, seen);
-            });
-            return copy_1;
-        }
-        case "[object Object]": {
-            if (seen.has(val))
-                return seen.get(val);
-            var copy_2 = Object.create(Object.getPrototypeOf(val));
-            seen.set(val, copy_2);
-            Object.keys(val).forEach(function (key) {
-                copy_2[key] = cloneDeepHelper(val[key], seen);
-            });
-            return copy_2;
-        }
-        default:
-            return val;
-    }
-}
-
-function getEnv() {
-    if (typeof process !== 'undefined' && "development") {
-        return "development";
-    }
-    return 'development';
-}
-function isEnv(env) {
-    return getEnv() === env;
-}
-function isProduction() {
-    return isEnv('production') === true;
-}
-function isDevelopment() {
-    return isEnv('development') === true;
-}
-function isTest() {
-    return isEnv('test') === true;
-}
-
-function tryFunctionOrLogError(f) {
-    try {
-        return f();
-    }
-    catch (e) {
-        if (console.error) {
-            console.error(e);
-        }
-    }
-}
-function graphQLResultHasError(result) {
-    return result.errors && result.errors.length;
-}
-
-function deepFreeze(o) {
-    Object.freeze(o);
-    Object.getOwnPropertyNames(o).forEach(function (prop) {
-        if (o[prop] !== null &&
-            (typeof o[prop] === 'object' || typeof o[prop] === 'function') &&
-            !Object.isFrozen(o[prop])) {
-            deepFreeze(o[prop]);
-        }
-    });
-    return o;
-}
-function maybeDeepFreeze(obj) {
-    if (isDevelopment() || isTest()) {
-        var symbolIsPolyfilled = typeof Symbol === 'function' && typeof Symbol('') === 'string';
-        if (!symbolIsPolyfilled) {
-            return deepFreeze(obj);
-        }
-    }
-    return obj;
-}
-
-var hasOwnProperty = Object.prototype.hasOwnProperty;
-function mergeDeep() {
-    var sources = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        sources[_i] = arguments[_i];
-    }
-    return mergeDeepArray(sources);
-}
-function mergeDeepArray(sources) {
-    var target = sources[0] || {};
-    var count = sources.length;
-    if (count > 1) {
-        var pastCopies = [];
-        target = shallowCopyForMerge(target, pastCopies);
-        for (var i = 1; i < count; ++i) {
-            target = mergeHelper(target, sources[i], pastCopies);
-        }
-    }
-    return target;
-}
-function isObject(obj) {
-    return obj !== null && typeof obj === 'object';
-}
-function mergeHelper(target, source, pastCopies) {
-    if (isObject(source) && isObject(target)) {
-        if (Object.isExtensible && !Object.isExtensible(target)) {
-            target = shallowCopyForMerge(target, pastCopies);
-        }
-        Object.keys(source).forEach(function (sourceKey) {
-            var sourceValue = source[sourceKey];
-            if (hasOwnProperty.call(target, sourceKey)) {
-                var targetValue = target[sourceKey];
-                if (sourceValue !== targetValue) {
-                    target[sourceKey] = mergeHelper(shallowCopyForMerge(targetValue, pastCopies), sourceValue, pastCopies);
-                }
-            }
-            else {
-                target[sourceKey] = sourceValue;
-            }
-        });
-        return target;
-    }
-    return source;
-}
-function shallowCopyForMerge(value, pastCopies) {
-    if (value !== null &&
-        typeof value === 'object' &&
-        pastCopies.indexOf(value) < 0) {
-        if (Array.isArray(value)) {
-            value = value.slice(0);
-        }
-        else {
-            value = (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)({ __proto__: Object.getPrototypeOf(value) }, value);
-        }
-        pastCopies.push(value);
-    }
-    return value;
-}
-
-var haveWarned = Object.create({});
-function warnOnceInDevelopment(msg, type) {
-    if (type === void 0) { type = 'warn'; }
-    if (!isProduction() && !haveWarned[msg]) {
-        if (!isTest()) {
-            haveWarned[msg] = true;
-        }
-        if (type === 'error') {
-            console.error(msg);
-        }
-        else {
-            console.warn(msg);
-        }
-    }
-}
-
-function stripSymbols(data) {
-    return JSON.parse(JSON.stringify(data));
-}
-
-
-//# sourceMappingURL=bundle.esm.js.map
-
-
-/***/ }),
-
-/***/ "./node_modules/apollo-boost/node_modules/apollo-cache/lib/bundle.esm.js":
-/*!*******************************************************************************!*\
-  !*** ./node_modules/apollo-boost/node_modules/apollo-cache/lib/bundle.esm.js ***!
-  \*******************************************************************************/
+/***/ "./node_modules/apollo-cache/lib/bundle.esm.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/apollo-cache/lib/bundle.esm.js ***!
+  \*****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2564,7 +1573,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "ApolloCache": () => (/* binding */ ApolloCache),
 /* harmony export */   "Cache": () => (/* binding */ Cache)
 /* harmony export */ });
-/* harmony import */ var apollo_utilities__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! apollo-utilities */ "./node_modules/apollo-boost/node_modules/apollo-cache/node_modules/apollo-utilities/lib/bundle.esm.js");
+/* harmony import */ var apollo_utilities__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! apollo-utilities */ "./node_modules/apollo-utilities/lib/bundle.esm.js");
 
 
 function queryFromPojo(obj) {
@@ -2744,1567 +1753,6 @@ var Cache;
 
 /***/ }),
 
-/***/ "./node_modules/apollo-boost/node_modules/apollo-cache/node_modules/apollo-utilities/lib/bundle.esm.js":
-/*!*************************************************************************************************************!*\
-  !*** ./node_modules/apollo-boost/node_modules/apollo-cache/node_modules/apollo-utilities/lib/bundle.esm.js ***!
-  \*************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "isEqual": () => (/* reexport safe */ _wry_equality__WEBPACK_IMPORTED_MODULE_2__.equal),
-/* harmony export */   "addTypenameToDocument": () => (/* binding */ addTypenameToDocument),
-/* harmony export */   "argumentsObjectFromField": () => (/* binding */ argumentsObjectFromField),
-/* harmony export */   "assign": () => (/* binding */ assign),
-/* harmony export */   "buildQueryFromSelectionSet": () => (/* binding */ buildQueryFromSelectionSet),
-/* harmony export */   "canUseWeakMap": () => (/* binding */ canUseWeakMap),
-/* harmony export */   "checkDocument": () => (/* binding */ checkDocument),
-/* harmony export */   "cloneDeep": () => (/* binding */ cloneDeep),
-/* harmony export */   "createFragmentMap": () => (/* binding */ createFragmentMap),
-/* harmony export */   "getDefaultValues": () => (/* binding */ getDefaultValues),
-/* harmony export */   "getDirectiveInfoFromField": () => (/* binding */ getDirectiveInfoFromField),
-/* harmony export */   "getDirectiveNames": () => (/* binding */ getDirectiveNames),
-/* harmony export */   "getDirectivesFromDocument": () => (/* binding */ getDirectivesFromDocument),
-/* harmony export */   "getEnv": () => (/* binding */ getEnv),
-/* harmony export */   "getFragmentDefinition": () => (/* binding */ getFragmentDefinition),
-/* harmony export */   "getFragmentDefinitions": () => (/* binding */ getFragmentDefinitions),
-/* harmony export */   "getFragmentQueryDocument": () => (/* binding */ getFragmentQueryDocument),
-/* harmony export */   "getInclusionDirectives": () => (/* binding */ getInclusionDirectives),
-/* harmony export */   "getMainDefinition": () => (/* binding */ getMainDefinition),
-/* harmony export */   "getMutationDefinition": () => (/* binding */ getMutationDefinition),
-/* harmony export */   "getOperationDefinition": () => (/* binding */ getOperationDefinition),
-/* harmony export */   "getOperationDefinitionOrDie": () => (/* binding */ getOperationDefinitionOrDie),
-/* harmony export */   "getOperationName": () => (/* binding */ getOperationName),
-/* harmony export */   "getQueryDefinition": () => (/* binding */ getQueryDefinition),
-/* harmony export */   "getStoreKeyName": () => (/* binding */ getStoreKeyName),
-/* harmony export */   "graphQLResultHasError": () => (/* binding */ graphQLResultHasError),
-/* harmony export */   "hasClientExports": () => (/* binding */ hasClientExports),
-/* harmony export */   "hasDirectives": () => (/* binding */ hasDirectives),
-/* harmony export */   "isDevelopment": () => (/* binding */ isDevelopment),
-/* harmony export */   "isEnv": () => (/* binding */ isEnv),
-/* harmony export */   "isField": () => (/* binding */ isField),
-/* harmony export */   "isIdValue": () => (/* binding */ isIdValue),
-/* harmony export */   "isInlineFragment": () => (/* binding */ isInlineFragment),
-/* harmony export */   "isJsonValue": () => (/* binding */ isJsonValue),
-/* harmony export */   "isNumberValue": () => (/* binding */ isNumberValue),
-/* harmony export */   "isProduction": () => (/* binding */ isProduction),
-/* harmony export */   "isScalarValue": () => (/* binding */ isScalarValue),
-/* harmony export */   "isTest": () => (/* binding */ isTest),
-/* harmony export */   "maybeDeepFreeze": () => (/* binding */ maybeDeepFreeze),
-/* harmony export */   "mergeDeep": () => (/* binding */ mergeDeep),
-/* harmony export */   "mergeDeepArray": () => (/* binding */ mergeDeepArray),
-/* harmony export */   "removeArgumentsFromDocument": () => (/* binding */ removeArgumentsFromDocument),
-/* harmony export */   "removeClientSetsFromDocument": () => (/* binding */ removeClientSetsFromDocument),
-/* harmony export */   "removeConnectionDirectiveFromDocument": () => (/* binding */ removeConnectionDirectiveFromDocument),
-/* harmony export */   "removeDirectivesFromDocument": () => (/* binding */ removeDirectivesFromDocument),
-/* harmony export */   "removeFragmentSpreadFromDocument": () => (/* binding */ removeFragmentSpreadFromDocument),
-/* harmony export */   "resultKeyNameFromField": () => (/* binding */ resultKeyNameFromField),
-/* harmony export */   "shouldInclude": () => (/* binding */ shouldInclude),
-/* harmony export */   "storeKeyNameFromField": () => (/* binding */ storeKeyNameFromField),
-/* harmony export */   "stripSymbols": () => (/* binding */ stripSymbols),
-/* harmony export */   "toIdValue": () => (/* binding */ toIdValue),
-/* harmony export */   "tryFunctionOrLogError": () => (/* binding */ tryFunctionOrLogError),
-/* harmony export */   "valueFromNode": () => (/* binding */ valueFromNode),
-/* harmony export */   "valueToObjectRepresentation": () => (/* binding */ valueToObjectRepresentation),
-/* harmony export */   "variablesInOperation": () => (/* binding */ variablesInOperation),
-/* harmony export */   "warnOnceInDevelopment": () => (/* binding */ warnOnceInDevelopment)
-/* harmony export */ });
-/* harmony import */ var graphql_language_visitor__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! graphql/language/visitor */ "./node_modules/graphql/language/visitor.mjs");
-/* harmony import */ var ts_invariant__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ts-invariant */ "./node_modules/ts-invariant/lib/invariant.esm.js");
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! tslib */ "./node_modules/apollo-boost/node_modules/tslib/tslib.es6.js");
-/* harmony import */ var fast_json_stable_stringify__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! fast-json-stable-stringify */ "./node_modules/fast-json-stable-stringify/index.js");
-/* harmony import */ var fast_json_stable_stringify__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(fast_json_stable_stringify__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _wry_equality__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wry/equality */ "./node_modules/@wry/equality/lib/equality.esm.js");
-/* provided dependency */ var process = __webpack_require__(/*! process/browser */ "./node_modules/process/browser.js");
-
-
-
-
-
-
-function isScalarValue(value) {
-    return ['StringValue', 'BooleanValue', 'EnumValue'].indexOf(value.kind) > -1;
-}
-function isNumberValue(value) {
-    return ['IntValue', 'FloatValue'].indexOf(value.kind) > -1;
-}
-function isStringValue(value) {
-    return value.kind === 'StringValue';
-}
-function isBooleanValue(value) {
-    return value.kind === 'BooleanValue';
-}
-function isIntValue(value) {
-    return value.kind === 'IntValue';
-}
-function isFloatValue(value) {
-    return value.kind === 'FloatValue';
-}
-function isVariable(value) {
-    return value.kind === 'Variable';
-}
-function isObjectValue(value) {
-    return value.kind === 'ObjectValue';
-}
-function isListValue(value) {
-    return value.kind === 'ListValue';
-}
-function isEnumValue(value) {
-    return value.kind === 'EnumValue';
-}
-function isNullValue(value) {
-    return value.kind === 'NullValue';
-}
-function valueToObjectRepresentation(argObj, name, value, variables) {
-    if (isIntValue(value) || isFloatValue(value)) {
-        argObj[name.value] = Number(value.value);
-    }
-    else if (isBooleanValue(value) || isStringValue(value)) {
-        argObj[name.value] = value.value;
-    }
-    else if (isObjectValue(value)) {
-        var nestedArgObj_1 = {};
-        value.fields.map(function (obj) {
-            return valueToObjectRepresentation(nestedArgObj_1, obj.name, obj.value, variables);
-        });
-        argObj[name.value] = nestedArgObj_1;
-    }
-    else if (isVariable(value)) {
-        var variableValue = (variables || {})[value.name.value];
-        argObj[name.value] = variableValue;
-    }
-    else if (isListValue(value)) {
-        argObj[name.value] = value.values.map(function (listValue) {
-            var nestedArgArrayObj = {};
-            valueToObjectRepresentation(nestedArgArrayObj, name, listValue, variables);
-            return nestedArgArrayObj[name.value];
-        });
-    }
-    else if (isEnumValue(value)) {
-        argObj[name.value] = value.value;
-    }
-    else if (isNullValue(value)) {
-        argObj[name.value] = null;
-    }
-    else {
-        throw  false ? 0 : new ts_invariant__WEBPACK_IMPORTED_MODULE_0__.InvariantError("The inline argument \"" + name.value + "\" of kind \"" + value.kind + "\"" +
-            'is not supported. Use variables instead of inline arguments to ' +
-            'overcome this limitation.');
-    }
-}
-function storeKeyNameFromField(field, variables) {
-    var directivesObj = null;
-    if (field.directives) {
-        directivesObj = {};
-        field.directives.forEach(function (directive) {
-            directivesObj[directive.name.value] = {};
-            if (directive.arguments) {
-                directive.arguments.forEach(function (_a) {
-                    var name = _a.name, value = _a.value;
-                    return valueToObjectRepresentation(directivesObj[directive.name.value], name, value, variables);
-                });
-            }
-        });
-    }
-    var argObj = null;
-    if (field.arguments && field.arguments.length) {
-        argObj = {};
-        field.arguments.forEach(function (_a) {
-            var name = _a.name, value = _a.value;
-            return valueToObjectRepresentation(argObj, name, value, variables);
-        });
-    }
-    return getStoreKeyName(field.name.value, argObj, directivesObj);
-}
-var KNOWN_DIRECTIVES = [
-    'connection',
-    'include',
-    'skip',
-    'client',
-    'rest',
-    'export',
-];
-function getStoreKeyName(fieldName, args, directives) {
-    if (directives &&
-        directives['connection'] &&
-        directives['connection']['key']) {
-        if (directives['connection']['filter'] &&
-            directives['connection']['filter'].length > 0) {
-            var filterKeys = directives['connection']['filter']
-                ? directives['connection']['filter']
-                : [];
-            filterKeys.sort();
-            var queryArgs_1 = args;
-            var filteredArgs_1 = {};
-            filterKeys.forEach(function (key) {
-                filteredArgs_1[key] = queryArgs_1[key];
-            });
-            return directives['connection']['key'] + "(" + JSON.stringify(filteredArgs_1) + ")";
-        }
-        else {
-            return directives['connection']['key'];
-        }
-    }
-    var completeFieldName = fieldName;
-    if (args) {
-        var stringifiedArgs = fast_json_stable_stringify__WEBPACK_IMPORTED_MODULE_1___default()(args);
-        completeFieldName += "(" + stringifiedArgs + ")";
-    }
-    if (directives) {
-        Object.keys(directives).forEach(function (key) {
-            if (KNOWN_DIRECTIVES.indexOf(key) !== -1)
-                return;
-            if (directives[key] && Object.keys(directives[key]).length) {
-                completeFieldName += "@" + key + "(" + JSON.stringify(directives[key]) + ")";
-            }
-            else {
-                completeFieldName += "@" + key;
-            }
-        });
-    }
-    return completeFieldName;
-}
-function argumentsObjectFromField(field, variables) {
-    if (field.arguments && field.arguments.length) {
-        var argObj_1 = {};
-        field.arguments.forEach(function (_a) {
-            var name = _a.name, value = _a.value;
-            return valueToObjectRepresentation(argObj_1, name, value, variables);
-        });
-        return argObj_1;
-    }
-    return null;
-}
-function resultKeyNameFromField(field) {
-    return field.alias ? field.alias.value : field.name.value;
-}
-function isField(selection) {
-    return selection.kind === 'Field';
-}
-function isInlineFragment(selection) {
-    return selection.kind === 'InlineFragment';
-}
-function isIdValue(idObject) {
-    return idObject &&
-        idObject.type === 'id' &&
-        typeof idObject.generated === 'boolean';
-}
-function toIdValue(idConfig, generated) {
-    if (generated === void 0) { generated = false; }
-    return (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)({ type: 'id', generated: generated }, (typeof idConfig === 'string'
-        ? { id: idConfig, typename: undefined }
-        : idConfig));
-}
-function isJsonValue(jsonObject) {
-    return (jsonObject != null &&
-        typeof jsonObject === 'object' &&
-        jsonObject.type === 'json');
-}
-function defaultValueFromVariable(node) {
-    throw  false ? 0 : new ts_invariant__WEBPACK_IMPORTED_MODULE_0__.InvariantError("Variable nodes are not supported by valueFromNode");
-}
-function valueFromNode(node, onVariable) {
-    if (onVariable === void 0) { onVariable = defaultValueFromVariable; }
-    switch (node.kind) {
-        case 'Variable':
-            return onVariable(node);
-        case 'NullValue':
-            return null;
-        case 'IntValue':
-            return parseInt(node.value, 10);
-        case 'FloatValue':
-            return parseFloat(node.value);
-        case 'ListValue':
-            return node.values.map(function (v) { return valueFromNode(v, onVariable); });
-        case 'ObjectValue': {
-            var value = {};
-            for (var _i = 0, _a = node.fields; _i < _a.length; _i++) {
-                var field = _a[_i];
-                value[field.name.value] = valueFromNode(field.value, onVariable);
-            }
-            return value;
-        }
-        default:
-            return node.value;
-    }
-}
-
-function getDirectiveInfoFromField(field, variables) {
-    if (field.directives && field.directives.length) {
-        var directiveObj_1 = {};
-        field.directives.forEach(function (directive) {
-            directiveObj_1[directive.name.value] = argumentsObjectFromField(directive, variables);
-        });
-        return directiveObj_1;
-    }
-    return null;
-}
-function shouldInclude(selection, variables) {
-    if (variables === void 0) { variables = {}; }
-    return getInclusionDirectives(selection.directives).every(function (_a) {
-        var directive = _a.directive, ifArgument = _a.ifArgument;
-        var evaledValue = false;
-        if (ifArgument.value.kind === 'Variable') {
-            evaledValue = variables[ifArgument.value.name.value];
-             false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(evaledValue !== void 0, "Invalid variable referenced in @" + directive.name.value + " directive.");
-        }
-        else {
-            evaledValue = ifArgument.value.value;
-        }
-        return directive.name.value === 'skip' ? !evaledValue : evaledValue;
-    });
-}
-function getDirectiveNames(doc) {
-    var names = [];
-    (0,graphql_language_visitor__WEBPACK_IMPORTED_MODULE_4__.visit)(doc, {
-        Directive: function (node) {
-            names.push(node.name.value);
-        },
-    });
-    return names;
-}
-function hasDirectives(names, doc) {
-    return getDirectiveNames(doc).some(function (name) { return names.indexOf(name) > -1; });
-}
-function hasClientExports(document) {
-    return (document &&
-        hasDirectives(['client'], document) &&
-        hasDirectives(['export'], document));
-}
-function isInclusionDirective(_a) {
-    var value = _a.name.value;
-    return value === 'skip' || value === 'include';
-}
-function getInclusionDirectives(directives) {
-    return directives ? directives.filter(isInclusionDirective).map(function (directive) {
-        var directiveArguments = directive.arguments;
-        var directiveName = directive.name.value;
-         false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(directiveArguments && directiveArguments.length === 1, "Incorrect number of arguments for the @" + directiveName + " directive.");
-        var ifArgument = directiveArguments[0];
-         false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(ifArgument.name && ifArgument.name.value === 'if', "Invalid argument for the @" + directiveName + " directive.");
-        var ifValue = ifArgument.value;
-         false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(ifValue &&
-            (ifValue.kind === 'Variable' || ifValue.kind === 'BooleanValue'), "Argument for the @" + directiveName + " directive must be a variable or a boolean value.");
-        return { directive: directive, ifArgument: ifArgument };
-    }) : [];
-}
-
-function getFragmentQueryDocument(document, fragmentName) {
-    var actualFragmentName = fragmentName;
-    var fragments = [];
-    document.definitions.forEach(function (definition) {
-        if (definition.kind === 'OperationDefinition') {
-            throw  false ? 0 : new ts_invariant__WEBPACK_IMPORTED_MODULE_0__.InvariantError("Found a " + definition.operation + " operation" + (definition.name ? " named '" + definition.name.value + "'" : '') + ". " +
-                'No operations are allowed when using a fragment as a query. Only fragments are allowed.');
-        }
-        if (definition.kind === 'FragmentDefinition') {
-            fragments.push(definition);
-        }
-    });
-    if (typeof actualFragmentName === 'undefined') {
-         false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(fragments.length === 1, "Found " + fragments.length + " fragments. `fragmentName` must be provided when there is not exactly 1 fragment.");
-        actualFragmentName = fragments[0].name.value;
-    }
-    var query = (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)((0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)({}, document), { definitions: (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__spreadArrays)([
-            {
-                kind: 'OperationDefinition',
-                operation: 'query',
-                selectionSet: {
-                    kind: 'SelectionSet',
-                    selections: [
-                        {
-                            kind: 'FragmentSpread',
-                            name: {
-                                kind: 'Name',
-                                value: actualFragmentName,
-                            },
-                        },
-                    ],
-                },
-            }
-        ], document.definitions) });
-    return query;
-}
-
-function assign(target) {
-    var sources = [];
-    for (var _i = 1; _i < arguments.length; _i++) {
-        sources[_i - 1] = arguments[_i];
-    }
-    sources.forEach(function (source) {
-        if (typeof source === 'undefined' || source === null) {
-            return;
-        }
-        Object.keys(source).forEach(function (key) {
-            target[key] = source[key];
-        });
-    });
-    return target;
-}
-
-function getMutationDefinition(doc) {
-    checkDocument(doc);
-    var mutationDef = doc.definitions.filter(function (definition) {
-        return definition.kind === 'OperationDefinition' &&
-            definition.operation === 'mutation';
-    })[0];
-     false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(mutationDef, 'Must contain a mutation definition.');
-    return mutationDef;
-}
-function checkDocument(doc) {
-     false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(doc && doc.kind === 'Document', "Expecting a parsed GraphQL document. Perhaps you need to wrap the query string in a \"gql\" tag? http://docs.apollostack.com/apollo-client/core.html#gql");
-    var operations = doc.definitions
-        .filter(function (d) { return d.kind !== 'FragmentDefinition'; })
-        .map(function (definition) {
-        if (definition.kind !== 'OperationDefinition') {
-            throw  false ? 0 : new ts_invariant__WEBPACK_IMPORTED_MODULE_0__.InvariantError("Schema type definitions not allowed in queries. Found: \"" + definition.kind + "\"");
-        }
-        return definition;
-    });
-     false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(operations.length <= 1, "Ambiguous GraphQL document: contains " + operations.length + " operations");
-    return doc;
-}
-function getOperationDefinition(doc) {
-    checkDocument(doc);
-    return doc.definitions.filter(function (definition) { return definition.kind === 'OperationDefinition'; })[0];
-}
-function getOperationDefinitionOrDie(document) {
-    var def = getOperationDefinition(document);
-     false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(def, "GraphQL document is missing an operation");
-    return def;
-}
-function getOperationName(doc) {
-    return (doc.definitions
-        .filter(function (definition) {
-        return definition.kind === 'OperationDefinition' && definition.name;
-    })
-        .map(function (x) { return x.name.value; })[0] || null);
-}
-function getFragmentDefinitions(doc) {
-    return doc.definitions.filter(function (definition) { return definition.kind === 'FragmentDefinition'; });
-}
-function getQueryDefinition(doc) {
-    var queryDef = getOperationDefinition(doc);
-     false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(queryDef && queryDef.operation === 'query', 'Must contain a query definition.');
-    return queryDef;
-}
-function getFragmentDefinition(doc) {
-     false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(doc.kind === 'Document', "Expecting a parsed GraphQL document. Perhaps you need to wrap the query string in a \"gql\" tag? http://docs.apollostack.com/apollo-client/core.html#gql");
-     false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(doc.definitions.length <= 1, 'Fragment must have exactly one definition.');
-    var fragmentDef = doc.definitions[0];
-     false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(fragmentDef.kind === 'FragmentDefinition', 'Must be a fragment definition.');
-    return fragmentDef;
-}
-function getMainDefinition(queryDoc) {
-    checkDocument(queryDoc);
-    var fragmentDefinition;
-    for (var _i = 0, _a = queryDoc.definitions; _i < _a.length; _i++) {
-        var definition = _a[_i];
-        if (definition.kind === 'OperationDefinition') {
-            var operation = definition.operation;
-            if (operation === 'query' ||
-                operation === 'mutation' ||
-                operation === 'subscription') {
-                return definition;
-            }
-        }
-        if (definition.kind === 'FragmentDefinition' && !fragmentDefinition) {
-            fragmentDefinition = definition;
-        }
-    }
-    if (fragmentDefinition) {
-        return fragmentDefinition;
-    }
-    throw  false ? 0 : new ts_invariant__WEBPACK_IMPORTED_MODULE_0__.InvariantError('Expected a parsed GraphQL query with a query, mutation, subscription, or a fragment.');
-}
-function createFragmentMap(fragments) {
-    if (fragments === void 0) { fragments = []; }
-    var symTable = {};
-    fragments.forEach(function (fragment) {
-        symTable[fragment.name.value] = fragment;
-    });
-    return symTable;
-}
-function getDefaultValues(definition) {
-    if (definition &&
-        definition.variableDefinitions &&
-        definition.variableDefinitions.length) {
-        var defaultValues = definition.variableDefinitions
-            .filter(function (_a) {
-            var defaultValue = _a.defaultValue;
-            return defaultValue;
-        })
-            .map(function (_a) {
-            var variable = _a.variable, defaultValue = _a.defaultValue;
-            var defaultValueObj = {};
-            valueToObjectRepresentation(defaultValueObj, variable.name, defaultValue);
-            return defaultValueObj;
-        });
-        return assign.apply(void 0, (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__spreadArrays)([{}], defaultValues));
-    }
-    return {};
-}
-function variablesInOperation(operation) {
-    var names = new Set();
-    if (operation.variableDefinitions) {
-        for (var _i = 0, _a = operation.variableDefinitions; _i < _a.length; _i++) {
-            var definition = _a[_i];
-            names.add(definition.variable.name.value);
-        }
-    }
-    return names;
-}
-
-function filterInPlace(array, test, context) {
-    var target = 0;
-    array.forEach(function (elem, i) {
-        if (test.call(this, elem, i, array)) {
-            array[target++] = elem;
-        }
-    }, context);
-    array.length = target;
-    return array;
-}
-
-var TYPENAME_FIELD = {
-    kind: 'Field',
-    name: {
-        kind: 'Name',
-        value: '__typename',
-    },
-};
-function isEmpty(op, fragments) {
-    return op.selectionSet.selections.every(function (selection) {
-        return selection.kind === 'FragmentSpread' &&
-            isEmpty(fragments[selection.name.value], fragments);
-    });
-}
-function nullIfDocIsEmpty(doc) {
-    return isEmpty(getOperationDefinition(doc) || getFragmentDefinition(doc), createFragmentMap(getFragmentDefinitions(doc)))
-        ? null
-        : doc;
-}
-function getDirectiveMatcher(directives) {
-    return function directiveMatcher(directive) {
-        return directives.some(function (dir) {
-            return (dir.name && dir.name === directive.name.value) ||
-                (dir.test && dir.test(directive));
-        });
-    };
-}
-function removeDirectivesFromDocument(directives, doc) {
-    var variablesInUse = Object.create(null);
-    var variablesToRemove = [];
-    var fragmentSpreadsInUse = Object.create(null);
-    var fragmentSpreadsToRemove = [];
-    var modifiedDoc = nullIfDocIsEmpty((0,graphql_language_visitor__WEBPACK_IMPORTED_MODULE_4__.visit)(doc, {
-        Variable: {
-            enter: function (node, _key, parent) {
-                if (parent.kind !== 'VariableDefinition') {
-                    variablesInUse[node.name.value] = true;
-                }
-            },
-        },
-        Field: {
-            enter: function (node) {
-                if (directives && node.directives) {
-                    var shouldRemoveField = directives.some(function (directive) { return directive.remove; });
-                    if (shouldRemoveField &&
-                        node.directives &&
-                        node.directives.some(getDirectiveMatcher(directives))) {
-                        if (node.arguments) {
-                            node.arguments.forEach(function (arg) {
-                                if (arg.value.kind === 'Variable') {
-                                    variablesToRemove.push({
-                                        name: arg.value.name.value,
-                                    });
-                                }
-                            });
-                        }
-                        if (node.selectionSet) {
-                            getAllFragmentSpreadsFromSelectionSet(node.selectionSet).forEach(function (frag) {
-                                fragmentSpreadsToRemove.push({
-                                    name: frag.name.value,
-                                });
-                            });
-                        }
-                        return null;
-                    }
-                }
-            },
-        },
-        FragmentSpread: {
-            enter: function (node) {
-                fragmentSpreadsInUse[node.name.value] = true;
-            },
-        },
-        Directive: {
-            enter: function (node) {
-                if (getDirectiveMatcher(directives)(node)) {
-                    return null;
-                }
-            },
-        },
-    }));
-    if (modifiedDoc &&
-        filterInPlace(variablesToRemove, function (v) { return !variablesInUse[v.name]; }).length) {
-        modifiedDoc = removeArgumentsFromDocument(variablesToRemove, modifiedDoc);
-    }
-    if (modifiedDoc &&
-        filterInPlace(fragmentSpreadsToRemove, function (fs) { return !fragmentSpreadsInUse[fs.name]; })
-            .length) {
-        modifiedDoc = removeFragmentSpreadFromDocument(fragmentSpreadsToRemove, modifiedDoc);
-    }
-    return modifiedDoc;
-}
-function addTypenameToDocument(doc) {
-    return (0,graphql_language_visitor__WEBPACK_IMPORTED_MODULE_4__.visit)(checkDocument(doc), {
-        SelectionSet: {
-            enter: function (node, _key, parent) {
-                if (parent &&
-                    parent.kind === 'OperationDefinition') {
-                    return;
-                }
-                var selections = node.selections;
-                if (!selections) {
-                    return;
-                }
-                var skip = selections.some(function (selection) {
-                    return (isField(selection) &&
-                        (selection.name.value === '__typename' ||
-                            selection.name.value.lastIndexOf('__', 0) === 0));
-                });
-                if (skip) {
-                    return;
-                }
-                var field = parent;
-                if (isField(field) &&
-                    field.directives &&
-                    field.directives.some(function (d) { return d.name.value === 'export'; })) {
-                    return;
-                }
-                return (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)((0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)({}, node), { selections: (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__spreadArrays)(selections, [TYPENAME_FIELD]) });
-            },
-        },
-    });
-}
-var connectionRemoveConfig = {
-    test: function (directive) {
-        var willRemove = directive.name.value === 'connection';
-        if (willRemove) {
-            if (!directive.arguments ||
-                !directive.arguments.some(function (arg) { return arg.name.value === 'key'; })) {
-                 false || ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant.warn('Removing an @connection directive even though it does not have a key. ' +
-                    'You may want to use the key parameter to specify a store key.');
-            }
-        }
-        return willRemove;
-    },
-};
-function removeConnectionDirectiveFromDocument(doc) {
-    return removeDirectivesFromDocument([connectionRemoveConfig], checkDocument(doc));
-}
-function hasDirectivesInSelectionSet(directives, selectionSet, nestedCheck) {
-    if (nestedCheck === void 0) { nestedCheck = true; }
-    return (selectionSet &&
-        selectionSet.selections &&
-        selectionSet.selections.some(function (selection) {
-            return hasDirectivesInSelection(directives, selection, nestedCheck);
-        }));
-}
-function hasDirectivesInSelection(directives, selection, nestedCheck) {
-    if (nestedCheck === void 0) { nestedCheck = true; }
-    if (!isField(selection)) {
-        return true;
-    }
-    if (!selection.directives) {
-        return false;
-    }
-    return (selection.directives.some(getDirectiveMatcher(directives)) ||
-        (nestedCheck &&
-            hasDirectivesInSelectionSet(directives, selection.selectionSet, nestedCheck)));
-}
-function getDirectivesFromDocument(directives, doc) {
-    checkDocument(doc);
-    var parentPath;
-    return nullIfDocIsEmpty((0,graphql_language_visitor__WEBPACK_IMPORTED_MODULE_4__.visit)(doc, {
-        SelectionSet: {
-            enter: function (node, _key, _parent, path) {
-                var currentPath = path.join('-');
-                if (!parentPath ||
-                    currentPath === parentPath ||
-                    !currentPath.startsWith(parentPath)) {
-                    if (node.selections) {
-                        var selectionsWithDirectives = node.selections.filter(function (selection) { return hasDirectivesInSelection(directives, selection); });
-                        if (hasDirectivesInSelectionSet(directives, node, false)) {
-                            parentPath = currentPath;
-                        }
-                        return (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)((0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)({}, node), { selections: selectionsWithDirectives });
-                    }
-                    else {
-                        return null;
-                    }
-                }
-            },
-        },
-    }));
-}
-function getArgumentMatcher(config) {
-    return function argumentMatcher(argument) {
-        return config.some(function (aConfig) {
-            return argument.value &&
-                argument.value.kind === 'Variable' &&
-                argument.value.name &&
-                (aConfig.name === argument.value.name.value ||
-                    (aConfig.test && aConfig.test(argument)));
-        });
-    };
-}
-function removeArgumentsFromDocument(config, doc) {
-    var argMatcher = getArgumentMatcher(config);
-    return nullIfDocIsEmpty((0,graphql_language_visitor__WEBPACK_IMPORTED_MODULE_4__.visit)(doc, {
-        OperationDefinition: {
-            enter: function (node) {
-                return (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)((0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)({}, node), { variableDefinitions: node.variableDefinitions.filter(function (varDef) {
-                        return !config.some(function (arg) { return arg.name === varDef.variable.name.value; });
-                    }) });
-            },
-        },
-        Field: {
-            enter: function (node) {
-                var shouldRemoveField = config.some(function (argConfig) { return argConfig.remove; });
-                if (shouldRemoveField) {
-                    var argMatchCount_1 = 0;
-                    node.arguments.forEach(function (arg) {
-                        if (argMatcher(arg)) {
-                            argMatchCount_1 += 1;
-                        }
-                    });
-                    if (argMatchCount_1 === 1) {
-                        return null;
-                    }
-                }
-            },
-        },
-        Argument: {
-            enter: function (node) {
-                if (argMatcher(node)) {
-                    return null;
-                }
-            },
-        },
-    }));
-}
-function removeFragmentSpreadFromDocument(config, doc) {
-    function enter(node) {
-        if (config.some(function (def) { return def.name === node.name.value; })) {
-            return null;
-        }
-    }
-    return nullIfDocIsEmpty((0,graphql_language_visitor__WEBPACK_IMPORTED_MODULE_4__.visit)(doc, {
-        FragmentSpread: { enter: enter },
-        FragmentDefinition: { enter: enter },
-    }));
-}
-function getAllFragmentSpreadsFromSelectionSet(selectionSet) {
-    var allFragments = [];
-    selectionSet.selections.forEach(function (selection) {
-        if ((isField(selection) || isInlineFragment(selection)) &&
-            selection.selectionSet) {
-            getAllFragmentSpreadsFromSelectionSet(selection.selectionSet).forEach(function (frag) { return allFragments.push(frag); });
-        }
-        else if (selection.kind === 'FragmentSpread') {
-            allFragments.push(selection);
-        }
-    });
-    return allFragments;
-}
-function buildQueryFromSelectionSet(document) {
-    var definition = getMainDefinition(document);
-    var definitionOperation = definition.operation;
-    if (definitionOperation === 'query') {
-        return document;
-    }
-    var modifiedDoc = (0,graphql_language_visitor__WEBPACK_IMPORTED_MODULE_4__.visit)(document, {
-        OperationDefinition: {
-            enter: function (node) {
-                return (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)((0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)({}, node), { operation: 'query' });
-            },
-        },
-    });
-    return modifiedDoc;
-}
-function removeClientSetsFromDocument(document) {
-    checkDocument(document);
-    var modifiedDoc = removeDirectivesFromDocument([
-        {
-            test: function (directive) { return directive.name.value === 'client'; },
-            remove: true,
-        },
-    ], document);
-    if (modifiedDoc) {
-        modifiedDoc = (0,graphql_language_visitor__WEBPACK_IMPORTED_MODULE_4__.visit)(modifiedDoc, {
-            FragmentDefinition: {
-                enter: function (node) {
-                    if (node.selectionSet) {
-                        var isTypenameOnly = node.selectionSet.selections.every(function (selection) {
-                            return isField(selection) && selection.name.value === '__typename';
-                        });
-                        if (isTypenameOnly) {
-                            return null;
-                        }
-                    }
-                },
-            },
-        });
-    }
-    return modifiedDoc;
-}
-
-var canUseWeakMap = typeof WeakMap === 'function' && !(typeof navigator === 'object' &&
-    navigator.product === 'ReactNative');
-
-var toString = Object.prototype.toString;
-function cloneDeep(value) {
-    return cloneDeepHelper(value, new Map());
-}
-function cloneDeepHelper(val, seen) {
-    switch (toString.call(val)) {
-        case "[object Array]": {
-            if (seen.has(val))
-                return seen.get(val);
-            var copy_1 = val.slice(0);
-            seen.set(val, copy_1);
-            copy_1.forEach(function (child, i) {
-                copy_1[i] = cloneDeepHelper(child, seen);
-            });
-            return copy_1;
-        }
-        case "[object Object]": {
-            if (seen.has(val))
-                return seen.get(val);
-            var copy_2 = Object.create(Object.getPrototypeOf(val));
-            seen.set(val, copy_2);
-            Object.keys(val).forEach(function (key) {
-                copy_2[key] = cloneDeepHelper(val[key], seen);
-            });
-            return copy_2;
-        }
-        default:
-            return val;
-    }
-}
-
-function getEnv() {
-    if (typeof process !== 'undefined' && "development") {
-        return "development";
-    }
-    return 'development';
-}
-function isEnv(env) {
-    return getEnv() === env;
-}
-function isProduction() {
-    return isEnv('production') === true;
-}
-function isDevelopment() {
-    return isEnv('development') === true;
-}
-function isTest() {
-    return isEnv('test') === true;
-}
-
-function tryFunctionOrLogError(f) {
-    try {
-        return f();
-    }
-    catch (e) {
-        if (console.error) {
-            console.error(e);
-        }
-    }
-}
-function graphQLResultHasError(result) {
-    return result.errors && result.errors.length;
-}
-
-function deepFreeze(o) {
-    Object.freeze(o);
-    Object.getOwnPropertyNames(o).forEach(function (prop) {
-        if (o[prop] !== null &&
-            (typeof o[prop] === 'object' || typeof o[prop] === 'function') &&
-            !Object.isFrozen(o[prop])) {
-            deepFreeze(o[prop]);
-        }
-    });
-    return o;
-}
-function maybeDeepFreeze(obj) {
-    if (isDevelopment() || isTest()) {
-        var symbolIsPolyfilled = typeof Symbol === 'function' && typeof Symbol('') === 'string';
-        if (!symbolIsPolyfilled) {
-            return deepFreeze(obj);
-        }
-    }
-    return obj;
-}
-
-var hasOwnProperty = Object.prototype.hasOwnProperty;
-function mergeDeep() {
-    var sources = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        sources[_i] = arguments[_i];
-    }
-    return mergeDeepArray(sources);
-}
-function mergeDeepArray(sources) {
-    var target = sources[0] || {};
-    var count = sources.length;
-    if (count > 1) {
-        var pastCopies = [];
-        target = shallowCopyForMerge(target, pastCopies);
-        for (var i = 1; i < count; ++i) {
-            target = mergeHelper(target, sources[i], pastCopies);
-        }
-    }
-    return target;
-}
-function isObject(obj) {
-    return obj !== null && typeof obj === 'object';
-}
-function mergeHelper(target, source, pastCopies) {
-    if (isObject(source) && isObject(target)) {
-        if (Object.isExtensible && !Object.isExtensible(target)) {
-            target = shallowCopyForMerge(target, pastCopies);
-        }
-        Object.keys(source).forEach(function (sourceKey) {
-            var sourceValue = source[sourceKey];
-            if (hasOwnProperty.call(target, sourceKey)) {
-                var targetValue = target[sourceKey];
-                if (sourceValue !== targetValue) {
-                    target[sourceKey] = mergeHelper(shallowCopyForMerge(targetValue, pastCopies), sourceValue, pastCopies);
-                }
-            }
-            else {
-                target[sourceKey] = sourceValue;
-            }
-        });
-        return target;
-    }
-    return source;
-}
-function shallowCopyForMerge(value, pastCopies) {
-    if (value !== null &&
-        typeof value === 'object' &&
-        pastCopies.indexOf(value) < 0) {
-        if (Array.isArray(value)) {
-            value = value.slice(0);
-        }
-        else {
-            value = (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)({ __proto__: Object.getPrototypeOf(value) }, value);
-        }
-        pastCopies.push(value);
-    }
-    return value;
-}
-
-var haveWarned = Object.create({});
-function warnOnceInDevelopment(msg, type) {
-    if (type === void 0) { type = 'warn'; }
-    if (!isProduction() && !haveWarned[msg]) {
-        if (!isTest()) {
-            haveWarned[msg] = true;
-        }
-        if (type === 'error') {
-            console.error(msg);
-        }
-        else {
-            console.warn(msg);
-        }
-    }
-}
-
-function stripSymbols(data) {
-    return JSON.parse(JSON.stringify(data));
-}
-
-
-//# sourceMappingURL=bundle.esm.js.map
-
-
-/***/ }),
-
-/***/ "./node_modules/apollo-boost/node_modules/apollo-link-http/lib/bundle.esm.js":
-/*!***********************************************************************************!*\
-  !*** ./node_modules/apollo-boost/node_modules/apollo-link-http/lib/bundle.esm.js ***!
-  \***********************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "HttpLink": () => (/* binding */ HttpLink),
-/* harmony export */   "createHttpLink": () => (/* binding */ createHttpLink)
-/* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/apollo-boost/node_modules/tslib/tslib.es6.js");
-/* harmony import */ var apollo_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! apollo-link */ "./node_modules/apollo-link/lib/bundle.esm.js");
-/* harmony import */ var apollo_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! apollo-link */ "./node_modules/zen-observable-ts/lib/bundle.esm.js");
-/* harmony import */ var apollo_link_http_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! apollo-link-http-common */ "./node_modules/apollo-boost/node_modules/apollo-link-http/node_modules/apollo-link-http-common/lib/bundle.esm.js");
-
-
-
-
-var createHttpLink = function (linkOptions) {
-    if (linkOptions === void 0) { linkOptions = {}; }
-    var _a = linkOptions.uri, uri = _a === void 0 ? '/graphql' : _a, fetcher = linkOptions.fetch, includeExtensions = linkOptions.includeExtensions, useGETForQueries = linkOptions.useGETForQueries, requestOptions = (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__rest)(linkOptions, ["uri", "fetch", "includeExtensions", "useGETForQueries"]);
-    (0,apollo_link_http_common__WEBPACK_IMPORTED_MODULE_1__.checkFetcher)(fetcher);
-    if (!fetcher) {
-        fetcher = fetch;
-    }
-    var linkConfig = {
-        http: { includeExtensions: includeExtensions },
-        options: requestOptions.fetchOptions,
-        credentials: requestOptions.credentials,
-        headers: requestOptions.headers,
-    };
-    return new apollo_link__WEBPACK_IMPORTED_MODULE_2__.ApolloLink(function (operation) {
-        var chosenURI = (0,apollo_link_http_common__WEBPACK_IMPORTED_MODULE_1__.selectURI)(operation, uri);
-        var context = operation.getContext();
-        var clientAwarenessHeaders = {};
-        if (context.clientAwareness) {
-            var _a = context.clientAwareness, name_1 = _a.name, version = _a.version;
-            if (name_1) {
-                clientAwarenessHeaders['apollographql-client-name'] = name_1;
-            }
-            if (version) {
-                clientAwarenessHeaders['apollographql-client-version'] = version;
-            }
-        }
-        var contextHeaders = (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__assign)({}, clientAwarenessHeaders, context.headers);
-        var contextConfig = {
-            http: context.http,
-            options: context.fetchOptions,
-            credentials: context.credentials,
-            headers: contextHeaders,
-        };
-        var _b = (0,apollo_link_http_common__WEBPACK_IMPORTED_MODULE_1__.selectHttpOptionsAndBody)(operation, apollo_link_http_common__WEBPACK_IMPORTED_MODULE_1__.fallbackHttpConfig, linkConfig, contextConfig), options = _b.options, body = _b.body;
-        var controller;
-        if (!options.signal) {
-            var _c = (0,apollo_link_http_common__WEBPACK_IMPORTED_MODULE_1__.createSignalIfSupported)(), _controller = _c.controller, signal = _c.signal;
-            controller = _controller;
-            if (controller)
-                options.signal = signal;
-        }
-        var definitionIsMutation = function (d) {
-            return d.kind === 'OperationDefinition' && d.operation === 'mutation';
-        };
-        if (useGETForQueries &&
-            !operation.query.definitions.some(definitionIsMutation)) {
-            options.method = 'GET';
-        }
-        if (options.method === 'GET') {
-            var _d = rewriteURIForGET(chosenURI, body), newURI = _d.newURI, parseError = _d.parseError;
-            if (parseError) {
-                return (0,apollo_link__WEBPACK_IMPORTED_MODULE_2__.fromError)(parseError);
-            }
-            chosenURI = newURI;
-        }
-        else {
-            try {
-                options.body = (0,apollo_link_http_common__WEBPACK_IMPORTED_MODULE_1__.serializeFetchParameter)(body, 'Payload');
-            }
-            catch (parseError) {
-                return (0,apollo_link__WEBPACK_IMPORTED_MODULE_2__.fromError)(parseError);
-            }
-        }
-        return new apollo_link__WEBPACK_IMPORTED_MODULE_3__["default"](function (observer) {
-            fetcher(chosenURI, options)
-                .then(function (response) {
-                operation.setContext({ response: response });
-                return response;
-            })
-                .then((0,apollo_link_http_common__WEBPACK_IMPORTED_MODULE_1__.parseAndCheckHttpResponse)(operation))
-                .then(function (result) {
-                observer.next(result);
-                observer.complete();
-                return result;
-            })
-                .catch(function (err) {
-                if (err.name === 'AbortError')
-                    return;
-                if (err.result && err.result.errors && err.result.data) {
-                    observer.next(err.result);
-                }
-                observer.error(err);
-            });
-            return function () {
-                if (controller)
-                    controller.abort();
-            };
-        });
-    });
-};
-function rewriteURIForGET(chosenURI, body) {
-    var queryParams = [];
-    var addQueryParam = function (key, value) {
-        queryParams.push(key + "=" + encodeURIComponent(value));
-    };
-    if ('query' in body) {
-        addQueryParam('query', body.query);
-    }
-    if (body.operationName) {
-        addQueryParam('operationName', body.operationName);
-    }
-    if (body.variables) {
-        var serializedVariables = void 0;
-        try {
-            serializedVariables = (0,apollo_link_http_common__WEBPACK_IMPORTED_MODULE_1__.serializeFetchParameter)(body.variables, 'Variables map');
-        }
-        catch (parseError) {
-            return { parseError: parseError };
-        }
-        addQueryParam('variables', serializedVariables);
-    }
-    if (body.extensions) {
-        var serializedExtensions = void 0;
-        try {
-            serializedExtensions = (0,apollo_link_http_common__WEBPACK_IMPORTED_MODULE_1__.serializeFetchParameter)(body.extensions, 'Extensions map');
-        }
-        catch (parseError) {
-            return { parseError: parseError };
-        }
-        addQueryParam('extensions', serializedExtensions);
-    }
-    var fragment = '', preFragment = chosenURI;
-    var fragmentStart = chosenURI.indexOf('#');
-    if (fragmentStart !== -1) {
-        fragment = chosenURI.substr(fragmentStart);
-        preFragment = chosenURI.substr(0, fragmentStart);
-    }
-    var queryParamsPrefix = preFragment.indexOf('?') === -1 ? '?' : '&';
-    var newURI = preFragment + queryParamsPrefix + queryParams.join('&') + fragment;
-    return { newURI: newURI };
-}
-var HttpLink = (function (_super) {
-    (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__extends)(HttpLink, _super);
-    function HttpLink(opts) {
-        return _super.call(this, createHttpLink(opts).request) || this;
-    }
-    return HttpLink;
-}(apollo_link__WEBPACK_IMPORTED_MODULE_2__.ApolloLink));
-
-
-//# sourceMappingURL=bundle.esm.js.map
-
-
-/***/ }),
-
-/***/ "./node_modules/apollo-boost/node_modules/apollo-link-http/node_modules/apollo-link-http-common/lib/bundle.esm.js":
-/*!************************************************************************************************************************!*\
-  !*** ./node_modules/apollo-boost/node_modules/apollo-link-http/node_modules/apollo-link-http-common/lib/bundle.esm.js ***!
-  \************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "checkFetcher": () => (/* binding */ checkFetcher),
-/* harmony export */   "createSignalIfSupported": () => (/* binding */ createSignalIfSupported),
-/* harmony export */   "fallbackHttpConfig": () => (/* binding */ fallbackHttpConfig),
-/* harmony export */   "parseAndCheckHttpResponse": () => (/* binding */ parseAndCheckHttpResponse),
-/* harmony export */   "selectHttpOptionsAndBody": () => (/* binding */ selectHttpOptionsAndBody),
-/* harmony export */   "selectURI": () => (/* binding */ selectURI),
-/* harmony export */   "serializeFetchParameter": () => (/* binding */ serializeFetchParameter),
-/* harmony export */   "throwServerError": () => (/* binding */ throwServerError)
-/* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! tslib */ "./node_modules/apollo-boost/node_modules/tslib/tslib.es6.js");
-/* harmony import */ var graphql_language_printer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! graphql/language/printer */ "./node_modules/graphql/language/printer.mjs");
-/* harmony import */ var ts_invariant__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ts-invariant */ "./node_modules/ts-invariant/lib/invariant.esm.js");
-
-
-
-
-var defaultHttpOptions = {
-    includeQuery: true,
-    includeExtensions: false,
-};
-var defaultHeaders = {
-    accept: '*/*',
-    'content-type': 'application/json',
-};
-var defaultOptions = {
-    method: 'POST',
-};
-var fallbackHttpConfig = {
-    http: defaultHttpOptions,
-    headers: defaultHeaders,
-    options: defaultOptions,
-};
-var throwServerError = function (response, result, message) {
-    var error = new Error(message);
-    error.name = 'ServerError';
-    error.response = response;
-    error.statusCode = response.status;
-    error.result = result;
-    throw error;
-};
-var parseAndCheckHttpResponse = function (operations) { return function (response) {
-    return (response
-        .text()
-        .then(function (bodyText) {
-        try {
-            return JSON.parse(bodyText);
-        }
-        catch (err) {
-            var parseError = err;
-            parseError.name = 'ServerParseError';
-            parseError.response = response;
-            parseError.statusCode = response.status;
-            parseError.bodyText = bodyText;
-            return Promise.reject(parseError);
-        }
-    })
-        .then(function (result) {
-        if (response.status >= 300) {
-            throwServerError(response, result, "Response not successful: Received status code " + response.status);
-        }
-        if (!Array.isArray(result) &&
-            !result.hasOwnProperty('data') &&
-            !result.hasOwnProperty('errors')) {
-            throwServerError(response, result, "Server response was missing for query '" + (Array.isArray(operations)
-                ? operations.map(function (op) { return op.operationName; })
-                : operations.operationName) + "'.");
-        }
-        return result;
-    }));
-}; };
-var checkFetcher = function (fetcher) {
-    if (!fetcher && typeof fetch === 'undefined') {
-        var library = 'unfetch';
-        if (typeof window === 'undefined')
-            library = 'node-fetch';
-        throw  false ? 0 : new ts_invariant__WEBPACK_IMPORTED_MODULE_0__.InvariantError("\nfetch is not found globally and no fetcher passed, to fix pass a fetch for\nyour environment like https://www.npmjs.com/package/" + library + ".\n\nFor example:\nimport fetch from '" + library + "';\nimport { createHttpLink } from 'apollo-link-http';\n\nconst link = createHttpLink({ uri: '/graphql', fetch: fetch });");
-    }
-};
-var createSignalIfSupported = function () {
-    if (typeof AbortController === 'undefined')
-        return { controller: false, signal: false };
-    var controller = new AbortController();
-    var signal = controller.signal;
-    return { controller: controller, signal: signal };
-};
-var selectHttpOptionsAndBody = function (operation, fallbackConfig) {
-    var configs = [];
-    for (var _i = 2; _i < arguments.length; _i++) {
-        configs[_i - 2] = arguments[_i];
-    }
-    var options = (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)({}, fallbackConfig.options, { headers: fallbackConfig.headers, credentials: fallbackConfig.credentials });
-    var http = fallbackConfig.http;
-    configs.forEach(function (config) {
-        options = (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)({}, options, config.options, { headers: (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)({}, options.headers, config.headers) });
-        if (config.credentials)
-            options.credentials = config.credentials;
-        http = (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)({}, http, config.http);
-    });
-    var operationName = operation.operationName, extensions = operation.extensions, variables = operation.variables, query = operation.query;
-    var body = { operationName: operationName, variables: variables };
-    if (http.includeExtensions)
-        body.extensions = extensions;
-    if (http.includeQuery)
-        body.query = (0,graphql_language_printer__WEBPACK_IMPORTED_MODULE_2__.print)(query);
-    return {
-        options: options,
-        body: body,
-    };
-};
-var serializeFetchParameter = function (p, label) {
-    var serialized;
-    try {
-        serialized = JSON.stringify(p);
-    }
-    catch (e) {
-        var parseError =  false ? 0 : new ts_invariant__WEBPACK_IMPORTED_MODULE_0__.InvariantError("Network request failed. " + label + " is not serializable: " + e.message);
-        parseError.parseError = e;
-        throw parseError;
-    }
-    return serialized;
-};
-var selectURI = function (operation, fallbackURI) {
-    var context = operation.getContext();
-    var contextURI = context.uri;
-    if (contextURI) {
-        return contextURI;
-    }
-    else if (typeof fallbackURI === 'function') {
-        return fallbackURI(operation);
-    }
-    else {
-        return fallbackURI || '/graphql';
-    }
-};
-
-
-//# sourceMappingURL=bundle.esm.js.map
-
-
-/***/ }),
-
-/***/ "./node_modules/apollo-boost/node_modules/tslib/tslib.es6.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/apollo-boost/node_modules/tslib/tslib.es6.js ***!
-  \*******************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "__extends": () => (/* binding */ __extends),
-/* harmony export */   "__assign": () => (/* binding */ __assign),
-/* harmony export */   "__rest": () => (/* binding */ __rest),
-/* harmony export */   "__decorate": () => (/* binding */ __decorate),
-/* harmony export */   "__param": () => (/* binding */ __param),
-/* harmony export */   "__metadata": () => (/* binding */ __metadata),
-/* harmony export */   "__awaiter": () => (/* binding */ __awaiter),
-/* harmony export */   "__generator": () => (/* binding */ __generator),
-/* harmony export */   "__createBinding": () => (/* binding */ __createBinding),
-/* harmony export */   "__exportStar": () => (/* binding */ __exportStar),
-/* harmony export */   "__values": () => (/* binding */ __values),
-/* harmony export */   "__read": () => (/* binding */ __read),
-/* harmony export */   "__spread": () => (/* binding */ __spread),
-/* harmony export */   "__spreadArrays": () => (/* binding */ __spreadArrays),
-/* harmony export */   "__await": () => (/* binding */ __await),
-/* harmony export */   "__asyncGenerator": () => (/* binding */ __asyncGenerator),
-/* harmony export */   "__asyncDelegator": () => (/* binding */ __asyncDelegator),
-/* harmony export */   "__asyncValues": () => (/* binding */ __asyncValues),
-/* harmony export */   "__makeTemplateObject": () => (/* binding */ __makeTemplateObject),
-/* harmony export */   "__importStar": () => (/* binding */ __importStar),
-/* harmony export */   "__importDefault": () => (/* binding */ __importDefault),
-/* harmony export */   "__classPrivateFieldGet": () => (/* binding */ __classPrivateFieldGet),
-/* harmony export */   "__classPrivateFieldSet": () => (/* binding */ __classPrivateFieldSet)
-/* harmony export */ });
-/*! *****************************************************************************
-Copyright (c) Microsoft Corporation.
-
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */
-/* global Reflect, Promise */
-
-var extendStatics = function(d, b) {
-    extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return extendStatics(d, b);
-};
-
-function __extends(d, b) {
-    extendStatics(d, b);
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-}
-
-var __assign = function() {
-    __assign = Object.assign || function __assign(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-        }
-        return t;
-    }
-    return __assign.apply(this, arguments);
-}
-
-function __rest(s, e) {
-    var t = {};
-    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-        t[p] = s[p];
-    if (s != null && typeof Object.getOwnPropertySymbols === "function")
-        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-                t[p[i]] = s[p[i]];
-        }
-    return t;
-}
-
-function __decorate(decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-}
-
-function __param(paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-}
-
-function __metadata(metadataKey, metadataValue) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
-}
-
-function __awaiter(thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-}
-
-function __generator(thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [op[0] & 2, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-}
-
-function __createBinding(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}
-
-function __exportStar(m, exports) {
-    for (var p in m) if (p !== "default" && !exports.hasOwnProperty(p)) exports[p] = m[p];
-}
-
-function __values(o) {
-    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
-    if (m) return m.call(o);
-    if (o && typeof o.length === "number") return {
-        next: function () {
-            if (o && i >= o.length) o = void 0;
-            return { value: o && o[i++], done: !o };
-        }
-    };
-    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
-}
-
-function __read(o, n) {
-    var m = typeof Symbol === "function" && o[Symbol.iterator];
-    if (!m) return o;
-    var i = m.call(o), r, ar = [], e;
-    try {
-        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
-    }
-    catch (error) { e = { error: error }; }
-    finally {
-        try {
-            if (r && !r.done && (m = i["return"])) m.call(i);
-        }
-        finally { if (e) throw e.error; }
-    }
-    return ar;
-}
-
-function __spread() {
-    for (var ar = [], i = 0; i < arguments.length; i++)
-        ar = ar.concat(__read(arguments[i]));
-    return ar;
-}
-
-function __spreadArrays() {
-    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
-    for (var r = Array(s), k = 0, i = 0; i < il; i++)
-        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
-            r[k] = a[j];
-    return r;
-};
-
-function __await(v) {
-    return this instanceof __await ? (this.v = v, this) : new __await(v);
-}
-
-function __asyncGenerator(thisArg, _arguments, generator) {
-    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-    var g = generator.apply(thisArg, _arguments || []), i, q = [];
-    return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
-    function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
-    function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
-    function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
-    function fulfill(value) { resume("next", value); }
-    function reject(value) { resume("throw", value); }
-    function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
-}
-
-function __asyncDelegator(o) {
-    var i, p;
-    return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
-    function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
-}
-
-function __asyncValues(o) {
-    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-    var m = o[Symbol.asyncIterator], i;
-    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
-    function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
-    function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
-}
-
-function __makeTemplateObject(cooked, raw) {
-    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
-    return cooked;
-};
-
-function __importStar(mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result.default = mod;
-    return result;
-}
-
-function __importDefault(mod) {
-    return (mod && mod.__esModule) ? mod : { default: mod };
-}
-
-function __classPrivateFieldGet(receiver, privateMap) {
-    if (!privateMap.has(receiver)) {
-        throw new TypeError("attempted to get private field on non-instance");
-    }
-    return privateMap.get(receiver);
-}
-
-function __classPrivateFieldSet(receiver, privateMap, value) {
-    if (!privateMap.has(receiver)) {
-        throw new TypeError("attempted to set private field on non-instance");
-    }
-    privateMap.set(receiver, value);
-    return value;
-}
-
-
-/***/ }),
-
 /***/ "./node_modules/apollo-client/bundle.esm.js":
 /*!**************************************************!*\
   !*** ./node_modules/apollo-client/bundle.esm.js ***!
@@ -4322,8 +1770,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "ObservableQuery": () => (/* binding */ ObservableQuery),
 /* harmony export */   "isApolloError": () => (/* binding */ isApolloError)
 /* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! tslib */ "./node_modules/apollo-client/node_modules/tslib/tslib.es6.js");
-/* harmony import */ var apollo_utilities__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! apollo-utilities */ "./node_modules/apollo-client/node_modules/apollo-utilities/lib/bundle.esm.js");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var apollo_utilities__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! apollo-utilities */ "./node_modules/apollo-utilities/lib/bundle.esm.js");
 /* harmony import */ var apollo_utilities__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! apollo-utilities */ "./node_modules/@wry/equality/lib/equality.esm.js");
 /* harmony import */ var apollo_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! apollo-link */ "./node_modules/zen-observable-ts/lib/bundle.esm.js");
 /* harmony import */ var apollo_link__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! apollo-link */ "./node_modules/apollo-link/lib/bundle.esm.js");
@@ -6440,1252 +3888,6 @@ var ApolloClient = (function () {
 
 /***/ }),
 
-/***/ "./node_modules/apollo-client/node_modules/apollo-utilities/lib/bundle.esm.js":
-/*!************************************************************************************!*\
-  !*** ./node_modules/apollo-client/node_modules/apollo-utilities/lib/bundle.esm.js ***!
-  \************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "isEqual": () => (/* reexport safe */ _wry_equality__WEBPACK_IMPORTED_MODULE_2__.equal),
-/* harmony export */   "addTypenameToDocument": () => (/* binding */ addTypenameToDocument),
-/* harmony export */   "argumentsObjectFromField": () => (/* binding */ argumentsObjectFromField),
-/* harmony export */   "assign": () => (/* binding */ assign),
-/* harmony export */   "buildQueryFromSelectionSet": () => (/* binding */ buildQueryFromSelectionSet),
-/* harmony export */   "canUseWeakMap": () => (/* binding */ canUseWeakMap),
-/* harmony export */   "checkDocument": () => (/* binding */ checkDocument),
-/* harmony export */   "cloneDeep": () => (/* binding */ cloneDeep),
-/* harmony export */   "createFragmentMap": () => (/* binding */ createFragmentMap),
-/* harmony export */   "getDefaultValues": () => (/* binding */ getDefaultValues),
-/* harmony export */   "getDirectiveInfoFromField": () => (/* binding */ getDirectiveInfoFromField),
-/* harmony export */   "getDirectiveNames": () => (/* binding */ getDirectiveNames),
-/* harmony export */   "getDirectivesFromDocument": () => (/* binding */ getDirectivesFromDocument),
-/* harmony export */   "getEnv": () => (/* binding */ getEnv),
-/* harmony export */   "getFragmentDefinition": () => (/* binding */ getFragmentDefinition),
-/* harmony export */   "getFragmentDefinitions": () => (/* binding */ getFragmentDefinitions),
-/* harmony export */   "getFragmentQueryDocument": () => (/* binding */ getFragmentQueryDocument),
-/* harmony export */   "getInclusionDirectives": () => (/* binding */ getInclusionDirectives),
-/* harmony export */   "getMainDefinition": () => (/* binding */ getMainDefinition),
-/* harmony export */   "getMutationDefinition": () => (/* binding */ getMutationDefinition),
-/* harmony export */   "getOperationDefinition": () => (/* binding */ getOperationDefinition),
-/* harmony export */   "getOperationDefinitionOrDie": () => (/* binding */ getOperationDefinitionOrDie),
-/* harmony export */   "getOperationName": () => (/* binding */ getOperationName),
-/* harmony export */   "getQueryDefinition": () => (/* binding */ getQueryDefinition),
-/* harmony export */   "getStoreKeyName": () => (/* binding */ getStoreKeyName),
-/* harmony export */   "graphQLResultHasError": () => (/* binding */ graphQLResultHasError),
-/* harmony export */   "hasClientExports": () => (/* binding */ hasClientExports),
-/* harmony export */   "hasDirectives": () => (/* binding */ hasDirectives),
-/* harmony export */   "isDevelopment": () => (/* binding */ isDevelopment),
-/* harmony export */   "isEnv": () => (/* binding */ isEnv),
-/* harmony export */   "isField": () => (/* binding */ isField),
-/* harmony export */   "isIdValue": () => (/* binding */ isIdValue),
-/* harmony export */   "isInlineFragment": () => (/* binding */ isInlineFragment),
-/* harmony export */   "isJsonValue": () => (/* binding */ isJsonValue),
-/* harmony export */   "isNumberValue": () => (/* binding */ isNumberValue),
-/* harmony export */   "isProduction": () => (/* binding */ isProduction),
-/* harmony export */   "isScalarValue": () => (/* binding */ isScalarValue),
-/* harmony export */   "isTest": () => (/* binding */ isTest),
-/* harmony export */   "maybeDeepFreeze": () => (/* binding */ maybeDeepFreeze),
-/* harmony export */   "mergeDeep": () => (/* binding */ mergeDeep),
-/* harmony export */   "mergeDeepArray": () => (/* binding */ mergeDeepArray),
-/* harmony export */   "removeArgumentsFromDocument": () => (/* binding */ removeArgumentsFromDocument),
-/* harmony export */   "removeClientSetsFromDocument": () => (/* binding */ removeClientSetsFromDocument),
-/* harmony export */   "removeConnectionDirectiveFromDocument": () => (/* binding */ removeConnectionDirectiveFromDocument),
-/* harmony export */   "removeDirectivesFromDocument": () => (/* binding */ removeDirectivesFromDocument),
-/* harmony export */   "removeFragmentSpreadFromDocument": () => (/* binding */ removeFragmentSpreadFromDocument),
-/* harmony export */   "resultKeyNameFromField": () => (/* binding */ resultKeyNameFromField),
-/* harmony export */   "shouldInclude": () => (/* binding */ shouldInclude),
-/* harmony export */   "storeKeyNameFromField": () => (/* binding */ storeKeyNameFromField),
-/* harmony export */   "stripSymbols": () => (/* binding */ stripSymbols),
-/* harmony export */   "toIdValue": () => (/* binding */ toIdValue),
-/* harmony export */   "tryFunctionOrLogError": () => (/* binding */ tryFunctionOrLogError),
-/* harmony export */   "valueFromNode": () => (/* binding */ valueFromNode),
-/* harmony export */   "valueToObjectRepresentation": () => (/* binding */ valueToObjectRepresentation),
-/* harmony export */   "variablesInOperation": () => (/* binding */ variablesInOperation),
-/* harmony export */   "warnOnceInDevelopment": () => (/* binding */ warnOnceInDevelopment)
-/* harmony export */ });
-/* harmony import */ var graphql_language_visitor__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! graphql/language/visitor */ "./node_modules/graphql/language/visitor.mjs");
-/* harmony import */ var ts_invariant__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ts-invariant */ "./node_modules/ts-invariant/lib/invariant.esm.js");
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! tslib */ "./node_modules/apollo-client/node_modules/tslib/tslib.es6.js");
-/* harmony import */ var fast_json_stable_stringify__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! fast-json-stable-stringify */ "./node_modules/fast-json-stable-stringify/index.js");
-/* harmony import */ var fast_json_stable_stringify__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(fast_json_stable_stringify__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _wry_equality__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wry/equality */ "./node_modules/@wry/equality/lib/equality.esm.js");
-/* provided dependency */ var process = __webpack_require__(/*! process/browser */ "./node_modules/process/browser.js");
-
-
-
-
-
-
-function isScalarValue(value) {
-    return ['StringValue', 'BooleanValue', 'EnumValue'].indexOf(value.kind) > -1;
-}
-function isNumberValue(value) {
-    return ['IntValue', 'FloatValue'].indexOf(value.kind) > -1;
-}
-function isStringValue(value) {
-    return value.kind === 'StringValue';
-}
-function isBooleanValue(value) {
-    return value.kind === 'BooleanValue';
-}
-function isIntValue(value) {
-    return value.kind === 'IntValue';
-}
-function isFloatValue(value) {
-    return value.kind === 'FloatValue';
-}
-function isVariable(value) {
-    return value.kind === 'Variable';
-}
-function isObjectValue(value) {
-    return value.kind === 'ObjectValue';
-}
-function isListValue(value) {
-    return value.kind === 'ListValue';
-}
-function isEnumValue(value) {
-    return value.kind === 'EnumValue';
-}
-function isNullValue(value) {
-    return value.kind === 'NullValue';
-}
-function valueToObjectRepresentation(argObj, name, value, variables) {
-    if (isIntValue(value) || isFloatValue(value)) {
-        argObj[name.value] = Number(value.value);
-    }
-    else if (isBooleanValue(value) || isStringValue(value)) {
-        argObj[name.value] = value.value;
-    }
-    else if (isObjectValue(value)) {
-        var nestedArgObj_1 = {};
-        value.fields.map(function (obj) {
-            return valueToObjectRepresentation(nestedArgObj_1, obj.name, obj.value, variables);
-        });
-        argObj[name.value] = nestedArgObj_1;
-    }
-    else if (isVariable(value)) {
-        var variableValue = (variables || {})[value.name.value];
-        argObj[name.value] = variableValue;
-    }
-    else if (isListValue(value)) {
-        argObj[name.value] = value.values.map(function (listValue) {
-            var nestedArgArrayObj = {};
-            valueToObjectRepresentation(nestedArgArrayObj, name, listValue, variables);
-            return nestedArgArrayObj[name.value];
-        });
-    }
-    else if (isEnumValue(value)) {
-        argObj[name.value] = value.value;
-    }
-    else if (isNullValue(value)) {
-        argObj[name.value] = null;
-    }
-    else {
-        throw  false ? 0 : new ts_invariant__WEBPACK_IMPORTED_MODULE_0__.InvariantError("The inline argument \"" + name.value + "\" of kind \"" + value.kind + "\"" +
-            'is not supported. Use variables instead of inline arguments to ' +
-            'overcome this limitation.');
-    }
-}
-function storeKeyNameFromField(field, variables) {
-    var directivesObj = null;
-    if (field.directives) {
-        directivesObj = {};
-        field.directives.forEach(function (directive) {
-            directivesObj[directive.name.value] = {};
-            if (directive.arguments) {
-                directive.arguments.forEach(function (_a) {
-                    var name = _a.name, value = _a.value;
-                    return valueToObjectRepresentation(directivesObj[directive.name.value], name, value, variables);
-                });
-            }
-        });
-    }
-    var argObj = null;
-    if (field.arguments && field.arguments.length) {
-        argObj = {};
-        field.arguments.forEach(function (_a) {
-            var name = _a.name, value = _a.value;
-            return valueToObjectRepresentation(argObj, name, value, variables);
-        });
-    }
-    return getStoreKeyName(field.name.value, argObj, directivesObj);
-}
-var KNOWN_DIRECTIVES = [
-    'connection',
-    'include',
-    'skip',
-    'client',
-    'rest',
-    'export',
-];
-function getStoreKeyName(fieldName, args, directives) {
-    if (directives &&
-        directives['connection'] &&
-        directives['connection']['key']) {
-        if (directives['connection']['filter'] &&
-            directives['connection']['filter'].length > 0) {
-            var filterKeys = directives['connection']['filter']
-                ? directives['connection']['filter']
-                : [];
-            filterKeys.sort();
-            var queryArgs_1 = args;
-            var filteredArgs_1 = {};
-            filterKeys.forEach(function (key) {
-                filteredArgs_1[key] = queryArgs_1[key];
-            });
-            return directives['connection']['key'] + "(" + JSON.stringify(filteredArgs_1) + ")";
-        }
-        else {
-            return directives['connection']['key'];
-        }
-    }
-    var completeFieldName = fieldName;
-    if (args) {
-        var stringifiedArgs = fast_json_stable_stringify__WEBPACK_IMPORTED_MODULE_1___default()(args);
-        completeFieldName += "(" + stringifiedArgs + ")";
-    }
-    if (directives) {
-        Object.keys(directives).forEach(function (key) {
-            if (KNOWN_DIRECTIVES.indexOf(key) !== -1)
-                return;
-            if (directives[key] && Object.keys(directives[key]).length) {
-                completeFieldName += "@" + key + "(" + JSON.stringify(directives[key]) + ")";
-            }
-            else {
-                completeFieldName += "@" + key;
-            }
-        });
-    }
-    return completeFieldName;
-}
-function argumentsObjectFromField(field, variables) {
-    if (field.arguments && field.arguments.length) {
-        var argObj_1 = {};
-        field.arguments.forEach(function (_a) {
-            var name = _a.name, value = _a.value;
-            return valueToObjectRepresentation(argObj_1, name, value, variables);
-        });
-        return argObj_1;
-    }
-    return null;
-}
-function resultKeyNameFromField(field) {
-    return field.alias ? field.alias.value : field.name.value;
-}
-function isField(selection) {
-    return selection.kind === 'Field';
-}
-function isInlineFragment(selection) {
-    return selection.kind === 'InlineFragment';
-}
-function isIdValue(idObject) {
-    return idObject &&
-        idObject.type === 'id' &&
-        typeof idObject.generated === 'boolean';
-}
-function toIdValue(idConfig, generated) {
-    if (generated === void 0) { generated = false; }
-    return (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)({ type: 'id', generated: generated }, (typeof idConfig === 'string'
-        ? { id: idConfig, typename: undefined }
-        : idConfig));
-}
-function isJsonValue(jsonObject) {
-    return (jsonObject != null &&
-        typeof jsonObject === 'object' &&
-        jsonObject.type === 'json');
-}
-function defaultValueFromVariable(node) {
-    throw  false ? 0 : new ts_invariant__WEBPACK_IMPORTED_MODULE_0__.InvariantError("Variable nodes are not supported by valueFromNode");
-}
-function valueFromNode(node, onVariable) {
-    if (onVariable === void 0) { onVariable = defaultValueFromVariable; }
-    switch (node.kind) {
-        case 'Variable':
-            return onVariable(node);
-        case 'NullValue':
-            return null;
-        case 'IntValue':
-            return parseInt(node.value, 10);
-        case 'FloatValue':
-            return parseFloat(node.value);
-        case 'ListValue':
-            return node.values.map(function (v) { return valueFromNode(v, onVariable); });
-        case 'ObjectValue': {
-            var value = {};
-            for (var _i = 0, _a = node.fields; _i < _a.length; _i++) {
-                var field = _a[_i];
-                value[field.name.value] = valueFromNode(field.value, onVariable);
-            }
-            return value;
-        }
-        default:
-            return node.value;
-    }
-}
-
-function getDirectiveInfoFromField(field, variables) {
-    if (field.directives && field.directives.length) {
-        var directiveObj_1 = {};
-        field.directives.forEach(function (directive) {
-            directiveObj_1[directive.name.value] = argumentsObjectFromField(directive, variables);
-        });
-        return directiveObj_1;
-    }
-    return null;
-}
-function shouldInclude(selection, variables) {
-    if (variables === void 0) { variables = {}; }
-    return getInclusionDirectives(selection.directives).every(function (_a) {
-        var directive = _a.directive, ifArgument = _a.ifArgument;
-        var evaledValue = false;
-        if (ifArgument.value.kind === 'Variable') {
-            evaledValue = variables[ifArgument.value.name.value];
-             false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(evaledValue !== void 0, "Invalid variable referenced in @" + directive.name.value + " directive.");
-        }
-        else {
-            evaledValue = ifArgument.value.value;
-        }
-        return directive.name.value === 'skip' ? !evaledValue : evaledValue;
-    });
-}
-function getDirectiveNames(doc) {
-    var names = [];
-    (0,graphql_language_visitor__WEBPACK_IMPORTED_MODULE_4__.visit)(doc, {
-        Directive: function (node) {
-            names.push(node.name.value);
-        },
-    });
-    return names;
-}
-function hasDirectives(names, doc) {
-    return getDirectiveNames(doc).some(function (name) { return names.indexOf(name) > -1; });
-}
-function hasClientExports(document) {
-    return (document &&
-        hasDirectives(['client'], document) &&
-        hasDirectives(['export'], document));
-}
-function isInclusionDirective(_a) {
-    var value = _a.name.value;
-    return value === 'skip' || value === 'include';
-}
-function getInclusionDirectives(directives) {
-    return directives ? directives.filter(isInclusionDirective).map(function (directive) {
-        var directiveArguments = directive.arguments;
-        var directiveName = directive.name.value;
-         false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(directiveArguments && directiveArguments.length === 1, "Incorrect number of arguments for the @" + directiveName + " directive.");
-        var ifArgument = directiveArguments[0];
-         false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(ifArgument.name && ifArgument.name.value === 'if', "Invalid argument for the @" + directiveName + " directive.");
-        var ifValue = ifArgument.value;
-         false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(ifValue &&
-            (ifValue.kind === 'Variable' || ifValue.kind === 'BooleanValue'), "Argument for the @" + directiveName + " directive must be a variable or a boolean value.");
-        return { directive: directive, ifArgument: ifArgument };
-    }) : [];
-}
-
-function getFragmentQueryDocument(document, fragmentName) {
-    var actualFragmentName = fragmentName;
-    var fragments = [];
-    document.definitions.forEach(function (definition) {
-        if (definition.kind === 'OperationDefinition') {
-            throw  false ? 0 : new ts_invariant__WEBPACK_IMPORTED_MODULE_0__.InvariantError("Found a " + definition.operation + " operation" + (definition.name ? " named '" + definition.name.value + "'" : '') + ". " +
-                'No operations are allowed when using a fragment as a query. Only fragments are allowed.');
-        }
-        if (definition.kind === 'FragmentDefinition') {
-            fragments.push(definition);
-        }
-    });
-    if (typeof actualFragmentName === 'undefined') {
-         false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(fragments.length === 1, "Found " + fragments.length + " fragments. `fragmentName` must be provided when there is not exactly 1 fragment.");
-        actualFragmentName = fragments[0].name.value;
-    }
-    var query = (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)((0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)({}, document), { definitions: (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__spreadArrays)([
-            {
-                kind: 'OperationDefinition',
-                operation: 'query',
-                selectionSet: {
-                    kind: 'SelectionSet',
-                    selections: [
-                        {
-                            kind: 'FragmentSpread',
-                            name: {
-                                kind: 'Name',
-                                value: actualFragmentName,
-                            },
-                        },
-                    ],
-                },
-            }
-        ], document.definitions) });
-    return query;
-}
-
-function assign(target) {
-    var sources = [];
-    for (var _i = 1; _i < arguments.length; _i++) {
-        sources[_i - 1] = arguments[_i];
-    }
-    sources.forEach(function (source) {
-        if (typeof source === 'undefined' || source === null) {
-            return;
-        }
-        Object.keys(source).forEach(function (key) {
-            target[key] = source[key];
-        });
-    });
-    return target;
-}
-
-function getMutationDefinition(doc) {
-    checkDocument(doc);
-    var mutationDef = doc.definitions.filter(function (definition) {
-        return definition.kind === 'OperationDefinition' &&
-            definition.operation === 'mutation';
-    })[0];
-     false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(mutationDef, 'Must contain a mutation definition.');
-    return mutationDef;
-}
-function checkDocument(doc) {
-     false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(doc && doc.kind === 'Document', "Expecting a parsed GraphQL document. Perhaps you need to wrap the query string in a \"gql\" tag? http://docs.apollostack.com/apollo-client/core.html#gql");
-    var operations = doc.definitions
-        .filter(function (d) { return d.kind !== 'FragmentDefinition'; })
-        .map(function (definition) {
-        if (definition.kind !== 'OperationDefinition') {
-            throw  false ? 0 : new ts_invariant__WEBPACK_IMPORTED_MODULE_0__.InvariantError("Schema type definitions not allowed in queries. Found: \"" + definition.kind + "\"");
-        }
-        return definition;
-    });
-     false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(operations.length <= 1, "Ambiguous GraphQL document: contains " + operations.length + " operations");
-    return doc;
-}
-function getOperationDefinition(doc) {
-    checkDocument(doc);
-    return doc.definitions.filter(function (definition) { return definition.kind === 'OperationDefinition'; })[0];
-}
-function getOperationDefinitionOrDie(document) {
-    var def = getOperationDefinition(document);
-     false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(def, "GraphQL document is missing an operation");
-    return def;
-}
-function getOperationName(doc) {
-    return (doc.definitions
-        .filter(function (definition) {
-        return definition.kind === 'OperationDefinition' && definition.name;
-    })
-        .map(function (x) { return x.name.value; })[0] || null);
-}
-function getFragmentDefinitions(doc) {
-    return doc.definitions.filter(function (definition) { return definition.kind === 'FragmentDefinition'; });
-}
-function getQueryDefinition(doc) {
-    var queryDef = getOperationDefinition(doc);
-     false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(queryDef && queryDef.operation === 'query', 'Must contain a query definition.');
-    return queryDef;
-}
-function getFragmentDefinition(doc) {
-     false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(doc.kind === 'Document', "Expecting a parsed GraphQL document. Perhaps you need to wrap the query string in a \"gql\" tag? http://docs.apollostack.com/apollo-client/core.html#gql");
-     false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(doc.definitions.length <= 1, 'Fragment must have exactly one definition.');
-    var fragmentDef = doc.definitions[0];
-     false ? 0 : (0,ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant)(fragmentDef.kind === 'FragmentDefinition', 'Must be a fragment definition.');
-    return fragmentDef;
-}
-function getMainDefinition(queryDoc) {
-    checkDocument(queryDoc);
-    var fragmentDefinition;
-    for (var _i = 0, _a = queryDoc.definitions; _i < _a.length; _i++) {
-        var definition = _a[_i];
-        if (definition.kind === 'OperationDefinition') {
-            var operation = definition.operation;
-            if (operation === 'query' ||
-                operation === 'mutation' ||
-                operation === 'subscription') {
-                return definition;
-            }
-        }
-        if (definition.kind === 'FragmentDefinition' && !fragmentDefinition) {
-            fragmentDefinition = definition;
-        }
-    }
-    if (fragmentDefinition) {
-        return fragmentDefinition;
-    }
-    throw  false ? 0 : new ts_invariant__WEBPACK_IMPORTED_MODULE_0__.InvariantError('Expected a parsed GraphQL query with a query, mutation, subscription, or a fragment.');
-}
-function createFragmentMap(fragments) {
-    if (fragments === void 0) { fragments = []; }
-    var symTable = {};
-    fragments.forEach(function (fragment) {
-        symTable[fragment.name.value] = fragment;
-    });
-    return symTable;
-}
-function getDefaultValues(definition) {
-    if (definition &&
-        definition.variableDefinitions &&
-        definition.variableDefinitions.length) {
-        var defaultValues = definition.variableDefinitions
-            .filter(function (_a) {
-            var defaultValue = _a.defaultValue;
-            return defaultValue;
-        })
-            .map(function (_a) {
-            var variable = _a.variable, defaultValue = _a.defaultValue;
-            var defaultValueObj = {};
-            valueToObjectRepresentation(defaultValueObj, variable.name, defaultValue);
-            return defaultValueObj;
-        });
-        return assign.apply(void 0, (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__spreadArrays)([{}], defaultValues));
-    }
-    return {};
-}
-function variablesInOperation(operation) {
-    var names = new Set();
-    if (operation.variableDefinitions) {
-        for (var _i = 0, _a = operation.variableDefinitions; _i < _a.length; _i++) {
-            var definition = _a[_i];
-            names.add(definition.variable.name.value);
-        }
-    }
-    return names;
-}
-
-function filterInPlace(array, test, context) {
-    var target = 0;
-    array.forEach(function (elem, i) {
-        if (test.call(this, elem, i, array)) {
-            array[target++] = elem;
-        }
-    }, context);
-    array.length = target;
-    return array;
-}
-
-var TYPENAME_FIELD = {
-    kind: 'Field',
-    name: {
-        kind: 'Name',
-        value: '__typename',
-    },
-};
-function isEmpty(op, fragments) {
-    return op.selectionSet.selections.every(function (selection) {
-        return selection.kind === 'FragmentSpread' &&
-            isEmpty(fragments[selection.name.value], fragments);
-    });
-}
-function nullIfDocIsEmpty(doc) {
-    return isEmpty(getOperationDefinition(doc) || getFragmentDefinition(doc), createFragmentMap(getFragmentDefinitions(doc)))
-        ? null
-        : doc;
-}
-function getDirectiveMatcher(directives) {
-    return function directiveMatcher(directive) {
-        return directives.some(function (dir) {
-            return (dir.name && dir.name === directive.name.value) ||
-                (dir.test && dir.test(directive));
-        });
-    };
-}
-function removeDirectivesFromDocument(directives, doc) {
-    var variablesInUse = Object.create(null);
-    var variablesToRemove = [];
-    var fragmentSpreadsInUse = Object.create(null);
-    var fragmentSpreadsToRemove = [];
-    var modifiedDoc = nullIfDocIsEmpty((0,graphql_language_visitor__WEBPACK_IMPORTED_MODULE_4__.visit)(doc, {
-        Variable: {
-            enter: function (node, _key, parent) {
-                if (parent.kind !== 'VariableDefinition') {
-                    variablesInUse[node.name.value] = true;
-                }
-            },
-        },
-        Field: {
-            enter: function (node) {
-                if (directives && node.directives) {
-                    var shouldRemoveField = directives.some(function (directive) { return directive.remove; });
-                    if (shouldRemoveField &&
-                        node.directives &&
-                        node.directives.some(getDirectiveMatcher(directives))) {
-                        if (node.arguments) {
-                            node.arguments.forEach(function (arg) {
-                                if (arg.value.kind === 'Variable') {
-                                    variablesToRemove.push({
-                                        name: arg.value.name.value,
-                                    });
-                                }
-                            });
-                        }
-                        if (node.selectionSet) {
-                            getAllFragmentSpreadsFromSelectionSet(node.selectionSet).forEach(function (frag) {
-                                fragmentSpreadsToRemove.push({
-                                    name: frag.name.value,
-                                });
-                            });
-                        }
-                        return null;
-                    }
-                }
-            },
-        },
-        FragmentSpread: {
-            enter: function (node) {
-                fragmentSpreadsInUse[node.name.value] = true;
-            },
-        },
-        Directive: {
-            enter: function (node) {
-                if (getDirectiveMatcher(directives)(node)) {
-                    return null;
-                }
-            },
-        },
-    }));
-    if (modifiedDoc &&
-        filterInPlace(variablesToRemove, function (v) { return !variablesInUse[v.name]; }).length) {
-        modifiedDoc = removeArgumentsFromDocument(variablesToRemove, modifiedDoc);
-    }
-    if (modifiedDoc &&
-        filterInPlace(fragmentSpreadsToRemove, function (fs) { return !fragmentSpreadsInUse[fs.name]; })
-            .length) {
-        modifiedDoc = removeFragmentSpreadFromDocument(fragmentSpreadsToRemove, modifiedDoc);
-    }
-    return modifiedDoc;
-}
-function addTypenameToDocument(doc) {
-    return (0,graphql_language_visitor__WEBPACK_IMPORTED_MODULE_4__.visit)(checkDocument(doc), {
-        SelectionSet: {
-            enter: function (node, _key, parent) {
-                if (parent &&
-                    parent.kind === 'OperationDefinition') {
-                    return;
-                }
-                var selections = node.selections;
-                if (!selections) {
-                    return;
-                }
-                var skip = selections.some(function (selection) {
-                    return (isField(selection) &&
-                        (selection.name.value === '__typename' ||
-                            selection.name.value.lastIndexOf('__', 0) === 0));
-                });
-                if (skip) {
-                    return;
-                }
-                var field = parent;
-                if (isField(field) &&
-                    field.directives &&
-                    field.directives.some(function (d) { return d.name.value === 'export'; })) {
-                    return;
-                }
-                return (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)((0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)({}, node), { selections: (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__spreadArrays)(selections, [TYPENAME_FIELD]) });
-            },
-        },
-    });
-}
-var connectionRemoveConfig = {
-    test: function (directive) {
-        var willRemove = directive.name.value === 'connection';
-        if (willRemove) {
-            if (!directive.arguments ||
-                !directive.arguments.some(function (arg) { return arg.name.value === 'key'; })) {
-                 false || ts_invariant__WEBPACK_IMPORTED_MODULE_0__.invariant.warn('Removing an @connection directive even though it does not have a key. ' +
-                    'You may want to use the key parameter to specify a store key.');
-            }
-        }
-        return willRemove;
-    },
-};
-function removeConnectionDirectiveFromDocument(doc) {
-    return removeDirectivesFromDocument([connectionRemoveConfig], checkDocument(doc));
-}
-function hasDirectivesInSelectionSet(directives, selectionSet, nestedCheck) {
-    if (nestedCheck === void 0) { nestedCheck = true; }
-    return (selectionSet &&
-        selectionSet.selections &&
-        selectionSet.selections.some(function (selection) {
-            return hasDirectivesInSelection(directives, selection, nestedCheck);
-        }));
-}
-function hasDirectivesInSelection(directives, selection, nestedCheck) {
-    if (nestedCheck === void 0) { nestedCheck = true; }
-    if (!isField(selection)) {
-        return true;
-    }
-    if (!selection.directives) {
-        return false;
-    }
-    return (selection.directives.some(getDirectiveMatcher(directives)) ||
-        (nestedCheck &&
-            hasDirectivesInSelectionSet(directives, selection.selectionSet, nestedCheck)));
-}
-function getDirectivesFromDocument(directives, doc) {
-    checkDocument(doc);
-    var parentPath;
-    return nullIfDocIsEmpty((0,graphql_language_visitor__WEBPACK_IMPORTED_MODULE_4__.visit)(doc, {
-        SelectionSet: {
-            enter: function (node, _key, _parent, path) {
-                var currentPath = path.join('-');
-                if (!parentPath ||
-                    currentPath === parentPath ||
-                    !currentPath.startsWith(parentPath)) {
-                    if (node.selections) {
-                        var selectionsWithDirectives = node.selections.filter(function (selection) { return hasDirectivesInSelection(directives, selection); });
-                        if (hasDirectivesInSelectionSet(directives, node, false)) {
-                            parentPath = currentPath;
-                        }
-                        return (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)((0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)({}, node), { selections: selectionsWithDirectives });
-                    }
-                    else {
-                        return null;
-                    }
-                }
-            },
-        },
-    }));
-}
-function getArgumentMatcher(config) {
-    return function argumentMatcher(argument) {
-        return config.some(function (aConfig) {
-            return argument.value &&
-                argument.value.kind === 'Variable' &&
-                argument.value.name &&
-                (aConfig.name === argument.value.name.value ||
-                    (aConfig.test && aConfig.test(argument)));
-        });
-    };
-}
-function removeArgumentsFromDocument(config, doc) {
-    var argMatcher = getArgumentMatcher(config);
-    return nullIfDocIsEmpty((0,graphql_language_visitor__WEBPACK_IMPORTED_MODULE_4__.visit)(doc, {
-        OperationDefinition: {
-            enter: function (node) {
-                return (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)((0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)({}, node), { variableDefinitions: node.variableDefinitions.filter(function (varDef) {
-                        return !config.some(function (arg) { return arg.name === varDef.variable.name.value; });
-                    }) });
-            },
-        },
-        Field: {
-            enter: function (node) {
-                var shouldRemoveField = config.some(function (argConfig) { return argConfig.remove; });
-                if (shouldRemoveField) {
-                    var argMatchCount_1 = 0;
-                    node.arguments.forEach(function (arg) {
-                        if (argMatcher(arg)) {
-                            argMatchCount_1 += 1;
-                        }
-                    });
-                    if (argMatchCount_1 === 1) {
-                        return null;
-                    }
-                }
-            },
-        },
-        Argument: {
-            enter: function (node) {
-                if (argMatcher(node)) {
-                    return null;
-                }
-            },
-        },
-    }));
-}
-function removeFragmentSpreadFromDocument(config, doc) {
-    function enter(node) {
-        if (config.some(function (def) { return def.name === node.name.value; })) {
-            return null;
-        }
-    }
-    return nullIfDocIsEmpty((0,graphql_language_visitor__WEBPACK_IMPORTED_MODULE_4__.visit)(doc, {
-        FragmentSpread: { enter: enter },
-        FragmentDefinition: { enter: enter },
-    }));
-}
-function getAllFragmentSpreadsFromSelectionSet(selectionSet) {
-    var allFragments = [];
-    selectionSet.selections.forEach(function (selection) {
-        if ((isField(selection) || isInlineFragment(selection)) &&
-            selection.selectionSet) {
-            getAllFragmentSpreadsFromSelectionSet(selection.selectionSet).forEach(function (frag) { return allFragments.push(frag); });
-        }
-        else if (selection.kind === 'FragmentSpread') {
-            allFragments.push(selection);
-        }
-    });
-    return allFragments;
-}
-function buildQueryFromSelectionSet(document) {
-    var definition = getMainDefinition(document);
-    var definitionOperation = definition.operation;
-    if (definitionOperation === 'query') {
-        return document;
-    }
-    var modifiedDoc = (0,graphql_language_visitor__WEBPACK_IMPORTED_MODULE_4__.visit)(document, {
-        OperationDefinition: {
-            enter: function (node) {
-                return (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)((0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)({}, node), { operation: 'query' });
-            },
-        },
-    });
-    return modifiedDoc;
-}
-function removeClientSetsFromDocument(document) {
-    checkDocument(document);
-    var modifiedDoc = removeDirectivesFromDocument([
-        {
-            test: function (directive) { return directive.name.value === 'client'; },
-            remove: true,
-        },
-    ], document);
-    if (modifiedDoc) {
-        modifiedDoc = (0,graphql_language_visitor__WEBPACK_IMPORTED_MODULE_4__.visit)(modifiedDoc, {
-            FragmentDefinition: {
-                enter: function (node) {
-                    if (node.selectionSet) {
-                        var isTypenameOnly = node.selectionSet.selections.every(function (selection) {
-                            return isField(selection) && selection.name.value === '__typename';
-                        });
-                        if (isTypenameOnly) {
-                            return null;
-                        }
-                    }
-                },
-            },
-        });
-    }
-    return modifiedDoc;
-}
-
-var canUseWeakMap = typeof WeakMap === 'function' && !(typeof navigator === 'object' &&
-    navigator.product === 'ReactNative');
-
-var toString = Object.prototype.toString;
-function cloneDeep(value) {
-    return cloneDeepHelper(value, new Map());
-}
-function cloneDeepHelper(val, seen) {
-    switch (toString.call(val)) {
-        case "[object Array]": {
-            if (seen.has(val))
-                return seen.get(val);
-            var copy_1 = val.slice(0);
-            seen.set(val, copy_1);
-            copy_1.forEach(function (child, i) {
-                copy_1[i] = cloneDeepHelper(child, seen);
-            });
-            return copy_1;
-        }
-        case "[object Object]": {
-            if (seen.has(val))
-                return seen.get(val);
-            var copy_2 = Object.create(Object.getPrototypeOf(val));
-            seen.set(val, copy_2);
-            Object.keys(val).forEach(function (key) {
-                copy_2[key] = cloneDeepHelper(val[key], seen);
-            });
-            return copy_2;
-        }
-        default:
-            return val;
-    }
-}
-
-function getEnv() {
-    if (typeof process !== 'undefined' && "development") {
-        return "development";
-    }
-    return 'development';
-}
-function isEnv(env) {
-    return getEnv() === env;
-}
-function isProduction() {
-    return isEnv('production') === true;
-}
-function isDevelopment() {
-    return isEnv('development') === true;
-}
-function isTest() {
-    return isEnv('test') === true;
-}
-
-function tryFunctionOrLogError(f) {
-    try {
-        return f();
-    }
-    catch (e) {
-        if (console.error) {
-            console.error(e);
-        }
-    }
-}
-function graphQLResultHasError(result) {
-    return result.errors && result.errors.length;
-}
-
-function deepFreeze(o) {
-    Object.freeze(o);
-    Object.getOwnPropertyNames(o).forEach(function (prop) {
-        if (o[prop] !== null &&
-            (typeof o[prop] === 'object' || typeof o[prop] === 'function') &&
-            !Object.isFrozen(o[prop])) {
-            deepFreeze(o[prop]);
-        }
-    });
-    return o;
-}
-function maybeDeepFreeze(obj) {
-    if (isDevelopment() || isTest()) {
-        var symbolIsPolyfilled = typeof Symbol === 'function' && typeof Symbol('') === 'string';
-        if (!symbolIsPolyfilled) {
-            return deepFreeze(obj);
-        }
-    }
-    return obj;
-}
-
-var hasOwnProperty = Object.prototype.hasOwnProperty;
-function mergeDeep() {
-    var sources = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        sources[_i] = arguments[_i];
-    }
-    return mergeDeepArray(sources);
-}
-function mergeDeepArray(sources) {
-    var target = sources[0] || {};
-    var count = sources.length;
-    if (count > 1) {
-        var pastCopies = [];
-        target = shallowCopyForMerge(target, pastCopies);
-        for (var i = 1; i < count; ++i) {
-            target = mergeHelper(target, sources[i], pastCopies);
-        }
-    }
-    return target;
-}
-function isObject(obj) {
-    return obj !== null && typeof obj === 'object';
-}
-function mergeHelper(target, source, pastCopies) {
-    if (isObject(source) && isObject(target)) {
-        if (Object.isExtensible && !Object.isExtensible(target)) {
-            target = shallowCopyForMerge(target, pastCopies);
-        }
-        Object.keys(source).forEach(function (sourceKey) {
-            var sourceValue = source[sourceKey];
-            if (hasOwnProperty.call(target, sourceKey)) {
-                var targetValue = target[sourceKey];
-                if (sourceValue !== targetValue) {
-                    target[sourceKey] = mergeHelper(shallowCopyForMerge(targetValue, pastCopies), sourceValue, pastCopies);
-                }
-            }
-            else {
-                target[sourceKey] = sourceValue;
-            }
-        });
-        return target;
-    }
-    return source;
-}
-function shallowCopyForMerge(value, pastCopies) {
-    if (value !== null &&
-        typeof value === 'object' &&
-        pastCopies.indexOf(value) < 0) {
-        if (Array.isArray(value)) {
-            value = value.slice(0);
-        }
-        else {
-            value = (0,tslib__WEBPACK_IMPORTED_MODULE_3__.__assign)({ __proto__: Object.getPrototypeOf(value) }, value);
-        }
-        pastCopies.push(value);
-    }
-    return value;
-}
-
-var haveWarned = Object.create({});
-function warnOnceInDevelopment(msg, type) {
-    if (type === void 0) { type = 'warn'; }
-    if (!isProduction() && !haveWarned[msg]) {
-        if (!isTest()) {
-            haveWarned[msg] = true;
-        }
-        if (type === 'error') {
-            console.error(msg);
-        }
-        else {
-            console.warn(msg);
-        }
-    }
-}
-
-function stripSymbols(data) {
-    return JSON.parse(JSON.stringify(data));
-}
-
-
-//# sourceMappingURL=bundle.esm.js.map
-
-
-/***/ }),
-
-/***/ "./node_modules/apollo-client/node_modules/tslib/tslib.es6.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/apollo-client/node_modules/tslib/tslib.es6.js ***!
-  \********************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "__extends": () => (/* binding */ __extends),
-/* harmony export */   "__assign": () => (/* binding */ __assign),
-/* harmony export */   "__rest": () => (/* binding */ __rest),
-/* harmony export */   "__decorate": () => (/* binding */ __decorate),
-/* harmony export */   "__param": () => (/* binding */ __param),
-/* harmony export */   "__metadata": () => (/* binding */ __metadata),
-/* harmony export */   "__awaiter": () => (/* binding */ __awaiter),
-/* harmony export */   "__generator": () => (/* binding */ __generator),
-/* harmony export */   "__createBinding": () => (/* binding */ __createBinding),
-/* harmony export */   "__exportStar": () => (/* binding */ __exportStar),
-/* harmony export */   "__values": () => (/* binding */ __values),
-/* harmony export */   "__read": () => (/* binding */ __read),
-/* harmony export */   "__spread": () => (/* binding */ __spread),
-/* harmony export */   "__spreadArrays": () => (/* binding */ __spreadArrays),
-/* harmony export */   "__await": () => (/* binding */ __await),
-/* harmony export */   "__asyncGenerator": () => (/* binding */ __asyncGenerator),
-/* harmony export */   "__asyncDelegator": () => (/* binding */ __asyncDelegator),
-/* harmony export */   "__asyncValues": () => (/* binding */ __asyncValues),
-/* harmony export */   "__makeTemplateObject": () => (/* binding */ __makeTemplateObject),
-/* harmony export */   "__importStar": () => (/* binding */ __importStar),
-/* harmony export */   "__importDefault": () => (/* binding */ __importDefault),
-/* harmony export */   "__classPrivateFieldGet": () => (/* binding */ __classPrivateFieldGet),
-/* harmony export */   "__classPrivateFieldSet": () => (/* binding */ __classPrivateFieldSet)
-/* harmony export */ });
-/*! *****************************************************************************
-Copyright (c) Microsoft Corporation.
-
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */
-/* global Reflect, Promise */
-
-var extendStatics = function(d, b) {
-    extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return extendStatics(d, b);
-};
-
-function __extends(d, b) {
-    extendStatics(d, b);
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-}
-
-var __assign = function() {
-    __assign = Object.assign || function __assign(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-        }
-        return t;
-    }
-    return __assign.apply(this, arguments);
-}
-
-function __rest(s, e) {
-    var t = {};
-    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-        t[p] = s[p];
-    if (s != null && typeof Object.getOwnPropertySymbols === "function")
-        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-                t[p[i]] = s[p[i]];
-        }
-    return t;
-}
-
-function __decorate(decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-}
-
-function __param(paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-}
-
-function __metadata(metadataKey, metadataValue) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
-}
-
-function __awaiter(thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-}
-
-function __generator(thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [op[0] & 2, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-}
-
-function __createBinding(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}
-
-function __exportStar(m, exports) {
-    for (var p in m) if (p !== "default" && !exports.hasOwnProperty(p)) exports[p] = m[p];
-}
-
-function __values(o) {
-    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
-    if (m) return m.call(o);
-    if (o && typeof o.length === "number") return {
-        next: function () {
-            if (o && i >= o.length) o = void 0;
-            return { value: o && o[i++], done: !o };
-        }
-    };
-    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
-}
-
-function __read(o, n) {
-    var m = typeof Symbol === "function" && o[Symbol.iterator];
-    if (!m) return o;
-    var i = m.call(o), r, ar = [], e;
-    try {
-        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
-    }
-    catch (error) { e = { error: error }; }
-    finally {
-        try {
-            if (r && !r.done && (m = i["return"])) m.call(i);
-        }
-        finally { if (e) throw e.error; }
-    }
-    return ar;
-}
-
-function __spread() {
-    for (var ar = [], i = 0; i < arguments.length; i++)
-        ar = ar.concat(__read(arguments[i]));
-    return ar;
-}
-
-function __spreadArrays() {
-    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
-    for (var r = Array(s), k = 0, i = 0; i < il; i++)
-        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
-            r[k] = a[j];
-    return r;
-};
-
-function __await(v) {
-    return this instanceof __await ? (this.v = v, this) : new __await(v);
-}
-
-function __asyncGenerator(thisArg, _arguments, generator) {
-    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-    var g = generator.apply(thisArg, _arguments || []), i, q = [];
-    return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
-    function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
-    function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
-    function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
-    function fulfill(value) { resume("next", value); }
-    function reject(value) { resume("throw", value); }
-    function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
-}
-
-function __asyncDelegator(o) {
-    var i, p;
-    return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
-    function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
-}
-
-function __asyncValues(o) {
-    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-    var m = o[Symbol.asyncIterator], i;
-    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
-    function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
-    function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
-}
-
-function __makeTemplateObject(cooked, raw) {
-    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
-    return cooked;
-};
-
-function __importStar(mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result.default = mod;
-    return result;
-}
-
-function __importDefault(mod) {
-    return (mod && mod.__esModule) ? mod : { default: mod };
-}
-
-function __classPrivateFieldGet(receiver, privateMap) {
-    if (!privateMap.has(receiver)) {
-        throw new TypeError("attempted to get private field on non-instance");
-    }
-    return privateMap.get(receiver);
-}
-
-function __classPrivateFieldSet(receiver, privateMap, value) {
-    if (!privateMap.has(receiver)) {
-        throw new TypeError("attempted to set private field on non-instance");
-    }
-    privateMap.set(receiver, value);
-    return value;
-}
-
-
-/***/ }),
-
 /***/ "./node_modules/apollo-link-error/lib/bundle.esm.js":
 /*!**********************************************************!*\
   !*** ./node_modules/apollo-link-error/lib/bundle.esm.js ***!
@@ -7698,7 +3900,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "ErrorLink": () => (/* binding */ ErrorLink),
 /* harmony export */   "onError": () => (/* binding */ onError)
 /* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! tslib */ "./node_modules/apollo-link-error/node_modules/tslib/tslib.es6.js");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var apollo_link__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! apollo-link */ "./node_modules/apollo-link/lib/bundle.esm.js");
 /* harmony import */ var apollo_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! apollo-link */ "./node_modules/zen-observable-ts/lib/bundle.esm.js");
 
@@ -7789,257 +3991,317 @@ var ErrorLink = (function (_super) {
 
 /***/ }),
 
-/***/ "./node_modules/apollo-link-error/node_modules/tslib/tslib.es6.js":
-/*!************************************************************************!*\
-  !*** ./node_modules/apollo-link-error/node_modules/tslib/tslib.es6.js ***!
-  \************************************************************************/
+/***/ "./node_modules/apollo-link-http-common/lib/bundle.esm.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/apollo-link-http-common/lib/bundle.esm.js ***!
+  \****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "__extends": () => (/* binding */ __extends),
-/* harmony export */   "__assign": () => (/* binding */ __assign),
-/* harmony export */   "__rest": () => (/* binding */ __rest),
-/* harmony export */   "__decorate": () => (/* binding */ __decorate),
-/* harmony export */   "__param": () => (/* binding */ __param),
-/* harmony export */   "__metadata": () => (/* binding */ __metadata),
-/* harmony export */   "__awaiter": () => (/* binding */ __awaiter),
-/* harmony export */   "__generator": () => (/* binding */ __generator),
-/* harmony export */   "__createBinding": () => (/* binding */ __createBinding),
-/* harmony export */   "__exportStar": () => (/* binding */ __exportStar),
-/* harmony export */   "__values": () => (/* binding */ __values),
-/* harmony export */   "__read": () => (/* binding */ __read),
-/* harmony export */   "__spread": () => (/* binding */ __spread),
-/* harmony export */   "__spreadArrays": () => (/* binding */ __spreadArrays),
-/* harmony export */   "__await": () => (/* binding */ __await),
-/* harmony export */   "__asyncGenerator": () => (/* binding */ __asyncGenerator),
-/* harmony export */   "__asyncDelegator": () => (/* binding */ __asyncDelegator),
-/* harmony export */   "__asyncValues": () => (/* binding */ __asyncValues),
-/* harmony export */   "__makeTemplateObject": () => (/* binding */ __makeTemplateObject),
-/* harmony export */   "__importStar": () => (/* binding */ __importStar),
-/* harmony export */   "__importDefault": () => (/* binding */ __importDefault),
-/* harmony export */   "__classPrivateFieldGet": () => (/* binding */ __classPrivateFieldGet),
-/* harmony export */   "__classPrivateFieldSet": () => (/* binding */ __classPrivateFieldSet)
+/* harmony export */   "checkFetcher": () => (/* binding */ checkFetcher),
+/* harmony export */   "createSignalIfSupported": () => (/* binding */ createSignalIfSupported),
+/* harmony export */   "fallbackHttpConfig": () => (/* binding */ fallbackHttpConfig),
+/* harmony export */   "parseAndCheckHttpResponse": () => (/* binding */ parseAndCheckHttpResponse),
+/* harmony export */   "selectHttpOptionsAndBody": () => (/* binding */ selectHttpOptionsAndBody),
+/* harmony export */   "selectURI": () => (/* binding */ selectURI),
+/* harmony export */   "serializeFetchParameter": () => (/* binding */ serializeFetchParameter),
+/* harmony export */   "throwServerError": () => (/* binding */ throwServerError)
 /* harmony export */ });
-/*! *****************************************************************************
-Copyright (c) Microsoft Corporation.
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var graphql_language_printer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! graphql/language/printer */ "./node_modules/graphql/language/printer.mjs");
+/* harmony import */ var ts_invariant__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ts-invariant */ "./node_modules/ts-invariant/lib/invariant.esm.js");
 
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted.
 
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */
-/* global Reflect, Promise */
 
-var extendStatics = function(d, b) {
-    extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return extendStatics(d, b);
+
+var defaultHttpOptions = {
+    includeQuery: true,
+    includeExtensions: false,
 };
-
-function __extends(d, b) {
-    extendStatics(d, b);
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-}
-
-var __assign = function() {
-    __assign = Object.assign || function __assign(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-        }
-        return t;
-    }
-    return __assign.apply(this, arguments);
-}
-
-function __rest(s, e) {
-    var t = {};
-    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-        t[p] = s[p];
-    if (s != null && typeof Object.getOwnPropertySymbols === "function")
-        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-                t[p[i]] = s[p[i]];
-        }
-    return t;
-}
-
-function __decorate(decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-}
-
-function __param(paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-}
-
-function __metadata(metadataKey, metadataValue) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
-}
-
-function __awaiter(thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-}
-
-function __generator(thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [op[0] & 2, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-}
-
-function __createBinding(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}
-
-function __exportStar(m, exports) {
-    for (var p in m) if (p !== "default" && !exports.hasOwnProperty(p)) exports[p] = m[p];
-}
-
-function __values(o) {
-    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
-    if (m) return m.call(o);
-    if (o && typeof o.length === "number") return {
-        next: function () {
-            if (o && i >= o.length) o = void 0;
-            return { value: o && o[i++], done: !o };
-        }
-    };
-    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
-}
-
-function __read(o, n) {
-    var m = typeof Symbol === "function" && o[Symbol.iterator];
-    if (!m) return o;
-    var i = m.call(o), r, ar = [], e;
-    try {
-        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
-    }
-    catch (error) { e = { error: error }; }
-    finally {
+var defaultHeaders = {
+    accept: '*/*',
+    'content-type': 'application/json',
+};
+var defaultOptions = {
+    method: 'POST',
+};
+var fallbackHttpConfig = {
+    http: defaultHttpOptions,
+    headers: defaultHeaders,
+    options: defaultOptions,
+};
+var throwServerError = function (response, result, message) {
+    var error = new Error(message);
+    error.name = 'ServerError';
+    error.response = response;
+    error.statusCode = response.status;
+    error.result = result;
+    throw error;
+};
+var parseAndCheckHttpResponse = function (operations) { return function (response) {
+    return (response
+        .text()
+        .then(function (bodyText) {
         try {
-            if (r && !r.done && (m = i["return"])) m.call(i);
+            return JSON.parse(bodyText);
         }
-        finally { if (e) throw e.error; }
+        catch (err) {
+            var parseError = err;
+            parseError.name = 'ServerParseError';
+            parseError.response = response;
+            parseError.statusCode = response.status;
+            parseError.bodyText = bodyText;
+            return Promise.reject(parseError);
+        }
+    })
+        .then(function (result) {
+        if (response.status >= 300) {
+            throwServerError(response, result, "Response not successful: Received status code " + response.status);
+        }
+        if (!Array.isArray(result) &&
+            !result.hasOwnProperty('data') &&
+            !result.hasOwnProperty('errors')) {
+            throwServerError(response, result, "Server response was missing for query '" + (Array.isArray(operations)
+                ? operations.map(function (op) { return op.operationName; })
+                : operations.operationName) + "'.");
+        }
+        return result;
+    }));
+}; };
+var checkFetcher = function (fetcher) {
+    if (!fetcher && typeof fetch === 'undefined') {
+        var library = 'unfetch';
+        if (typeof window === 'undefined')
+            library = 'node-fetch';
+        throw  false ? 0 : new ts_invariant__WEBPACK_IMPORTED_MODULE_0__.InvariantError("\nfetch is not found globally and no fetcher passed, to fix pass a fetch for\nyour environment like https://www.npmjs.com/package/" + library + ".\n\nFor example:\nimport fetch from '" + library + "';\nimport { createHttpLink } from 'apollo-link-http';\n\nconst link = createHttpLink({ uri: '/graphql', fetch: fetch });");
     }
-    return ar;
-}
-
-function __spread() {
-    for (var ar = [], i = 0; i < arguments.length; i++)
-        ar = ar.concat(__read(arguments[i]));
-    return ar;
-}
-
-function __spreadArrays() {
-    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
-    for (var r = Array(s), k = 0, i = 0; i < il; i++)
-        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
-            r[k] = a[j];
-    return r;
+};
+var createSignalIfSupported = function () {
+    if (typeof AbortController === 'undefined')
+        return { controller: false, signal: false };
+    var controller = new AbortController();
+    var signal = controller.signal;
+    return { controller: controller, signal: signal };
+};
+var selectHttpOptionsAndBody = function (operation, fallbackConfig) {
+    var configs = [];
+    for (var _i = 2; _i < arguments.length; _i++) {
+        configs[_i - 2] = arguments[_i];
+    }
+    var options = (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)({}, fallbackConfig.options, { headers: fallbackConfig.headers, credentials: fallbackConfig.credentials });
+    var http = fallbackConfig.http;
+    configs.forEach(function (config) {
+        options = (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)({}, options, config.options, { headers: (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)({}, options.headers, config.headers) });
+        if (config.credentials)
+            options.credentials = config.credentials;
+        http = (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)({}, http, config.http);
+    });
+    var operationName = operation.operationName, extensions = operation.extensions, variables = operation.variables, query = operation.query;
+    var body = { operationName: operationName, variables: variables };
+    if (http.includeExtensions)
+        body.extensions = extensions;
+    if (http.includeQuery)
+        body.query = (0,graphql_language_printer__WEBPACK_IMPORTED_MODULE_2__.print)(query);
+    return {
+        options: options,
+        body: body,
+    };
+};
+var serializeFetchParameter = function (p, label) {
+    var serialized;
+    try {
+        serialized = JSON.stringify(p);
+    }
+    catch (e) {
+        var parseError =  false ? 0 : new ts_invariant__WEBPACK_IMPORTED_MODULE_0__.InvariantError("Network request failed. " + label + " is not serializable: " + e.message);
+        parseError.parseError = e;
+        throw parseError;
+    }
+    return serialized;
+};
+var selectURI = function (operation, fallbackURI) {
+    var context = operation.getContext();
+    var contextURI = context.uri;
+    if (contextURI) {
+        return contextURI;
+    }
+    else if (typeof fallbackURI === 'function') {
+        return fallbackURI(operation);
+    }
+    else {
+        return fallbackURI || '/graphql';
+    }
 };
 
-function __await(v) {
-    return this instanceof __await ? (this.v = v, this) : new __await(v);
-}
 
-function __asyncGenerator(thisArg, _arguments, generator) {
-    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-    var g = generator.apply(thisArg, _arguments || []), i, q = [];
-    return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
-    function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
-    function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
-    function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
-    function fulfill(value) { resume("next", value); }
-    function reject(value) { resume("throw", value); }
-    function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
-}
+//# sourceMappingURL=bundle.esm.js.map
 
-function __asyncDelegator(o) {
-    var i, p;
-    return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
-    function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
-}
 
-function __asyncValues(o) {
-    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-    var m = o[Symbol.asyncIterator], i;
-    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
-    function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
-    function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
-}
+/***/ }),
 
-function __makeTemplateObject(cooked, raw) {
-    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
-    return cooked;
+/***/ "./node_modules/apollo-link-http/lib/bundle.esm.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/apollo-link-http/lib/bundle.esm.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "HttpLink": () => (/* binding */ HttpLink),
+/* harmony export */   "createHttpLink": () => (/* binding */ createHttpLink)
+/* harmony export */ });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var apollo_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! apollo-link */ "./node_modules/apollo-link/lib/bundle.esm.js");
+/* harmony import */ var apollo_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! apollo-link */ "./node_modules/zen-observable-ts/lib/bundle.esm.js");
+/* harmony import */ var apollo_link_http_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! apollo-link-http-common */ "./node_modules/apollo-link-http-common/lib/bundle.esm.js");
+
+
+
+
+var createHttpLink = function (linkOptions) {
+    if (linkOptions === void 0) { linkOptions = {}; }
+    var _a = linkOptions.uri, uri = _a === void 0 ? '/graphql' : _a, fetcher = linkOptions.fetch, includeExtensions = linkOptions.includeExtensions, useGETForQueries = linkOptions.useGETForQueries, requestOptions = (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__rest)(linkOptions, ["uri", "fetch", "includeExtensions", "useGETForQueries"]);
+    (0,apollo_link_http_common__WEBPACK_IMPORTED_MODULE_1__.checkFetcher)(fetcher);
+    if (!fetcher) {
+        fetcher = fetch;
+    }
+    var linkConfig = {
+        http: { includeExtensions: includeExtensions },
+        options: requestOptions.fetchOptions,
+        credentials: requestOptions.credentials,
+        headers: requestOptions.headers,
+    };
+    return new apollo_link__WEBPACK_IMPORTED_MODULE_2__.ApolloLink(function (operation) {
+        var chosenURI = (0,apollo_link_http_common__WEBPACK_IMPORTED_MODULE_1__.selectURI)(operation, uri);
+        var context = operation.getContext();
+        var clientAwarenessHeaders = {};
+        if (context.clientAwareness) {
+            var _a = context.clientAwareness, name_1 = _a.name, version = _a.version;
+            if (name_1) {
+                clientAwarenessHeaders['apollographql-client-name'] = name_1;
+            }
+            if (version) {
+                clientAwarenessHeaders['apollographql-client-version'] = version;
+            }
+        }
+        var contextHeaders = (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__assign)({}, clientAwarenessHeaders, context.headers);
+        var contextConfig = {
+            http: context.http,
+            options: context.fetchOptions,
+            credentials: context.credentials,
+            headers: contextHeaders,
+        };
+        var _b = (0,apollo_link_http_common__WEBPACK_IMPORTED_MODULE_1__.selectHttpOptionsAndBody)(operation, apollo_link_http_common__WEBPACK_IMPORTED_MODULE_1__.fallbackHttpConfig, linkConfig, contextConfig), options = _b.options, body = _b.body;
+        var controller;
+        if (!options.signal) {
+            var _c = (0,apollo_link_http_common__WEBPACK_IMPORTED_MODULE_1__.createSignalIfSupported)(), _controller = _c.controller, signal = _c.signal;
+            controller = _controller;
+            if (controller)
+                options.signal = signal;
+        }
+        var definitionIsMutation = function (d) {
+            return d.kind === 'OperationDefinition' && d.operation === 'mutation';
+        };
+        if (useGETForQueries &&
+            !operation.query.definitions.some(definitionIsMutation)) {
+            options.method = 'GET';
+        }
+        if (options.method === 'GET') {
+            var _d = rewriteURIForGET(chosenURI, body), newURI = _d.newURI, parseError = _d.parseError;
+            if (parseError) {
+                return (0,apollo_link__WEBPACK_IMPORTED_MODULE_2__.fromError)(parseError);
+            }
+            chosenURI = newURI;
+        }
+        else {
+            try {
+                options.body = (0,apollo_link_http_common__WEBPACK_IMPORTED_MODULE_1__.serializeFetchParameter)(body, 'Payload');
+            }
+            catch (parseError) {
+                return (0,apollo_link__WEBPACK_IMPORTED_MODULE_2__.fromError)(parseError);
+            }
+        }
+        return new apollo_link__WEBPACK_IMPORTED_MODULE_3__["default"](function (observer) {
+            fetcher(chosenURI, options)
+                .then(function (response) {
+                operation.setContext({ response: response });
+                return response;
+            })
+                .then((0,apollo_link_http_common__WEBPACK_IMPORTED_MODULE_1__.parseAndCheckHttpResponse)(operation))
+                .then(function (result) {
+                observer.next(result);
+                observer.complete();
+                return result;
+            })
+                .catch(function (err) {
+                if (err.name === 'AbortError')
+                    return;
+                if (err.result && err.result.errors && err.result.data) {
+                    observer.next(err.result);
+                }
+                observer.error(err);
+            });
+            return function () {
+                if (controller)
+                    controller.abort();
+            };
+        });
+    });
 };
-
-function __importStar(mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result.default = mod;
-    return result;
-}
-
-function __importDefault(mod) {
-    return (mod && mod.__esModule) ? mod : { default: mod };
-}
-
-function __classPrivateFieldGet(receiver, privateMap) {
-    if (!privateMap.has(receiver)) {
-        throw new TypeError("attempted to get private field on non-instance");
+function rewriteURIForGET(chosenURI, body) {
+    var queryParams = [];
+    var addQueryParam = function (key, value) {
+        queryParams.push(key + "=" + encodeURIComponent(value));
+    };
+    if ('query' in body) {
+        addQueryParam('query', body.query);
     }
-    return privateMap.get(receiver);
-}
-
-function __classPrivateFieldSet(receiver, privateMap, value) {
-    if (!privateMap.has(receiver)) {
-        throw new TypeError("attempted to set private field on non-instance");
+    if (body.operationName) {
+        addQueryParam('operationName', body.operationName);
     }
-    privateMap.set(receiver, value);
-    return value;
+    if (body.variables) {
+        var serializedVariables = void 0;
+        try {
+            serializedVariables = (0,apollo_link_http_common__WEBPACK_IMPORTED_MODULE_1__.serializeFetchParameter)(body.variables, 'Variables map');
+        }
+        catch (parseError) {
+            return { parseError: parseError };
+        }
+        addQueryParam('variables', serializedVariables);
+    }
+    if (body.extensions) {
+        var serializedExtensions = void 0;
+        try {
+            serializedExtensions = (0,apollo_link_http_common__WEBPACK_IMPORTED_MODULE_1__.serializeFetchParameter)(body.extensions, 'Extensions map');
+        }
+        catch (parseError) {
+            return { parseError: parseError };
+        }
+        addQueryParam('extensions', serializedExtensions);
+    }
+    var fragment = '', preFragment = chosenURI;
+    var fragmentStart = chosenURI.indexOf('#');
+    if (fragmentStart !== -1) {
+        fragment = chosenURI.substr(fragmentStart);
+        preFragment = chosenURI.substr(0, fragmentStart);
+    }
+    var queryParamsPrefix = preFragment.indexOf('?') === -1 ? '?' : '&';
+    var newURI = preFragment + queryParamsPrefix + queryParams.join('&') + fragment;
+    return { newURI: newURI };
 }
+var HttpLink = (function (_super) {
+    (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__extends)(HttpLink, _super);
+    function HttpLink(opts) {
+        return _super.call(this, createHttpLink(opts).request) || this;
+    }
+    return HttpLink;
+}(apollo_link__WEBPACK_IMPORTED_MODULE_2__.ApolloLink));
+
+
+//# sourceMappingURL=bundle.esm.js.map
 
 
 /***/ }),
@@ -8069,8 +4331,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var zen_observable_ts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! zen-observable-ts */ "./node_modules/zen-observable-ts/lib/bundle.esm.js");
 /* harmony import */ var ts_invariant__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ts-invariant */ "./node_modules/ts-invariant/lib/invariant.esm.js");
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! tslib */ "./node_modules/apollo-link/node_modules/tslib/tslib.es6.js");
-/* harmony import */ var apollo_utilities__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! apollo-utilities */ "./node_modules/apollo-link/node_modules/apollo-utilities/lib/bundle.esm.js");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var apollo_utilities__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! apollo-utilities */ "./node_modules/apollo-utilities/lib/bundle.esm.js");
 
 
 
@@ -8266,10 +4528,10 @@ function execute(link, operation) {
 
 /***/ }),
 
-/***/ "./node_modules/apollo-link/node_modules/apollo-utilities/lib/bundle.esm.js":
-/*!**********************************************************************************!*\
-  !*** ./node_modules/apollo-link/node_modules/apollo-utilities/lib/bundle.esm.js ***!
-  \**********************************************************************************/
+/***/ "./node_modules/apollo-utilities/lib/bundle.esm.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/apollo-utilities/lib/bundle.esm.js ***!
+  \*********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -8334,11 +4596,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var graphql_language_visitor__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! graphql/language/visitor */ "./node_modules/graphql/language/visitor.mjs");
 /* harmony import */ var ts_invariant__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ts-invariant */ "./node_modules/ts-invariant/lib/invariant.esm.js");
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! tslib */ "./node_modules/apollo-link/node_modules/tslib/tslib.es6.js");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var fast_json_stable_stringify__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! fast-json-stable-stringify */ "./node_modules/fast-json-stable-stringify/index.js");
 /* harmony import */ var fast_json_stable_stringify__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(fast_json_stable_stringify__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _wry_equality__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wry/equality */ "./node_modules/@wry/equality/lib/equality.esm.js");
-/* provided dependency */ var process = __webpack_require__(/*! process/browser */ "./node_modules/process/browser.js");
+/* provided dependency */ var process = __webpack_require__(/*! process/browser.js */ "./node_modules/process/browser.js");
 
 
 
@@ -9257,261 +5519,6 @@ function stripSymbols(data) {
 
 /***/ }),
 
-/***/ "./node_modules/apollo-link/node_modules/tslib/tslib.es6.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/apollo-link/node_modules/tslib/tslib.es6.js ***!
-  \******************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "__extends": () => (/* binding */ __extends),
-/* harmony export */   "__assign": () => (/* binding */ __assign),
-/* harmony export */   "__rest": () => (/* binding */ __rest),
-/* harmony export */   "__decorate": () => (/* binding */ __decorate),
-/* harmony export */   "__param": () => (/* binding */ __param),
-/* harmony export */   "__metadata": () => (/* binding */ __metadata),
-/* harmony export */   "__awaiter": () => (/* binding */ __awaiter),
-/* harmony export */   "__generator": () => (/* binding */ __generator),
-/* harmony export */   "__createBinding": () => (/* binding */ __createBinding),
-/* harmony export */   "__exportStar": () => (/* binding */ __exportStar),
-/* harmony export */   "__values": () => (/* binding */ __values),
-/* harmony export */   "__read": () => (/* binding */ __read),
-/* harmony export */   "__spread": () => (/* binding */ __spread),
-/* harmony export */   "__spreadArrays": () => (/* binding */ __spreadArrays),
-/* harmony export */   "__await": () => (/* binding */ __await),
-/* harmony export */   "__asyncGenerator": () => (/* binding */ __asyncGenerator),
-/* harmony export */   "__asyncDelegator": () => (/* binding */ __asyncDelegator),
-/* harmony export */   "__asyncValues": () => (/* binding */ __asyncValues),
-/* harmony export */   "__makeTemplateObject": () => (/* binding */ __makeTemplateObject),
-/* harmony export */   "__importStar": () => (/* binding */ __importStar),
-/* harmony export */   "__importDefault": () => (/* binding */ __importDefault),
-/* harmony export */   "__classPrivateFieldGet": () => (/* binding */ __classPrivateFieldGet),
-/* harmony export */   "__classPrivateFieldSet": () => (/* binding */ __classPrivateFieldSet)
-/* harmony export */ });
-/*! *****************************************************************************
-Copyright (c) Microsoft Corporation.
-
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */
-/* global Reflect, Promise */
-
-var extendStatics = function(d, b) {
-    extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return extendStatics(d, b);
-};
-
-function __extends(d, b) {
-    extendStatics(d, b);
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-}
-
-var __assign = function() {
-    __assign = Object.assign || function __assign(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-        }
-        return t;
-    }
-    return __assign.apply(this, arguments);
-}
-
-function __rest(s, e) {
-    var t = {};
-    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-        t[p] = s[p];
-    if (s != null && typeof Object.getOwnPropertySymbols === "function")
-        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-                t[p[i]] = s[p[i]];
-        }
-    return t;
-}
-
-function __decorate(decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-}
-
-function __param(paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-}
-
-function __metadata(metadataKey, metadataValue) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
-}
-
-function __awaiter(thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-}
-
-function __generator(thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [op[0] & 2, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-}
-
-function __createBinding(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}
-
-function __exportStar(m, exports) {
-    for (var p in m) if (p !== "default" && !exports.hasOwnProperty(p)) exports[p] = m[p];
-}
-
-function __values(o) {
-    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
-    if (m) return m.call(o);
-    if (o && typeof o.length === "number") return {
-        next: function () {
-            if (o && i >= o.length) o = void 0;
-            return { value: o && o[i++], done: !o };
-        }
-    };
-    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
-}
-
-function __read(o, n) {
-    var m = typeof Symbol === "function" && o[Symbol.iterator];
-    if (!m) return o;
-    var i = m.call(o), r, ar = [], e;
-    try {
-        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
-    }
-    catch (error) { e = { error: error }; }
-    finally {
-        try {
-            if (r && !r.done && (m = i["return"])) m.call(i);
-        }
-        finally { if (e) throw e.error; }
-    }
-    return ar;
-}
-
-function __spread() {
-    for (var ar = [], i = 0; i < arguments.length; i++)
-        ar = ar.concat(__read(arguments[i]));
-    return ar;
-}
-
-function __spreadArrays() {
-    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
-    for (var r = Array(s), k = 0, i = 0; i < il; i++)
-        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
-            r[k] = a[j];
-    return r;
-};
-
-function __await(v) {
-    return this instanceof __await ? (this.v = v, this) : new __await(v);
-}
-
-function __asyncGenerator(thisArg, _arguments, generator) {
-    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-    var g = generator.apply(thisArg, _arguments || []), i, q = [];
-    return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
-    function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
-    function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
-    function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
-    function fulfill(value) { resume("next", value); }
-    function reject(value) { resume("throw", value); }
-    function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
-}
-
-function __asyncDelegator(o) {
-    var i, p;
-    return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
-    function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
-}
-
-function __asyncValues(o) {
-    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-    var m = o[Symbol.asyncIterator], i;
-    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
-    function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
-    function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
-}
-
-function __makeTemplateObject(cooked, raw) {
-    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
-    return cooked;
-};
-
-function __importStar(mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result.default = mod;
-    return result;
-}
-
-function __importDefault(mod) {
-    return (mod && mod.__esModule) ? mod : { default: mod };
-}
-
-function __classPrivateFieldGet(receiver, privateMap) {
-    if (!privateMap.has(receiver)) {
-        throw new TypeError("attempted to get private field on non-instance");
-    }
-    return privateMap.get(receiver);
-}
-
-function __classPrivateFieldSet(receiver, privateMap, value) {
-    if (!privateMap.has(receiver)) {
-        throw new TypeError("attempted to set private field on non-instance");
-    }
-    privateMap.set(receiver, value);
-    return value;
-}
-
-
-/***/ }),
-
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Board.vue?vue&type=script&lang=js&":
 /*!*************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Board.vue?vue&type=script&lang=js& ***!
@@ -9603,6 +5610,97 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CardAddButton.vue?vue&type=script&lang=js&":
+/*!********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CardAddButton.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _graphql_CardAdd_gql__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../graphql/CardAdd.gql */ "./resources/js/graphql/CardAdd.gql");
+/* harmony import */ var _graphql_CardAdd_gql__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_graphql_CardAdd_gql__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _graphql_BoardsWithListsAndCards_gql__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../graphql/BoardsWithListsAndCards.gql */ "./resources/js/graphql/BoardsWithListsAndCards.gql");
+/* harmony import */ var _graphql_BoardsWithListsAndCards_gql__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_graphql_BoardsWithListsAndCards_gql__WEBPACK_IMPORTED_MODULE_1__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  methods: {
+    addCard: function addCard() {
+      this.$apollo.mutate({
+        mutation: (_graphql_CardAdd_gql__WEBPACK_IMPORTED_MODULE_0___default()),
+        variables: {
+          title: "added through mutation",
+          listId: 1,
+          order: 1
+        },
+        update: function update(store, _ref) {
+          var cardAdd = _ref.data.cardAdd;
+          var data = store.readQuery({
+            query: (_graphql_BoardsWithListsAndCards_gql__WEBPACK_IMPORTED_MODULE_1___default()),
+            variables: {
+              id: 1
+            }
+          });
+          data.board.lists.find(function (list) {
+            return list.id = 1;
+          }).cards.push(cardAdd);
+          store.writeQuery({
+            query: (_graphql_BoardsWithListsAndCards_gql__WEBPACK_IMPORTED_MODULE_1___default()),
+            data: data
+          });
+        }
+      });
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CardEditor.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CardEditor.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      title: null
+    };
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/List.vue?vue&type=script&lang=js&":
 /*!***********************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/List.vue?vue&type=script&lang=js& ***!
@@ -9616,6 +5714,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _Card__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Card */ "./resources/js/components/Card.vue");
 /* harmony import */ var _CardAddButton__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CardAddButton */ "./resources/js/components/CardAddButton.vue");
+/* harmony import */ var _CardEditor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CardEditor */ "./resources/js/components/CardEditor.vue");
 //
 //
 //
@@ -9630,12 +5729,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
     Card: _Card__WEBPACK_IMPORTED_MODULE_0__["default"],
-    CardAddButton: _CardAddButton__WEBPACK_IMPORTED_MODULE_1__["default"]
+    CardAddButton: _CardAddButton__WEBPACK_IMPORTED_MODULE_1__["default"],
+    CardEditor: _CardEditor__WEBPACK_IMPORTED_MODULE_2__["default"]
   },
   props: {
     list: Object
@@ -9680,27 +5782,18 @@ var apolloClient = new apollo_boost__WEBPACK_IMPORTED_MODULE_2__["default"]({
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
 /* harmony import */ var _Board__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Board */ "./resources/js/Board.vue");
-/* harmony import */ var _components_Card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Card */ "./resources/js/components/Card.vue");
-/* harmony import */ var _components_CardAddButton__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/CardAddButton */ "./resources/js/components/CardAddButton.vue");
-/* harmony import */ var _components_List__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/List */ "./resources/js/components/List.vue");
-/* harmony import */ var _apollo_config__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./apollo.config */ "./resources/js/apollo.config.js");
+/* harmony import */ var _apollo_config__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./apollo.config */ "./resources/js/apollo.config.js");
 
 
 
 
-
-
-
-window.Vue = vue__WEBPACK_IMPORTED_MODULE_6__["default"];
-vue__WEBPACK_IMPORTED_MODULE_6__["default"].component("Board", _Board__WEBPACK_IMPORTED_MODULE_1__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_6__["default"].component("Card", _components_Card__WEBPACK_IMPORTED_MODULE_2__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_6__["default"].component("CardAddButton", _components_CardAddButton__WEBPACK_IMPORTED_MODULE_3__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_6__["default"].component("List", _components_List__WEBPACK_IMPORTED_MODULE_4__["default"]);
-var app = new vue__WEBPACK_IMPORTED_MODULE_6__["default"]({
+window.Vue = vue__WEBPACK_IMPORTED_MODULE_3__["default"];
+vue__WEBPACK_IMPORTED_MODULE_3__["default"].component("Board", _Board__WEBPACK_IMPORTED_MODULE_1__["default"]);
+var app = new vue__WEBPACK_IMPORTED_MODULE_3__["default"]({
   el: "#app",
-  apolloProvider: _apollo_config__WEBPACK_IMPORTED_MODULE_5__["default"]
+  apolloProvider: _apollo_config__WEBPACK_IMPORTED_MODULE_2__["default"]
 });
 
 /***/ }),
@@ -9717,154 +5810,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
 
 window._ = lodash__WEBPACK_IMPORTED_MODULE_0__;
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Board.vue?vue&type=style&index=0&id=36375f90&scoped=true&lang=css&":
-/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Board.vue?vue&type=style&index=0&id=36375f90&scoped=true&lang=css& ***!
-  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
-// Imports
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.header[data-v-36375f90] {\n    height: 40px;\n}\n", ""]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Card.vue?vue&type=style&index=0&id=b9bc2c0a&scoped=true&lang=css&":
-/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Card.vue?vue&type=style&index=0&id=b9bc2c0a&scoped=true&lang=css& ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
-// Imports
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.card[data-v-b9bc2c0a] {\n    box-shadow: 0 1px 0 rgba(9, 30, 66, 0.25);\n}\n", ""]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/List.vue?vue&type=style&index=0&id=1856aeee&scoped=true&lang=css&":
-/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/List.vue?vue&type=style&index=0&id=1856aeee&scoped=true&lang=css& ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
-// Imports
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.list[data-v-1856aeee] {\n    width: 250px;\n    min-width: 250px;\n}\n", ""]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/runtime/api.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
-  \*****************************************************/
-/***/ ((module) => {
-
-"use strict";
-
-
-/*
-  MIT License http://www.opensource.org/licenses/mit-license.php
-  Author Tobias Koppers @sokra
-*/
-// css base code, injected by the css-loader
-// eslint-disable-next-line func-names
-module.exports = function (cssWithMappingToString) {
-  var list = []; // return the list of modules as css string
-
-  list.toString = function toString() {
-    return this.map(function (item) {
-      var content = cssWithMappingToString(item);
-
-      if (item[2]) {
-        return "@media ".concat(item[2], " {").concat(content, "}");
-      }
-
-      return content;
-    }).join("");
-  }; // import a list of modules into the list
-  // eslint-disable-next-line func-names
-
-
-  list.i = function (modules, mediaQuery, dedupe) {
-    if (typeof modules === "string") {
-      // eslint-disable-next-line no-param-reassign
-      modules = [[null, modules, ""]];
-    }
-
-    var alreadyImportedModules = {};
-
-    if (dedupe) {
-      for (var i = 0; i < this.length; i++) {
-        // eslint-disable-next-line prefer-destructuring
-        var id = this[i][0];
-
-        if (id != null) {
-          alreadyImportedModules[id] = true;
-        }
-      }
-    }
-
-    for (var _i = 0; _i < modules.length; _i++) {
-      var item = [].concat(modules[_i]);
-
-      if (dedupe && alreadyImportedModules[item[0]]) {
-        // eslint-disable-next-line no-continue
-        continue;
-      }
-
-      if (mediaQuery) {
-        if (!item[2]) {
-          item[2] = mediaQuery;
-        } else {
-          item[2] = "".concat(mediaQuery, " and ").concat(item[2]);
-        }
-      }
-
-      list.push(item);
-    }
-  };
-
-  return list;
-};
 
 /***/ }),
 
@@ -9954,7 +5899,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "disableExperimentalFragmentVariables": () => (/* binding */ disableExperimentalFragmentVariables),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/graphql-tag/node_modules/tslib/tslib.es6.js");
 /* harmony import */ var graphql__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! graphql */ "./node_modules/graphql/language/parser.mjs");
 
 
@@ -10021,7 +5966,8 @@ function parseDocument(source) {
     var cacheKey = normalize(source);
     if (!docCache.has(cacheKey)) {
         var parsed = (0,graphql__WEBPACK_IMPORTED_MODULE_1__.parse)(source, {
-            experimentalFragmentVariables: experimentalFragmentVariables
+            experimentalFragmentVariables: experimentalFragmentVariables,
+            allowLegacyFragmentVariables: experimentalFragmentVariables
         });
         if (!parsed || parsed.kind !== 'Document') {
             throw new Error('Not a valid GraphQL document.');
@@ -10076,6 +6022,671 @@ var extras = {
 gql["default"] = gql;
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (gql);
 //# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./resources/js/graphql/BoardsWithListsAndCards.gql":
+/*!**********************************************************!*\
+  !*** ./resources/js/graphql/BoardsWithListsAndCards.gql ***!
+  \**********************************************************/
+/***/ ((module) => {
+
+
+    var doc = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"BoardsWithListsAndCards"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"id"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"ID"}}},"directives":[]}],"directives":[],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"board"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"id"},"value":{"kind":"Variable","name":{"kind":"Name","value":"id"}}}],"directives":[],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"title"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"color"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"lists"},"arguments":[],"directives":[],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"title"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"cards"},"arguments":[],"directives":[],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"title"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"order"},"arguments":[],"directives":[]}]}}]}}]}}]}}],"loc":{"start":0,"end":255}};
+    doc.loc.source = {"body":"query BoardsWithListsAndCards($id: ID!) {\n    board(id: $id) {\n        title\n        color\n        lists {\n            id\n            title\n            cards {\n                id\n                title\n                order\n            }\n        }\n    }\n}\n","name":"GraphQL request","locationOffset":{"line":1,"column":1}};
+  
+
+    var names = {};
+    function unique(defs) {
+      return defs.filter(
+        function(def) {
+          if (def.kind !== 'FragmentDefinition') return true;
+          var name = def.name.value
+          if (names[name]) {
+            return false;
+          } else {
+            names[name] = true;
+            return true;
+          }
+        }
+      )
+    }
+  
+
+    // Collect any fragment/type references from a node, adding them to the refs Set
+    function collectFragmentReferences(node, refs) {
+      if (node.kind === "FragmentSpread") {
+        refs.add(node.name.value);
+      } else if (node.kind === "VariableDefinition") {
+        var type = node.type;
+        if (type.kind === "NamedType") {
+          refs.add(type.name.value);
+        }
+      }
+
+      if (node.selectionSet) {
+        node.selectionSet.selections.forEach(function(selection) {
+          collectFragmentReferences(selection, refs);
+        });
+      }
+
+      if (node.variableDefinitions) {
+        node.variableDefinitions.forEach(function(def) {
+          collectFragmentReferences(def, refs);
+        });
+      }
+
+      if (node.definitions) {
+        node.definitions.forEach(function(def) {
+          collectFragmentReferences(def, refs);
+        });
+      }
+    }
+
+    var definitionRefs = {};
+    (function extractReferences() {
+      doc.definitions.forEach(function(def) {
+        if (def.name) {
+          var refs = new Set();
+          collectFragmentReferences(def, refs);
+          definitionRefs[def.name.value] = refs;
+        }
+      });
+    })();
+
+    function findOperation(doc, name) {
+      for (var i = 0; i < doc.definitions.length; i++) {
+        var element = doc.definitions[i];
+        if (element.name && element.name.value == name) {
+          return element;
+        }
+      }
+    }
+
+    function oneQuery(doc, operationName) {
+      // Copy the DocumentNode, but clear out the definitions
+      var newDoc = {
+        kind: doc.kind,
+        definitions: [findOperation(doc, operationName)]
+      };
+      if (doc.hasOwnProperty("loc")) {
+        newDoc.loc = doc.loc;
+      }
+
+      // Now, for the operation we're running, find any fragments referenced by
+      // it or the fragments it references
+      var opRefs = definitionRefs[operationName] || new Set();
+      var allRefs = new Set();
+      var newRefs = new Set();
+
+      // IE 11 doesn't support "new Set(iterable)", so we add the members of opRefs to newRefs one by one
+      opRefs.forEach(function(refName) {
+        newRefs.add(refName);
+      });
+
+      while (newRefs.size > 0) {
+        var prevRefs = newRefs;
+        newRefs = new Set();
+
+        prevRefs.forEach(function(refName) {
+          if (!allRefs.has(refName)) {
+            allRefs.add(refName);
+            var childRefs = definitionRefs[refName] || new Set();
+            childRefs.forEach(function(childRef) {
+              newRefs.add(childRef);
+            });
+          }
+        });
+      }
+
+      allRefs.forEach(function(refName) {
+        var op = findOperation(doc, refName);
+        if (op) {
+          newDoc.definitions.push(op);
+        }
+      });
+
+      return newDoc;
+    }
+    
+    module.exports = doc;
+    
+        module.exports.BoardsWithListsAndCards = oneQuery(doc, "BoardsWithListsAndCards");
+        
+
+
+/***/ }),
+
+/***/ "./resources/js/graphql/CardAdd.gql":
+/*!******************************************!*\
+  !*** ./resources/js/graphql/CardAdd.gql ***!
+  \******************************************/
+/***/ ((module) => {
+
+
+    var doc = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"mutation","name":{"kind":"Name","value":"CardAdd"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"listId"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"ID"}}},"directives":[]},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"title"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}},"directives":[]},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"order"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"Int"}}},"directives":[]}],"directives":[],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"cardAdd"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"input"},"value":{"kind":"ObjectValue","fields":[{"kind":"ObjectField","name":{"kind":"Name","value":"title"},"value":{"kind":"Variable","name":{"kind":"Name","value":"title"}}},{"kind":"ObjectField","name":{"kind":"Name","value":"order"},"value":{"kind":"Variable","name":{"kind":"Name","value":"order"}}},{"kind":"ObjectField","name":{"kind":"Name","value":"list_id"},"value":{"kind":"Variable","name":{"kind":"Name","value":"listId"}}},{"kind":"ObjectField","name":{"kind":"Name","value":"owner_id"},"value":{"kind":"IntValue","value":"1"}}]}}],"directives":[],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"title"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"order"},"arguments":[],"directives":[]}]}}]}}],"loc":{"start":0,"end":211}};
+    doc.loc.source = {"body":"mutation CardAdd($listId: ID!, $title: String!, $order: Int!) {\n    cardAdd(\n        input: { title: $title, order: $order, list_id: $listId, owner_id: 1 }\n    ) {\n        id\n        title\n        order\n    }\n}\n","name":"GraphQL request","locationOffset":{"line":1,"column":1}};
+  
+
+    var names = {};
+    function unique(defs) {
+      return defs.filter(
+        function(def) {
+          if (def.kind !== 'FragmentDefinition') return true;
+          var name = def.name.value
+          if (names[name]) {
+            return false;
+          } else {
+            names[name] = true;
+            return true;
+          }
+        }
+      )
+    }
+  
+
+    // Collect any fragment/type references from a node, adding them to the refs Set
+    function collectFragmentReferences(node, refs) {
+      if (node.kind === "FragmentSpread") {
+        refs.add(node.name.value);
+      } else if (node.kind === "VariableDefinition") {
+        var type = node.type;
+        if (type.kind === "NamedType") {
+          refs.add(type.name.value);
+        }
+      }
+
+      if (node.selectionSet) {
+        node.selectionSet.selections.forEach(function(selection) {
+          collectFragmentReferences(selection, refs);
+        });
+      }
+
+      if (node.variableDefinitions) {
+        node.variableDefinitions.forEach(function(def) {
+          collectFragmentReferences(def, refs);
+        });
+      }
+
+      if (node.definitions) {
+        node.definitions.forEach(function(def) {
+          collectFragmentReferences(def, refs);
+        });
+      }
+    }
+
+    var definitionRefs = {};
+    (function extractReferences() {
+      doc.definitions.forEach(function(def) {
+        if (def.name) {
+          var refs = new Set();
+          collectFragmentReferences(def, refs);
+          definitionRefs[def.name.value] = refs;
+        }
+      });
+    })();
+
+    function findOperation(doc, name) {
+      for (var i = 0; i < doc.definitions.length; i++) {
+        var element = doc.definitions[i];
+        if (element.name && element.name.value == name) {
+          return element;
+        }
+      }
+    }
+
+    function oneQuery(doc, operationName) {
+      // Copy the DocumentNode, but clear out the definitions
+      var newDoc = {
+        kind: doc.kind,
+        definitions: [findOperation(doc, operationName)]
+      };
+      if (doc.hasOwnProperty("loc")) {
+        newDoc.loc = doc.loc;
+      }
+
+      // Now, for the operation we're running, find any fragments referenced by
+      // it or the fragments it references
+      var opRefs = definitionRefs[operationName] || new Set();
+      var allRefs = new Set();
+      var newRefs = new Set();
+
+      // IE 11 doesn't support "new Set(iterable)", so we add the members of opRefs to newRefs one by one
+      opRefs.forEach(function(refName) {
+        newRefs.add(refName);
+      });
+
+      while (newRefs.size > 0) {
+        var prevRefs = newRefs;
+        newRefs = new Set();
+
+        prevRefs.forEach(function(refName) {
+          if (!allRefs.has(refName)) {
+            allRefs.add(refName);
+            var childRefs = definitionRefs[refName] || new Set();
+            childRefs.forEach(function(childRef) {
+              newRefs.add(childRef);
+            });
+          }
+        });
+      }
+
+      allRefs.forEach(function(refName) {
+        var op = findOperation(doc, refName);
+        if (op) {
+          newDoc.definitions.push(op);
+        }
+      });
+
+      return newDoc;
+    }
+    
+    module.exports = doc;
+    
+        module.exports.CardAdd = oneQuery(doc, "CardAdd");
+        
+
+
+/***/ }),
+
+/***/ "./node_modules/graphql-tag/node_modules/tslib/tslib.es6.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/graphql-tag/node_modules/tslib/tslib.es6.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "__extends": () => (/* binding */ __extends),
+/* harmony export */   "__assign": () => (/* binding */ __assign),
+/* harmony export */   "__rest": () => (/* binding */ __rest),
+/* harmony export */   "__decorate": () => (/* binding */ __decorate),
+/* harmony export */   "__param": () => (/* binding */ __param),
+/* harmony export */   "__metadata": () => (/* binding */ __metadata),
+/* harmony export */   "__awaiter": () => (/* binding */ __awaiter),
+/* harmony export */   "__generator": () => (/* binding */ __generator),
+/* harmony export */   "__createBinding": () => (/* binding */ __createBinding),
+/* harmony export */   "__exportStar": () => (/* binding */ __exportStar),
+/* harmony export */   "__values": () => (/* binding */ __values),
+/* harmony export */   "__read": () => (/* binding */ __read),
+/* harmony export */   "__spread": () => (/* binding */ __spread),
+/* harmony export */   "__spreadArrays": () => (/* binding */ __spreadArrays),
+/* harmony export */   "__spreadArray": () => (/* binding */ __spreadArray),
+/* harmony export */   "__await": () => (/* binding */ __await),
+/* harmony export */   "__asyncGenerator": () => (/* binding */ __asyncGenerator),
+/* harmony export */   "__asyncDelegator": () => (/* binding */ __asyncDelegator),
+/* harmony export */   "__asyncValues": () => (/* binding */ __asyncValues),
+/* harmony export */   "__makeTemplateObject": () => (/* binding */ __makeTemplateObject),
+/* harmony export */   "__importStar": () => (/* binding */ __importStar),
+/* harmony export */   "__importDefault": () => (/* binding */ __importDefault),
+/* harmony export */   "__classPrivateFieldGet": () => (/* binding */ __classPrivateFieldGet),
+/* harmony export */   "__classPrivateFieldSet": () => (/* binding */ __classPrivateFieldSet)
+/* harmony export */ });
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
+***************************************************************************** */
+/* global Reflect, Promise */
+
+var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+    return extendStatics(d, b);
+};
+
+function __extends(d, b) {
+    if (typeof b !== "function" && b !== null)
+        throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+    extendStatics(d, b);
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+}
+
+var __assign = function() {
+    __assign = Object.assign || function __assign(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    }
+    return __assign.apply(this, arguments);
+}
+
+function __rest(s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+}
+
+function __decorate(decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+}
+
+function __param(paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+}
+
+function __metadata(metadataKey, metadataValue) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
+}
+
+function __awaiter(thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+}
+
+function __generator(thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+}
+
+var __createBinding = Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+});
+
+function __exportStar(m, o) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(o, p)) __createBinding(o, m, p);
+}
+
+function __values(o) {
+    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
+    if (m) return m.call(o);
+    if (o && typeof o.length === "number") return {
+        next: function () {
+            if (o && i >= o.length) o = void 0;
+            return { value: o && o[i++], done: !o };
+        }
+    };
+    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
+}
+
+function __read(o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
+    }
+    catch (error) { e = { error: error }; }
+    finally {
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        }
+        finally { if (e) throw e.error; }
+    }
+    return ar;
+}
+
+/** @deprecated */
+function __spread() {
+    for (var ar = [], i = 0; i < arguments.length; i++)
+        ar = ar.concat(__read(arguments[i]));
+    return ar;
+}
+
+/** @deprecated */
+function __spreadArrays() {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+}
+
+function __spreadArray(to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+}
+
+function __await(v) {
+    return this instanceof __await ? (this.v = v, this) : new __await(v);
+}
+
+function __asyncGenerator(thisArg, _arguments, generator) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var g = generator.apply(thisArg, _arguments || []), i, q = [];
+    return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
+    function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
+    function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
+    function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
+    function fulfill(value) { resume("next", value); }
+    function reject(value) { resume("throw", value); }
+    function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
+}
+
+function __asyncDelegator(o) {
+    var i, p;
+    return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
+    function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
+}
+
+function __asyncValues(o) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var m = o[Symbol.asyncIterator], i;
+    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
+    function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
+    function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
+}
+
+function __makeTemplateObject(cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
+
+var __setModuleDefault = Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+};
+
+function __importStar(mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+}
+
+function __importDefault(mod) {
+    return (mod && mod.__esModule) ? mod : { default: mod };
+}
+
+function __classPrivateFieldGet(receiver, state, kind, f) {
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
+    return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
+}
+
+function __classPrivateFieldSet(receiver, state, value, kind, f) {
+    if (kind === "m") throw new TypeError("Private method is not writable");
+    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
+    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
+    return (kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value)), value;
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Board.vue?vue&type=style&index=0&id=36375f90&scoped=true&lang=css&":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Board.vue?vue&type=style&index=0&id=36375f90&scoped=true&lang=css& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js */ "./node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\n.header[data-v-36375f90] {\n    height: 40px;\n}\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/List.vue?vue&type=style&index=0&id=1856aeee&scoped=true&lang=css&":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/List.vue?vue&type=style&index=0&id=1856aeee&scoped=true&lang=css& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js */ "./node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\n.list[data-v-1856aeee] {\n    width: 250px;\n    min-width: 250px;\n}\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js ***!
+  \******************************************************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+/*
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+// eslint-disable-next-line func-names
+module.exports = function (cssWithMappingToString) {
+  var list = []; // return the list of modules as css string
+
+  list.toString = function toString() {
+    return this.map(function (item) {
+      var content = cssWithMappingToString(item);
+
+      if (item[2]) {
+        return "@media ".concat(item[2], " {").concat(content, "}");
+      }
+
+      return content;
+    }).join("");
+  }; // import a list of modules into the list
+  // eslint-disable-next-line func-names
+
+
+  list.i = function (modules, mediaQuery, dedupe) {
+    if (typeof modules === "string") {
+      // eslint-disable-next-line no-param-reassign
+      modules = [[null, modules, ""]];
+    }
+
+    var alreadyImportedModules = {};
+
+    if (dedupe) {
+      for (var i = 0; i < this.length; i++) {
+        // eslint-disable-next-line prefer-destructuring
+        var id = this[i][0];
+
+        if (id != null) {
+          alreadyImportedModules[id] = true;
+        }
+      }
+    }
+
+    for (var _i = 0; _i < modules.length; _i++) {
+      var item = [].concat(modules[_i]);
+
+      if (dedupe && alreadyImportedModules[item[0]]) {
+        // eslint-disable-next-line no-continue
+        continue;
+      }
+
+      if (mediaQuery) {
+        if (!item[2]) {
+          item[2] = mediaQuery;
+        } else {
+          item[2] = "".concat(mediaQuery, " and ").concat(item[2]);
+        }
+      }
+
+      list.push(item);
+    }
+  };
+
+  return list;
+};
 
 /***/ }),
 
@@ -27999,10 +24610,10 @@ process.umask = function() { return 0; };
 
 /***/ }),
 
-/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Board.vue?vue&type=style&index=0&id=36375f90&scoped=true&lang=css&":
-/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Board.vue?vue&type=style&index=0&id=36375f90&scoped=true&lang=css& ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Board.vue?vue&type=style&index=0&id=36375f90&scoped=true&lang=css&":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Board.vue?vue&type=style&index=0&id=36375f90&scoped=true&lang=css& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -28012,7 +24623,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Board_vue_vue_type_style_index_0_id_36375f90_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Board.vue?vue&type=style&index=0&id=36375f90&scoped=true&lang=css& */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Board.vue?vue&type=style&index=0&id=36375f90&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Board_vue_vue_type_style_index_0_id_36375f90_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Board.vue?vue&type=style&index=0&id=36375f90&scoped=true&lang=css& */ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Board.vue?vue&type=style&index=0&id=36375f90&scoped=true&lang=css&");
 
             
 
@@ -28021,18 +24632,18 @@ var options = {};
 options.insert = "head";
 options.singleton = false;
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Board_vue_vue_type_style_index_0_id_36375f90_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"], options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Board_vue_vue_type_style_index_0_id_36375f90_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"], options);
 
 
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Board_vue_vue_type_style_index_0_id_36375f90_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Board_vue_vue_type_style_index_0_id_36375f90_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ }),
 
-/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Card.vue?vue&type=style&index=0&id=b9bc2c0a&scoped=true&lang=css&":
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Card.vue?vue&type=style&index=0&id=b9bc2c0a&scoped=true&lang=css& ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/List.vue?vue&type=style&index=0&id=1856aeee&scoped=true&lang=css&":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/List.vue?vue&type=style&index=0&id=1856aeee&scoped=true&lang=css& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -28042,7 +24653,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Card_vue_vue_type_style_index_0_id_b9bc2c0a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Card.vue?vue&type=style&index=0&id=b9bc2c0a&scoped=true&lang=css& */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Card.vue?vue&type=style&index=0&id=b9bc2c0a&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_List_vue_vue_type_style_index_0_id_1856aeee_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./List.vue?vue&type=style&index=0&id=1856aeee&scoped=true&lang=css& */ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/List.vue?vue&type=style&index=0&id=1856aeee&scoped=true&lang=css&");
 
             
 
@@ -28051,41 +24662,11 @@ var options = {};
 options.insert = "head";
 options.singleton = false;
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Card_vue_vue_type_style_index_0_id_b9bc2c0a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"], options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_List_vue_vue_type_style_index_0_id_1856aeee_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"], options);
 
 
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Card_vue_vue_type_style_index_0_id_b9bc2c0a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/List.vue?vue&type=style&index=0&id=1856aeee&scoped=true&lang=css&":
-/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/List.vue?vue&type=style&index=0&id=1856aeee&scoped=true&lang=css& ***!
-  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_List_vue_vue_type_style_index_0_id_1856aeee_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./List.vue?vue&type=style&index=0&id=1856aeee&scoped=true&lang=css& */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/List.vue?vue&type=style&index=0&id=1856aeee&scoped=true&lang=css&");
-
-            
-
-var options = {};
-
-options.insert = "head";
-options.singleton = false;
-
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_List_vue_vue_type_style_index_0_id_1856aeee_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"], options);
-
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_List_vue_vue_type_style_index_0_id_1856aeee_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_List_vue_vue_type_style_index_0_id_1856aeee_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ }),
 
@@ -28448,8 +25029,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "invariant": () => (/* binding */ invariant),
 /* harmony export */   "process": () => (/* binding */ processStub)
 /* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/ts-invariant/node_modules/tslib/tslib.es6.js");
-/* provided dependency */ var process = __webpack_require__(/*! process/browser */ "./node_modules/process/browser.js");
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* provided dependency */ var process = __webpack_require__(/*! process/browser.js */ "./node_modules/process/browser.js");
 
 
 var genericMessage = "Invariant Violation";
@@ -28516,10 +25097,10 @@ var invariant$1 = invariant;
 
 /***/ }),
 
-/***/ "./node_modules/ts-invariant/node_modules/tslib/tslib.es6.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/ts-invariant/node_modules/tslib/tslib.es6.js ***!
-  \*******************************************************************/
+/***/ "./node_modules/tslib/tslib.es6.js":
+/*!*****************************************!*\
+  !*** ./node_modules/tslib/tslib.es6.js ***!
+  \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -28766,283 +25347,6 @@ function __classPrivateFieldSet(receiver, privateMap, value) {
     }
     privateMap.set(receiver, value);
     return value;
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/tslib/tslib.es6.js":
-/*!*****************************************!*\
-  !*** ./node_modules/tslib/tslib.es6.js ***!
-  \*****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "__extends": () => (/* binding */ __extends),
-/* harmony export */   "__assign": () => (/* binding */ __assign),
-/* harmony export */   "__rest": () => (/* binding */ __rest),
-/* harmony export */   "__decorate": () => (/* binding */ __decorate),
-/* harmony export */   "__param": () => (/* binding */ __param),
-/* harmony export */   "__metadata": () => (/* binding */ __metadata),
-/* harmony export */   "__awaiter": () => (/* binding */ __awaiter),
-/* harmony export */   "__generator": () => (/* binding */ __generator),
-/* harmony export */   "__createBinding": () => (/* binding */ __createBinding),
-/* harmony export */   "__exportStar": () => (/* binding */ __exportStar),
-/* harmony export */   "__values": () => (/* binding */ __values),
-/* harmony export */   "__read": () => (/* binding */ __read),
-/* harmony export */   "__spread": () => (/* binding */ __spread),
-/* harmony export */   "__spreadArrays": () => (/* binding */ __spreadArrays),
-/* harmony export */   "__spreadArray": () => (/* binding */ __spreadArray),
-/* harmony export */   "__await": () => (/* binding */ __await),
-/* harmony export */   "__asyncGenerator": () => (/* binding */ __asyncGenerator),
-/* harmony export */   "__asyncDelegator": () => (/* binding */ __asyncDelegator),
-/* harmony export */   "__asyncValues": () => (/* binding */ __asyncValues),
-/* harmony export */   "__makeTemplateObject": () => (/* binding */ __makeTemplateObject),
-/* harmony export */   "__importStar": () => (/* binding */ __importStar),
-/* harmony export */   "__importDefault": () => (/* binding */ __importDefault),
-/* harmony export */   "__classPrivateFieldGet": () => (/* binding */ __classPrivateFieldGet),
-/* harmony export */   "__classPrivateFieldSet": () => (/* binding */ __classPrivateFieldSet)
-/* harmony export */ });
-/*! *****************************************************************************
-Copyright (c) Microsoft Corporation.
-
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */
-/* global Reflect, Promise */
-
-var extendStatics = function(d, b) {
-    extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
-    return extendStatics(d, b);
-};
-
-function __extends(d, b) {
-    if (typeof b !== "function" && b !== null)
-        throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-    extendStatics(d, b);
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-}
-
-var __assign = function() {
-    __assign = Object.assign || function __assign(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-        }
-        return t;
-    }
-    return __assign.apply(this, arguments);
-}
-
-function __rest(s, e) {
-    var t = {};
-    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-        t[p] = s[p];
-    if (s != null && typeof Object.getOwnPropertySymbols === "function")
-        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-                t[p[i]] = s[p[i]];
-        }
-    return t;
-}
-
-function __decorate(decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-}
-
-function __param(paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-}
-
-function __metadata(metadataKey, metadataValue) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
-}
-
-function __awaiter(thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-}
-
-function __generator(thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [op[0] & 2, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-}
-
-var __createBinding = Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-});
-
-function __exportStar(m, o) {
-    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(o, p)) __createBinding(o, m, p);
-}
-
-function __values(o) {
-    var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
-    if (m) return m.call(o);
-    if (o && typeof o.length === "number") return {
-        next: function () {
-            if (o && i >= o.length) o = void 0;
-            return { value: o && o[i++], done: !o };
-        }
-    };
-    throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
-}
-
-function __read(o, n) {
-    var m = typeof Symbol === "function" && o[Symbol.iterator];
-    if (!m) return o;
-    var i = m.call(o), r, ar = [], e;
-    try {
-        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
-    }
-    catch (error) { e = { error: error }; }
-    finally {
-        try {
-            if (r && !r.done && (m = i["return"])) m.call(i);
-        }
-        finally { if (e) throw e.error; }
-    }
-    return ar;
-}
-
-/** @deprecated */
-function __spread() {
-    for (var ar = [], i = 0; i < arguments.length; i++)
-        ar = ar.concat(__read(arguments[i]));
-    return ar;
-}
-
-/** @deprecated */
-function __spreadArrays() {
-    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
-    for (var r = Array(s), k = 0, i = 0; i < il; i++)
-        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
-            r[k] = a[j];
-    return r;
-}
-
-function __spreadArray(to, from, pack) {
-    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-        if (ar || !(i in from)) {
-            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-            ar[i] = from[i];
-        }
-    }
-    return to.concat(ar || Array.prototype.slice.call(from));
-}
-
-function __await(v) {
-    return this instanceof __await ? (this.v = v, this) : new __await(v);
-}
-
-function __asyncGenerator(thisArg, _arguments, generator) {
-    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-    var g = generator.apply(thisArg, _arguments || []), i, q = [];
-    return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
-    function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
-    function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
-    function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
-    function fulfill(value) { resume("next", value); }
-    function reject(value) { resume("throw", value); }
-    function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
-}
-
-function __asyncDelegator(o) {
-    var i, p;
-    return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
-    function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
-}
-
-function __asyncValues(o) {
-    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-    var m = o[Symbol.asyncIterator], i;
-    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
-    function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
-    function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
-}
-
-function __makeTemplateObject(cooked, raw) {
-    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
-    return cooked;
-};
-
-var __setModuleDefault = Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-};
-
-function __importStar(mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
-}
-
-function __importDefault(mod) {
-    return (mod && mod.__esModule) ? mod : { default: mod };
-}
-
-function __classPrivateFieldGet(receiver, state, kind, f) {
-    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a getter");
-    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
-    return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
-}
-
-function __classPrivateFieldSet(receiver, state, value, kind, f) {
-    if (kind === "m") throw new TypeError("Private method is not writable");
-    if (kind === "a" && !f) throw new TypeError("Private accessor was defined without a setter");
-    if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot write private member to an object whose class did not declare it");
-    return (kind === "a" ? f.call(receiver, value) : f ? f.value = value : state.set(receiver, value)), value;
 }
 
 
@@ -29556,10 +25860,13 @@ var utils_6 = utils.omit;
 var utils_7 = utils.addGqlError;
 var utils_8 = utils.noop;
 
+var skippAllKeys = {
+  query: '_skipAllQueries',
+  subscription: '_skipAllSubscriptions'
+};
+
 var SmartApollo = /*#__PURE__*/function () {
   function SmartApollo(vm, key, options) {
-    var autostart = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : true;
-
     _classCallCheck(this, SmartApollo);
 
     _defineProperty(this, "type", null);
@@ -29575,10 +25882,6 @@ var SmartApollo = /*#__PURE__*/function () {
     this._watchers = [];
     this._destroyed = false;
     this.lastApolloOptions = null;
-
-    if (autostart) {
-      this.autostart();
-    }
   }
 
   _createClass(SmartApollo, [{
@@ -29593,7 +25896,7 @@ var SmartApollo = /*#__PURE__*/function () {
           immediate: true,
           deep: this.options.deep
         });
-      } else if (!this.options.skip) {
+      } else if (!this.options.skip && !this.allSkip) {
         this.start();
       } else {
         this._skip = true;
@@ -29639,13 +25942,18 @@ var SmartApollo = /*#__PURE__*/function () {
       return this._skip;
     },
     set: function set(value) {
-      if (value) {
+      if (value || this.allSkip) {
         this.stop();
       } else {
         this.start();
       }
 
       this._skip = value;
+    }
+  }, {
+    key: "allSkip",
+    get: function get() {
+      return this.vm.$apollo[skippAllKeys[this.type]];
     }
   }, {
     key: "refresh",
@@ -29840,7 +26148,7 @@ var SmartQuery = /*#__PURE__*/function (_SmartApollo) {
       });
     }
 
-    _this = _super.call(this, vm, key, options, false);
+    _this = _super.call(this, vm, key, options);
 
     _defineProperty(_assertThisInitialized(_this), "type", 'query');
 
@@ -30258,25 +26566,35 @@ var SmartSubscription = /*#__PURE__*/function (_SmartApollo) {
 
   var _super = _createSuper(SmartSubscription);
 
-  function SmartSubscription() {
+  function SmartSubscription(vm, key, options) {
     var _this;
+
+    var autostart = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : true;
 
     _classCallCheck(this, SmartSubscription);
 
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _super.call.apply(_super, [this].concat(args));
+    _this = _super.call(this, vm, key, options);
 
     _defineProperty(_assertThisInitialized(_this), "type", 'subscription');
 
     _defineProperty(_assertThisInitialized(_this), "vueApolloSpecialKeys", ['variables', 'result', 'error', 'throttle', 'debounce', 'linkedQuery']);
 
+    if (autostart) {
+      _this.autostart();
+    }
+
     return _this;
   }
 
   _createClass(SmartSubscription, [{
+    key: "generateApolloOptions",
+    value: function generateApolloOptions(variables) {
+      var apolloOptions = _get(_getPrototypeOf(SmartSubscription.prototype), "generateApolloOptions", this).call(this, variables);
+
+      apolloOptions.onError = this.catchError.bind(this);
+      return apolloOptions;
+    }
+  }, {
     key: "executeApollo",
     value: function executeApollo(variables) {
       var variablesJson = JSON.stringify(variables);
@@ -30328,6 +26646,17 @@ var SmartSubscription = /*#__PURE__*/function (_SmartApollo) {
 
       if (typeof this.options.result === 'function') {
         this.options.result.call(this.vm, data, this.key);
+      }
+    }
+  }, {
+    key: "catchError",
+    value: function catchError(error) {
+      _get(_getPrototypeOf(SmartSubscription.prototype), "catchError", this).call(this, error); // Restart the subscription
+
+
+      if (!this.skip) {
+        this.stop();
+        this.start();
       }
     }
   }]);
@@ -30541,6 +26870,8 @@ var DollarApollo = /*#__PURE__*/function () {
   }, {
     key: "skipAllQueries",
     set: function set(value) {
+      this._skipAllQueries = value;
+
       for (var key in this.queries) {
         this.queries[key].skip = value;
       }
@@ -30549,6 +26880,8 @@ var DollarApollo = /*#__PURE__*/function () {
   }, {
     key: "skipAllSubscriptions",
     set: function set(value) {
+      this._skipAllSubscriptions = value;
+
       for (var key in this.subscriptions) {
         this.subscriptions[key].skip = value;
       }
@@ -31209,7 +27542,7 @@ function install(Vue, options) {
 }
 ApolloProvider.install = install; // eslint-disable-next-line no-undef
 
-ApolloProvider.version = "3.0.8"; // Apollo provider
+ApolloProvider.version = "3.1.0"; // Apollo provider
 
 var ApolloProvider$1 = ApolloProvider; // Components
 
@@ -31287,25 +27620,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Card_vue_vue_type_template_id_b9bc2c0a_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Card.vue?vue&type=template&id=b9bc2c0a&scoped=true& */ "./resources/js/components/Card.vue?vue&type=template&id=b9bc2c0a&scoped=true&");
+/* harmony import */ var _Card_vue_vue_type_template_id_b9bc2c0a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Card.vue?vue&type=template&id=b9bc2c0a& */ "./resources/js/components/Card.vue?vue&type=template&id=b9bc2c0a&");
 /* harmony import */ var _Card_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Card.vue?vue&type=script&lang=js& */ "./resources/js/components/Card.vue?vue&type=script&lang=js&");
-/* harmony import */ var _Card_vue_vue_type_style_index_0_id_b9bc2c0a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Card.vue?vue&type=style&index=0&id=b9bc2c0a&scoped=true&lang=css& */ "./resources/js/components/Card.vue?vue&type=style&index=0&id=b9bc2c0a&scoped=true&lang=css&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
-;
 
 
 /* normalize component */
-
-var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _Card_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Card_vue_vue_type_template_id_b9bc2c0a_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render,
-  _Card_vue_vue_type_template_id_b9bc2c0a_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  _Card_vue_vue_type_template_id_b9bc2c0a___WEBPACK_IMPORTED_MODULE_0__.render,
+  _Card_vue_vue_type_template_id_b9bc2c0a___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
   false,
   null,
-  "b9bc2c0a",
+  null,
   null
   
 )
@@ -31329,15 +27660,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _CardAddButton_vue_vue_type_template_id_1f284828___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CardAddButton.vue?vue&type=template&id=1f284828& */ "./resources/js/components/CardAddButton.vue?vue&type=template&id=1f284828&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _CardAddButton_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CardAddButton.vue?vue&type=script&lang=js& */ "./resources/js/components/CardAddButton.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
-var script = {}
+
+
 
 
 /* normalize component */
 ;
-var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
-  script,
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _CardAddButton_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _CardAddButton_vue_vue_type_template_id_1f284828___WEBPACK_IMPORTED_MODULE_0__.render,
   _CardAddButton_vue_vue_type_template_id_1f284828___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
   false,
@@ -31350,6 +27683,45 @@ var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__
 /* hot reload */
 if (false) { var api; }
 component.options.__file = "resources/js/components/CardAddButton.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/CardEditor.vue":
+/*!************************************************!*\
+  !*** ./resources/js/components/CardEditor.vue ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _CardEditor_vue_vue_type_template_id_16e9da70___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CardEditor.vue?vue&type=template&id=16e9da70& */ "./resources/js/components/CardEditor.vue?vue&type=template&id=16e9da70&");
+/* harmony import */ var _CardEditor_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CardEditor.vue?vue&type=script&lang=js& */ "./resources/js/components/CardEditor.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _CardEditor_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _CardEditor_vue_vue_type_template_id_16e9da70___WEBPACK_IMPORTED_MODULE_0__.render,
+  _CardEditor_vue_vue_type_template_id_16e9da70___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/CardEditor.vue"
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
 
 /***/ }),
@@ -31427,6 +27799,38 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/CardAddButton.vue?vue&type=script&lang=js&":
+/*!****************************************************************************!*\
+  !*** ./resources/js/components/CardAddButton.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardAddButton_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CardAddButton.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CardAddButton.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardAddButton_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/CardEditor.vue?vue&type=script&lang=js&":
+/*!*************************************************************************!*\
+  !*** ./resources/js/components/CardEditor.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardEditor_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CardEditor.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CardEditor.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardEditor_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
 /***/ "./resources/js/components/List.vue?vue&type=script&lang=js&":
 /*!*******************************************************************!*\
   !*** ./resources/js/components/List.vue?vue&type=script&lang=js& ***!
@@ -31451,20 +27855,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Board_vue_vue_type_style_index_0_id_36375f90_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/style-loader/dist/cjs.js!../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Board.vue?vue&type=style&index=0&id=36375f90&scoped=true&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Board.vue?vue&type=style&index=0&id=36375f90&scoped=true&lang=css&");
-
-
-/***/ }),
-
-/***/ "./resources/js/components/Card.vue?vue&type=style&index=0&id=b9bc2c0a&scoped=true&lang=css&":
-/*!***************************************************************************************************!*\
-  !*** ./resources/js/components/Card.vue?vue&type=style&index=0&id=b9bc2c0a&scoped=true&lang=css& ***!
-  \***************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Card_vue_vue_type_style_index_0_id_b9bc2c0a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Card.vue?vue&type=style&index=0&id=b9bc2c0a&scoped=true&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Card.vue?vue&type=style&index=0&id=b9bc2c0a&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Board_vue_vue_type_style_index_0_id_36375f90_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/style-loader/dist/cjs.js!../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Board.vue?vue&type=style&index=0&id=36375f90&scoped=true&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Board.vue?vue&type=style&index=0&id=36375f90&scoped=true&lang=css&");
 
 
 /***/ }),
@@ -31477,7 +27868,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_List_vue_vue_type_style_index_0_id_1856aeee_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./List.vue?vue&type=style&index=0&id=1856aeee&scoped=true&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/List.vue?vue&type=style&index=0&id=1856aeee&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_List_vue_vue_type_style_index_0_id_1856aeee_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./List.vue?vue&type=style&index=0&id=1856aeee&scoped=true&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/List.vue?vue&type=style&index=0&id=1856aeee&scoped=true&lang=css&");
 
 
 /***/ }),
@@ -31499,19 +27890,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/Card.vue?vue&type=template&id=b9bc2c0a&scoped=true&":
-/*!*************************************************************************************!*\
-  !*** ./resources/js/components/Card.vue?vue&type=template&id=b9bc2c0a&scoped=true& ***!
-  \*************************************************************************************/
+/***/ "./resources/js/components/Card.vue?vue&type=template&id=b9bc2c0a&":
+/*!*************************************************************************!*\
+  !*** ./resources/js/components/Card.vue?vue&type=template&id=b9bc2c0a& ***!
+  \*************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Card_vue_vue_type_template_id_b9bc2c0a_scoped_true___WEBPACK_IMPORTED_MODULE_0__.render),
-/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Card_vue_vue_type_template_id_b9bc2c0a_scoped_true___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Card_vue_vue_type_template_id_b9bc2c0a___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Card_vue_vue_type_template_id_b9bc2c0a___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Card_vue_vue_type_template_id_b9bc2c0a_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Card.vue?vue&type=template&id=b9bc2c0a&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Card.vue?vue&type=template&id=b9bc2c0a&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Card_vue_vue_type_template_id_b9bc2c0a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Card.vue?vue&type=template&id=b9bc2c0a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Card.vue?vue&type=template&id=b9bc2c0a&");
 
 
 /***/ }),
@@ -31529,6 +27920,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CardAddButton_vue_vue_type_template_id_1f284828___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CardAddButton_vue_vue_type_template_id_1f284828___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CardAddButton.vue?vue&type=template&id=1f284828& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CardAddButton.vue?vue&type=template&id=1f284828&");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/CardEditor.vue?vue&type=template&id=16e9da70&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/components/CardEditor.vue?vue&type=template&id=16e9da70& ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CardEditor_vue_vue_type_template_id_16e9da70___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CardEditor_vue_vue_type_template_id_16e9da70___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CardEditor_vue_vue_type_template_id_16e9da70___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./CardEditor.vue?vue&type=template&id=16e9da70& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CardEditor.vue?vue&type=template&id=16e9da70&");
 
 
 /***/ }),
@@ -31562,7 +27970,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -31576,25 +27984,25 @@ var render = function() {
         _c("div", { staticClass: "mx-4 mb-2 text-white font-bold text-lg" }, [
           _vm.$apollo.queries.board.loading
             ? _c("span", [_vm._v("loading...")])
-            : _c("span", [_vm._v(_vm._s(_vm.board.title))])
+            : _c("span", [_vm._v(_vm._s(_vm.board.title))]),
         ]),
         _vm._v(" "),
         _vm.board
           ? _c(
               "div",
               { staticClass: "flex flex-1 items-start overflow-x-auto mx-2" },
-              _vm._l(_vm.board.lists, function(list) {
+              _vm._l(_vm.board.lists, function (list) {
                 return _c("List", { key: list.id, attrs: { list: list } })
               }),
               1
             )
-          : _vm._e()
-      ])
+          : _vm._e(),
+      ]),
     ]
   )
 }
 var staticRenderFns = [
-  function() {
+  function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
@@ -31602,7 +28010,7 @@ var staticRenderFns = [
       "div",
       {
         staticClass:
-          "header text-white flex justify-between items-center mb-2 bg-yellow-600"
+          "header text-white flex justify-between items-center mb-2 bg-yellow-600",
       },
       [
         _c("div", { staticClass: "ml-2 w-1/3" }, [_vm._v("x")]),
@@ -31613,10 +28021,12 @@ var staticRenderFns = [
           [_vm._v("\n            Honeycomb\n        ")]
         ),
         _vm._v(" "),
-        _c("div", { staticClass: "mr-2 w-1/3 flex justify-end" }, [_vm._v("x")])
+        _c("div", { staticClass: "mr-2 w-1/3 flex justify-end" }, [
+          _vm._v("x"),
+        ]),
       ]
     )
-  }
+  },
 ]
 render._withStripped = true
 
@@ -31624,10 +28034,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Card.vue?vue&type=template&id=b9bc2c0a&scoped=true&":
-/*!****************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Card.vue?vue&type=template&id=b9bc2c0a&scoped=true& ***!
-  \****************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Card.vue?vue&type=template&id=b9bc2c0a&":
+/*!****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/Card.vue?vue&type=template&id=b9bc2c0a& ***!
+  \****************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -31636,7 +28046,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -31644,7 +28054,7 @@ var render = function() {
     "div",
     {
       staticClass:
-        "card bg-white rounded-sm p-2 cursor-pointer text-sm hover:bg-gray-100 mb-2"
+        "shadow-card bg-white rounded-sm p-2 cursor-pointer text-sm hover:bg-gray-100 mb-2",
     },
     [_vm._v("\n    " + _vm._s(_vm.card.title) + "\n")]
   )
@@ -31668,7 +28078,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -31676,10 +28086,59 @@ var render = function() {
     "div",
     {
       staticClass:
-        "rounded-sm p-2 text-gray-600 cursor-pointer hover:bg-gray-400 hover:text-gray-800 text-sm"
+        "rounded-sm p-2 text-gray-600 cursor-pointer hover:bg-gray-400 hover:text-gray-800 text-sm",
+      on: { click: _vm.addCard },
     },
     [_vm._v("\n    Add new card\n")]
   )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CardEditor.vue?vue&type=template&id=16e9da70&":
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/CardEditor.vue?vue&type=template&id=16e9da70& ***!
+  \**********************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c("textarea", {
+      directives: [
+        {
+          name: "model",
+          rawName: "v-model",
+          value: _vm.title,
+          expression: "title",
+        },
+      ],
+      staticClass:
+        "rounded-md shadow-card py-1 px-2 outline-none w-full text-gray-900 text-sm bg-white h-16 resize-none",
+      attrs: { placeholder: "Enter title" },
+      domProps: { value: _vm.title },
+      on: {
+        input: function ($event) {
+          if ($event.target.composing) {
+            return
+          }
+          _vm.title = $event.target.value
+        },
+      },
+    }),
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -31700,7 +28159,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function() {
+var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
@@ -31710,15 +28169,17 @@ var render = function() {
     [
       _c("div", { staticClass: "flex justify-between" }, [
         _c("div", { staticClass: "text-gray-800 pl-2 pb-2 font-bold" }, [
-          _vm._v("\n            " + _vm._s(_vm.list.title) + "\n        ")
-        ])
+          _vm._v("\n            " + _vm._s(_vm.list.title) + "\n        "),
+        ]),
       ]),
       _vm._v(" "),
-      _vm._l(_vm.list.cards, function(card) {
+      _vm._l(_vm.list.cards, function (card) {
         return _c("Card", { key: card.id, attrs: { card: card } })
       }),
       _vm._v(" "),
-      _c("CardAddButton")
+      _c("CardEditor"),
+      _vm._v(" "),
+      _c("CardAddButton"),
     ],
     2
   )
@@ -44550,16 +41011,6 @@ if (hasSymbols()) {
 
 /***/ }),
 
-/***/ "./resources/js/graphql/BoardsWithListsAndCards.gql":
-/*!**********************************************************!*\
-  !*** ./resources/js/graphql/BoardsWithListsAndCards.gql ***!
-  \**********************************************************/
-/***/ (() => {
-
-throw new Error("Module parse failed: Unexpected token (1:6)\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\n> query BoardsWithListsAndCards($id: ID!) {\n|     board(id: $id) {\n|         title");
-
-/***/ }),
-
 /***/ "./node_modules/graphql/error/GraphQLError.mjs":
 /*!*****************************************************!*\
   !*** ./node_modules/graphql/error/GraphQLError.mjs ***!
@@ -44704,11 +41155,12 @@ var GraphQLError = /*#__PURE__*/function (_Error) {
       return (0,_language_location_mjs__WEBPACK_IMPORTED_MODULE_0__.getLocation)(loc.source, loc.start);
     });
     _this.path = path !== null && path !== void 0 ? path : undefined;
-    _this.extensions = extensions !== null && extensions !== void 0 ? extensions : {};
     var originalExtensions = originalError === null || originalError === void 0 ? void 0 : originalError.extensions;
 
-    if ((0,_jsutils_isObjectLike_mjs__WEBPACK_IMPORTED_MODULE_1__["default"])(originalExtensions)) {
+    if (extensions == null && (0,_jsutils_isObjectLike_mjs__WEBPACK_IMPORTED_MODULE_1__["default"])(originalExtensions)) {
       _this.extensions = _objectSpread({}, originalExtensions);
+    } else {
+      _this.extensions = extensions !== null && extensions !== void 0 ? extensions : {};
     } // By being enumerable, JSON.stringify will include bellow properties in the resulting output.
     // This ensures that the simplest possible GraphQL service adheres to the spec.
 
