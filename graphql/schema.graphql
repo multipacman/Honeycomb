@@ -11,6 +11,10 @@ type Query {
     board(id: ID! @eq): Board @find
 }
 
+type Mutation {
+    cardAdd(input: CardAddInput! @spread): Card! @create
+}
+
 "updated data"
 type User {
     id: ID!
@@ -49,4 +53,11 @@ type Card {
     order: Int!
     list: CardList! @belongsTo
     owner: User! @belongsTo
+}
+
+input CardAddInput {
+    title: String!
+    order: Int!
+    list_id: ID!
+    owner_id: ID!
 }
