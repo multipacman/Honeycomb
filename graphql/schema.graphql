@@ -8,6 +8,11 @@ scalar DateTime
 type Query {
     users: [User!]! @paginate(defaultCount: 10)
     user(id: ID @eq): User @find
+    board(id: ID! @eq): Board @find
+}
+
+type Mutation {
+    cardAdd(input: CardAddInput! @spread): Card! @create
 }
 
 "updated data"
@@ -40,7 +45,7 @@ type CardList {
     board: Board! @belongsTo
 }
 
-type Cards {
+type Card {
     id: ID!
     created_at: DateTime!
     updated_at: DateTime!
@@ -48,4 +53,11 @@ type Cards {
     order: Int!
     list: CardList! @belongsTo
     owner: User! @belongsTo
+}
+
+input CardAddInput {
+    title: String!
+    order: Int!
+    list_id: ID!
+    owner_id: ID!
 }

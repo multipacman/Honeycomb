@@ -25,5 +25,10 @@
         "vue": "^2.6.12",
         "vue-loader": "^15.9.8",
         "vue-template-compiler": "^2.6.12"
+    },
+    "dependencies": {
+        "apollo-boost": "^0.4.9",
+        "graphql": "^15.2.0",
+        "vue-apollo": "^3.0.3"
     }
 }
