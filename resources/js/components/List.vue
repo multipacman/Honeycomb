@@ -13,12 +13,12 @@
             @deleted="$emit('card-deleted', { ...$event, listId: list.id })"
         ></Card>
 
-        <CardEditor
+        <CardAddEditor
             v-if="editing"
             @closed="editing = false"
             :list="list"
             @added="$emit('card-added', { ...$event, listId: list.id })"
-        ></CardEditor>
+        ></CardAddEditor>
         <CardAddButton v-else @viewEditor="editing = true"></CardAddButton>
     </div>
 </template>
@@ -26,9 +26,10 @@
 <script>
 import Card from "./Card";
 import CardAddButton from "./CardAddButton";
-import CardEditor from "./CardEditor";
+import CardAddEditor from "./CardAddEditor";
+
 export default {
-    components: { Card, CardAddButton, CardEditor },
+    components: { Card, CardAddButton, CardAddEditor },
     props: {
         list: Object
     },
