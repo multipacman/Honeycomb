@@ -1,5 +1,10 @@
 <template>
-    <CardEditor v-model="title" @closed="closed" @saved="addCard"></CardEditor>
+    <CardEditor
+        v-model="title"
+        @closed="closed"
+        @saved="addCard"
+        label="Add Card"
+    ></CardEditor>
 </template>
 
 <script>

@@ -11,6 +11,7 @@
             :key="card.id"
             :card="card"
             @deleted="$emit('card-deleted', { ...$event, listId: list.id })"
+            @updated="$emit('card-updated', { ...$event, listId: list.id })"
         ></Card>
 
         <CardAddEditor

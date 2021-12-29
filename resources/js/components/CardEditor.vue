@@ -16,7 +16,7 @@
                 @click="saved"
                 class="rounded-md py-1 px-3 bg-yellow-700 text-white cursor-pointer hover:bg-yellow-600 outline-none"
             >
-                Add Card
+                {{ label }}
             </button>
             <button
                 class="py-1 px-1 rounded-md hover:bg-gray-400 cursor-pointer text-gray-500"
@@ -30,7 +30,7 @@
 
 <script>
 export default {
-    props: ["value"],
+    props: ["value", "label"],
     mounted() {
         this.$refs.card.focus();
     },
