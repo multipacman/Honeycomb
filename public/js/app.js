@@ -5631,8 +5631,15 @@ __webpack_require__.r(__webpack_exports__);
 /*!*************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Login.vue?vue&type=script&lang=js& ***!
   \*************************************************************************************************************************************************************************************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _graphql_Login_gql__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./graphql/Login.gql */ "./resources/js/graphql/Login.gql");
+/* harmony import */ var _graphql_Login_gql__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_graphql_Login_gql__WEBPACK_IMPORTED_MODULE_0__);
 //
 //
 //
@@ -5692,42 +5699,54 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-// import Login from "./graphql/Login.gql";
-// import { gqlErrors } from "./utils";
+//
+//
+ // import { gqlErrors } from "./utils";
 // import Errors from "./components/Errors";
-// export default {
-//     components: { Errors },
-//     data() {
-//         return {
-//             email: null,
-//             password: null,
-//             errors: []
-//         };
-//     },
-//     methods: {
-//         async authenticate() {
-//             this.errors = [];
-//             try {
-//                 const response = await this.$apollo.mutate({
-//                     mutation: Login,
-//                     variables: {
-//                         email: this.email,
-//                         password: this.password
-//                     }
-//                 });
-//                 const user = response.data?.login;
-//                 if (user) {
-//                     this.$store.dispatch("setLoggedIn", true);
-//                     this.$store.commit("setUser", user);
-//                     this.$router.push({ name: "board" });
-//                 }
-//             } catch (err) {
-//                 this.errors = gqlErrors(err);
-//             }
-//         }
-//     }
-// };
-//
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  //     components: { Errors },
+  data: function data() {
+    return {
+      email: null,
+      password: null // errors: []
+
+    };
+  },
+  methods: {
+    authenticate: function authenticate() {
+      this.$apollo.mutate({
+        mutation: (_graphql_Login_gql__WEBPACK_IMPORTED_MODULE_0___default()),
+        variables: {
+          email: this.email,
+          password: this.password
+        }
+      });
+    }
+  } //     methods: {
+  //         async authenticate() {
+  //             this.errors = [];
+  //             try {
+  //                 const response = await this.$apollo.mutate({
+  //                     mutation: Login,
+  //                     variables: {
+  //                         email: this.email,
+  //                         password: this.password
+  //                     }
+  //                 });
+  //                 const user = response.data?.login;
+  //                 if (user) {
+  //                     this.$store.dispatch("setLoggedIn", true);
+  //                     this.$store.commit("setUser", user);
+  //                     this.$router.push({ name: "board" });
+  //                 }
+  //             } catch (err) {
+  //                 this.errors = gqlErrors(err);
+  //             }
+  //         }
+  //     }
+
+});
 
 /***/ }),
 
@@ -5737,6 +5756,8 @@ __webpack_require__.r(__webpack_exports__);
   \****************************************************************************************************************************************************************************************************/
 /***/ (() => {
 
+//
+//
 //
 //
 //
@@ -6166,7 +6187,14 @@ __webpack_require__.r(__webpack_exports__);
 
 vue__WEBPACK_IMPORTED_MODULE_1__["default"].use(vue_apollo__WEBPACK_IMPORTED_MODULE_0__["default"]);
 var apolloClient = new apollo_boost__WEBPACK_IMPORTED_MODULE_2__["default"]({
-  uri: "http://localhost:8000/graphql"
+  uri: "http://localhost:8000/graphql",
+  headers: {
+    "X-CSRF-TOKEN": document.querySelector('meta[name="csrf-token"]').content
+  },
+  credentials: "include",
+  onError: function onError(err) {
+    return console.log(err);
+  }
 });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vue_apollo__WEBPACK_IMPORTED_MODULE_0__["default"]({
   defaultClient: apolloClient
@@ -7011,6 +7039,138 @@ gql["default"] = gql;
     module.exports = doc;
     
         module.exports.CardUpdate = oneQuery(doc, "CardUpdate");
+        
+
+
+/***/ }),
+
+/***/ "./resources/js/graphql/Login.gql":
+/*!****************************************!*\
+  !*** ./resources/js/graphql/Login.gql ***!
+  \****************************************/
+/***/ ((module) => {
+
+
+    var doc = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"mutation","name":{"kind":"Name","value":"Login"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"email"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}},"directives":[]},{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"password"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"String"}}},"directives":[]}],"directives":[],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"login"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"email"},"value":{"kind":"Variable","name":{"kind":"Name","value":"email"}}},{"kind":"Argument","name":{"kind":"Name","value":"password"},"value":{"kind":"Variable","name":{"kind":"Name","value":"password"}}}],"directives":[],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"name"},"arguments":[],"directives":[]},{"kind":"Field","name":{"kind":"Name","value":"email"},"arguments":[],"directives":[]}]}}]}}],"loc":{"start":0,"end":148}};
+    doc.loc.source = {"body":"mutation Login($email: String!, $password: String!) {\n    login(email: $email, password: $password) {\n        id\n        name\n        email\n    }\n}\n","name":"GraphQL request","locationOffset":{"line":1,"column":1}};
+  
+
+    var names = {};
+    function unique(defs) {
+      return defs.filter(
+        function(def) {
+          if (def.kind !== 'FragmentDefinition') return true;
+          var name = def.name.value
+          if (names[name]) {
+            return false;
+          } else {
+            names[name] = true;
+            return true;
+          }
+        }
+      )
+    }
+  
+
+    // Collect any fragment/type references from a node, adding them to the refs Set
+    function collectFragmentReferences(node, refs) {
+      if (node.kind === "FragmentSpread") {
+        refs.add(node.name.value);
+      } else if (node.kind === "VariableDefinition") {
+        var type = node.type;
+        if (type.kind === "NamedType") {
+          refs.add(type.name.value);
+        }
+      }
+
+      if (node.selectionSet) {
+        node.selectionSet.selections.forEach(function(selection) {
+          collectFragmentReferences(selection, refs);
+        });
+      }
+
+      if (node.variableDefinitions) {
+        node.variableDefinitions.forEach(function(def) {
+          collectFragmentReferences(def, refs);
+        });
+      }
+
+      if (node.definitions) {
+        node.definitions.forEach(function(def) {
+          collectFragmentReferences(def, refs);
+        });
+      }
+    }
+
+    var definitionRefs = {};
+    (function extractReferences() {
+      doc.definitions.forEach(function(def) {
+        if (def.name) {
+          var refs = new Set();
+          collectFragmentReferences(def, refs);
+          definitionRefs[def.name.value] = refs;
+        }
+      });
+    })();
+
+    function findOperation(doc, name) {
+      for (var i = 0; i < doc.definitions.length; i++) {
+        var element = doc.definitions[i];
+        if (element.name && element.name.value == name) {
+          return element;
+        }
+      }
+    }
+
+    function oneQuery(doc, operationName) {
+      // Copy the DocumentNode, but clear out the definitions
+      var newDoc = {
+        kind: doc.kind,
+        definitions: [findOperation(doc, operationName)]
+      };
+      if (doc.hasOwnProperty("loc")) {
+        newDoc.loc = doc.loc;
+      }
+
+      // Now, for the operation we're running, find any fragments referenced by
+      // it or the fragments it references
+      var opRefs = definitionRefs[operationName] || new Set();
+      var allRefs = new Set();
+      var newRefs = new Set();
+
+      // IE 11 doesn't support "new Set(iterable)", so we add the members of opRefs to newRefs one by one
+      opRefs.forEach(function(refName) {
+        newRefs.add(refName);
+      });
+
+      while (newRefs.size > 0) {
+        var prevRefs = newRefs;
+        newRefs = new Set();
+
+        prevRefs.forEach(function(refName) {
+          if (!allRefs.has(refName)) {
+            allRefs.add(refName);
+            var childRefs = definitionRefs[refName] || new Set();
+            childRefs.forEach(function(childRef) {
+              newRefs.add(childRef);
+            });
+          }
+        });
+      }
+
+      allRefs.forEach(function(refName) {
+        var op = findOperation(doc, refName);
+        if (op) {
+          newDoc.definitions.push(op);
+        }
+      });
+
+      return newDoc;
+    }
+    
+    module.exports = doc;
+    
+        module.exports.Login = oneQuery(doc, "Login");
         
 
 
@@ -28457,9 +28617,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _Login_vue_vue_type_template_id_43b1518a_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Login.vue?vue&type=template&id=43b1518a&scoped=true& */ "./resources/js/Login.vue?vue&type=template&id=43b1518a&scoped=true&");
 /* harmony import */ var _Login_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Login.vue?vue&type=script&lang=js& */ "./resources/js/Login.vue?vue&type=script&lang=js&");
-/* harmony reexport (unknown) */ var __WEBPACK_REEXPORT_OBJECT__ = {};
-/* harmony reexport (unknown) */ for(const __WEBPACK_IMPORT_KEY__ in _Login_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== "default") __WEBPACK_REEXPORT_OBJECT__[__WEBPACK_IMPORT_KEY__] = () => _Login_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[__WEBPACK_IMPORT_KEY__]
-/* harmony reexport (unknown) */ __webpack_require__.d(__webpack_exports__, __WEBPACK_REEXPORT_OBJECT__);
 /* harmony import */ var _Login_vue_vue_type_style_index_0_id_43b1518a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Login.vue?vue&type=style&index=0&id=43b1518a&scoped=true&lang=css& */ "./resources/js/Login.vue?vue&type=style&index=0&id=43b1518a&scoped=true&lang=css&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
@@ -28755,11 +28912,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Login.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Login.vue?vue&type=script&lang=js&");
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ var __WEBPACK_REEXPORT_OBJECT__ = {};
-/* harmony reexport (unknown) */ for(const __WEBPACK_IMPORT_KEY__ in _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== "default") __WEBPACK_REEXPORT_OBJECT__[__WEBPACK_IMPORT_KEY__] = () => _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[__WEBPACK_IMPORT_KEY__]
-/* harmony reexport (unknown) */ __webpack_require__.d(__webpack_exports__, __WEBPACK_REEXPORT_OBJECT__);
- /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default())); 
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
@@ -29153,10 +29306,11 @@ var render = function () {
           _vm._v(" "),
           _c(
             "div",
-            { staticClass: "w-full sm:shadow-xl sm:bg-white sm:py-8 sm:px-12" },
+            {
+              staticClass:
+                "rounded-md w-full sm:shadow-xl sm:bg-white sm:py-8 sm:px-12",
+            },
             [
-              _c("Errors", { attrs: { errors: _vm.errors } }),
-              _vm._v(" "),
               _c(
                 "div",
                 {
@@ -29252,8 +29406,7 @@ var render = function () {
                 ],
                 1
               ),
-            ],
-            1
+            ]
           ),
         ]
       ),
@@ -29322,7 +29475,10 @@ var render = function () {
           _vm._v(" "),
           _c(
             "div",
-            { staticClass: "w-full sm:shadow-xl sm:bg-white sm:py-8 sm:px-12" },
+            {
+              staticClass:
+                "rounded-md w-full sm:shadow-xl sm:bg-white sm:py-8 sm:px-12",
+            },
             [
               _c("Errors", { attrs: { errors: _vm.errors } }),
               _vm._v(" "),

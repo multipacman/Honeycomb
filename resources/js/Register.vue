@@ -5,7 +5,9 @@
                 <span>Honeycomb</span>
             </div>
 
-            <div class="w-full sm:shadow-xl sm:bg-white sm:py-8 sm:px-12">
+            <div
+                class="rounded-md w-full sm:shadow-xl sm:bg-white sm:py-8 sm:px-12"
+            >
                 <Errors :errors="errors"></Errors>
                 <div class="w-full text-center text-gray-600 font-bold mb-8">
                     Create an account

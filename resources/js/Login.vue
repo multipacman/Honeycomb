@@ -5,8 +5,10 @@
                 <span>Honeycomb</span>
             </div>
 
-            <div class="w-full sm:shadow-xl sm:bg-white sm:py-8 sm:px-12">
-                <Errors :errors="errors"></Errors>
+            <div
+                class="rounded-md w-full sm:shadow-xl sm:bg-white sm:py-8 sm:px-12"
+            >
+                <!-- <Errors :errors="errors"></Errors> -->
 
                 <div class="w-full text-center text-gray-600 font-bold mb-8">
                     Log in to Honeycomb
@@ -58,45 +60,55 @@
 
 //
 <script>
-// import Login from "./graphql/Login.gql";
+import Login from "./graphql/Login.gql";
 // import { gqlErrors } from "./utils";
 // import Errors from "./components/Errors";
 
-// export default {
-//     components: { Errors },
-//     data() {
-//         return {
-//             email: null,
-//             password: null,
-//             errors: []
-//         };
-//     },
-//     methods: {
-//         async authenticate() {
-//             this.errors = [];
+export default {
+    //     components: { Errors },
+    data() {
+        return {
+            email: null,
+            password: null
+            // errors: []
+        };
+    },
+    methods: {
+        authenticate() {
+            this.$apollo.mutate({
+                mutation: Login,
+                variables: {
+                    email: this.email,
+                    password: this.password
+                }
+            });
+        }
+    }
+    //     methods: {
+    //         async authenticate() {
+    //             this.errors = [];
 
-//             try {
-//                 const response = await this.$apollo.mutate({
-//                     mutation: Login,
-//                     variables: {
-//                         email: this.email,
-//                         password: this.password
-//                     }
-//                 });
-//                 const user = response.data?.login;
+    //             try {
+    //                 const response = await this.$apollo.mutate({
+    //                     mutation: Login,
+    //                     variables: {
+    //                         email: this.email,
+    //                         password: this.password
+    //                     }
+    //                 });
+    //                 const user = response.data?.login;
 
-//                 if (user) {
-//                     this.$store.dispatch("setLoggedIn", true);
-//                     this.$store.commit("setUser", user);
-//                     this.$router.push({ name: "board" });
-//                 }
-//             } catch (err) {
-//                 this.errors = gqlErrors(err);
-//             }
-//         }
-//     }
-// };
-//
+    //                 if (user) {
+    //                     this.$store.dispatch("setLoggedIn", true);
+    //                     this.$store.commit("setUser", user);
+    //                     this.$router.push({ name: "board" });
+    //                 }
+    //             } catch (err) {
+    //                 this.errors = gqlErrors(err);
+    //             }
+    //         }
+    //     }
+};
 </script>
 
 <style scoped>
