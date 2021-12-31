@@ -104,7 +104,6 @@ export default {
             } catch (err) {
                 this.errors = gqlErrors(err);
             }
-            this.$router.push({ name: "board" });
         },
     },
 };

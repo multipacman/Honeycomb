@@ -59,6 +59,7 @@
 import Login from "./graphql/Login.gql";
 import { gqlErrors } from "./utils";
 import Errors from "./components/Errors";
+import UserBoard from "./graphql/UserBoard.gql";
 
 export default {
     components: { Errors },
@@ -72,7 +73,6 @@ export default {
     methods: {
         async authenticate() {
             this.errors = [];
-
             try {
                 const response = await this.$apollo.mutate({
                     mutation: Login,
@@ -84,14 +84,28 @@ export default {
                 const user = response.data?.login;
 
                 if (user) {
+                    const firstBoardId = await this.$apollo.mutate({
+                        mutation: UserBoard,
+                        variables: { userId: user.id },
+                    });
+                    // console.log(firstBoardId);
                     this.$store.dispatch("setLoggedIn", true);
                     this.$store.commit("setUser", user);
-                    this.$router.push({ name: "board" });
+                    if (firstBoardId.data.userBoard == null) {
+                        this.$router.push({
+                            name: "board",
+                            params: { id: 0 },
+                        });
+                    } else {
+                        this.$router.push({
+                            name: "board",
+                            params: { id: firstBoardId.data.userBoard.id },
+                        });
+                    }
                 }
             } catch (err) {
                 this.errors = gqlErrors(err);
             }
-            this.$router.push({ name: "board" });
         },
     },
 };
