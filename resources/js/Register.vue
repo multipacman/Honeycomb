@@ -67,47 +67,47 @@
 </template>
 
 <script>
-// import Register from "./graphql/Register.gql";
-// import { gqlErrors } from "./utils";
-// import Errors from "./components/Errors";
+import Register from "./graphql/Register.gql";
+import { gqlErrors } from "./utils";
+import Errors from "./components/Errors";
 
-// export default {
-//   components: { Errors },
-//   data() {
-//     return {
-//       email: null,
-//       password: null,
-//       name: null,
-//       errors: []
-//     };
-//   },
-//   methods: {
-//     async register() {
-//       this.errors = [];
+export default {
+    components: { Errors },
+    data() {
+        return {
+            email: null,
+            password: null,
+            name: null,
+            errors: [],
+        };
+    },
+    methods: {
+        async register() {
+            this.errors = [];
 
-//       try {
-//         const response = await this.$apollo.mutate({
-//           mutation: Register,
-//           variables: {
-//             email: this.email,
-//             password: this.password,
-//             name: this.name
-//           }
-//         });
-//         const user = response.data?.register;
+            try {
+                const response = await this.$apollo.mutate({
+                    mutation: Register,
+                    variables: {
+                        email: this.email,
+                        password: this.password,
+                        name: this.name,
+                    },
+                });
+                const user = response.data?.register;
 
-//         if (user) {
-//           this.$store.dispatch("setLoggedIn", true);
-//           this.$store.commit("setUser", user);
-//           this.$router.push({ name: "board" });
-//         }
-//       } catch (err) {
-//         this.errors = gqlErrors(err);
-//       }
-//     }
-//   }
-// };
-//
+                if (user) {
+                    this.$store.dispatch("setLoggedIn", true);
+                    this.$store.commit("setUser", user);
+                    this.$router.push({ name: "board" });
+                }
+            } catch (err) {
+                this.errors = gqlErrors(err);
+            }
+            this.$router.push({ name: "board" });
+        },
+    },
+};
 </script>
 
 <style scoped>
