@@ -1,7 +1,7 @@
 <template>
     <div class="bg-white sm:bg-gray-100 h-full flex justify-center">
         <div class="container mt-2 sm:mt-10 flex flex-col items-center">
-            <div class="text-3xl text-yellow-500 font-bold mb-10">
+            <div class="text-3xl text-blue-700 font-bold mb-10">
                 <span>Honeycomb</span>
             </div>
 
@@ -34,7 +34,7 @@
                     <div class="w-full mb-6">
                         <button
                             type="submit"
-                            class="rounded-md px-4 py-2 text-sam bg-yellow-500 font-bold outline-none focus:outline-none hover:bg-opacity-75 w-full text-white disabled:opacity-25"
+                            class="rounded-sm px-4 py-2 text-sam bg-green-500 font-bold outline-none focus:outline-none hover:bg-opacity-75 w-full text-white disabled:opacity-25"
                         >
                             Login
                         </button>
@@ -44,7 +44,6 @@
                 <div class="bg-gray-400 h-px w-full mb-6"></div>
 
                 <div class="text-center text-sm">
-                    New user?
                     <router-link
                         :to="{ name: 'register' }"
                         class="text-blue-600 hover:underline"
@@ -56,47 +55,60 @@
     </div>
 </template>
 
-//
 <script>
-// import Login from "./graphql/Login.gql";
-// import { gqlErrors } from "./utils";
-// import Errors from "./components/Errors";
+import Login from "./graphql/Login.gql";
+import { gqlErrors } from "./utils";
+import Errors from "./components/Errors";
+import UserBoard from "./graphql/UserBoard.gql";
 
-// export default {
-//     components: { Errors },
-//     data() {
-//         return {
-//             email: null,
-//             password: null,
-//             errors: []
-//         };
-//     },
-//     methods: {
-//         async authenticate() {
-//             this.errors = [];
+export default {
+    components: { Errors },
+    data() {
+        return {
+            email: null,
+            password: null,
+            errors: [],
+        };
+    },
+    methods: {
+        async authenticate() {
+            this.errors = [];
+            try {
+                const response = await this.$apollo.mutate({
+                    mutation: Login,
+                    variables: {
+                        email: this.email,
+                        password: this.password,
+                    },
+                });
+                const user = response.data?.login;
 
-//             try {
-//                 const response = await this.$apollo.mutate({
-//                     mutation: Login,
-//                     variables: {
-//                         email: this.email,
-//                         password: this.password
-//                     }
-//                 });
-//                 const user = response.data?.login;
-
-//                 if (user) {
-//                     this.$store.dispatch("setLoggedIn", true);
-//                     this.$store.commit("setUser", user);
-//                     this.$router.push({ name: "board" });
-//                 }
-//             } catch (err) {
-//                 this.errors = gqlErrors(err);
-//             }
-//         }
-//     }
-// };
-//
+                if (user) {
+                    const firstBoardId = await this.$apollo.mutate({
+                        mutation: UserBoard,
+                        variables: { userId: user.id },
+                    });
+                    // console.log(firstBoardId);
+                    this.$store.dispatch("setLoggedIn", true);
+                    this.$store.commit("setUser", user);
+                    if (firstBoardId.data.userBoard == null) {
+                        this.$router.push({
+                            name: "board",
+                            params: { id: 0 },
+                        });
+                    } else {
+                        this.$router.push({
+                            name: "board",
+                            params: { id: firstBoardId.data.userBoard.id },
+                        });
+                    }
+                }
+            } catch (err) {
+                this.errors = gqlErrors(err);
+            }
+        },
+    },
+};
 </script>
 
 <style scoped>
