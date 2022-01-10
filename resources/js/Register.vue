@@ -5,7 +5,9 @@
                 <span>Honeycomb</span>
             </div>
 
-            <div class="w-full sm:shadow-xl sm:bg-white sm:py-8 sm:px-12">
+            <div
+                class="rounded-md w-full sm:shadow-xl sm:bg-white sm:py-8 sm:px-12"
+            >
                 <Errors :errors="errors"></Errors>
                 <div class="w-full text-center text-gray-600 font-bold mb-8">
                     Create an account
@@ -42,7 +44,7 @@
                     <div class="w-full mb-6">
                         <button
                             type="submit"
-                            class="rounded-md px-4 py-2 text-sam bg-yellow-500 font-bold outline-none focus:outline-none hover:bg-opacity-75 w-full text-white disabled:opacity-25"
+                            class="rounded-sm px-4 py-2 text-sam bg-yellow-500 font-bold outline-none focus:outline-none hover:bg-opacity-75 w-full text-white disabled:opacity-25"
                         >
                             Signup
                         </button>
@@ -55,7 +57,7 @@
                     Already have an account?
                     <router-link
                         :to="{ name: 'login' }"
-                        class="text-blue-600 hover:underline"
+                        class="text-yellow-600 hover:underline"
                         >Log in</router-link
                     >
                 </div>
@@ -65,47 +67,46 @@
 </template>
 
 <script>
-// import Register from "./graphql/Register.gql";
-// import { gqlErrors } from "./utils";
-// import Errors from "./components/Errors";
+import Register from "./graphql/Register.gql";
+import { gqlErrors } from "./utils";
+import Errors from "./components/Errors";
 
-// export default {
-//   components: { Errors },
-//   data() {
-//     return {
-//       email: null,
-//       password: null,
-//       name: null,
-//       errors: []
-//     };
-//   },
-//   methods: {
-//     async register() {
-//       this.errors = [];
+export default {
+    components: { Errors },
+    data() {
+        return {
+            email: null,
+            password: null,
+            name: null,
+            errors: [],
+        };
+    },
+    methods: {
+        async register() {
+            this.errors = [];
 
-//       try {
-//         const response = await this.$apollo.mutate({
-//           mutation: Register,
-//           variables: {
-//             email: this.email,
-//             password: this.password,
-//             name: this.name
-//           }
-//         });
-//         const user = response.data?.register;
+            try {
+                const response = await this.$apollo.mutate({
+                    mutation: Register,
+                    variables: {
+                        email: this.email,
+                        password: this.password,
+                        name: this.name,
+                    },
+                });
+                const user = response.data?.register;
 
-//         if (user) {
-//           this.$store.dispatch("setLoggedIn", true);
-//           this.$store.commit("setUser", user);
-//           this.$router.push({ name: "board" });
-//         }
-//       } catch (err) {
-//         this.errors = gqlErrors(err);
-//       }
-//     }
-//   }
-// };
-//
+                if (user) {
+                    this.$store.dispatch("setLoggedIn", true);
+                    this.$store.commit("setUser", user);
+                    this.$router.push({ name: "board" });
+                }
+            } catch (err) {
+                this.errors = gqlErrors(err);
+            }
+        },
+    },
+};
 </script>
 
 <style scoped>

@@ -5,7 +5,9 @@
                 <span>Honeycomb</span>
             </div>
 
-            <div class="w-full sm:shadow-xl sm:bg-white sm:py-8 sm:px-12">
+            <div
+                class="rounded-md w-full sm:shadow-xl sm:bg-white sm:py-8 sm:px-12"
+            >
                 <Errors :errors="errors"></Errors>
 
                 <div class="w-full text-center text-gray-600 font-bold mb-8">
@@ -34,7 +36,7 @@
                     <div class="w-full mb-6">
                         <button
                             type="submit"
-                            class="rounded-md px-4 py-2 text-sam bg-yellow-500 font-bold outline-none focus:outline-none hover:bg-opacity-75 w-full text-white disabled:opacity-25"
+                            class="rounded-sm px-4 py-2 text-sam bg-yellow-500 font-bold outline-none focus:outline-none hover:bg-opacity-75 w-full text-white disabled:opacity-25"
                         >
                             Login
                         </button>
@@ -44,10 +46,9 @@
                 <div class="bg-gray-400 h-px w-full mb-6"></div>
 
                 <div class="text-center text-sm">
-                    New user?
                     <router-link
                         :to="{ name: 'register' }"
-                        class="text-blue-600 hover:underline"
+                        class="text-yellow-600 hover:underline"
                         >Sign up for an account</router-link
                     >
                 </div>
@@ -56,47 +57,60 @@
     </div>
 </template>
 
-//
 <script>
-// import Login from "./graphql/Login.gql";
-// import { gqlErrors } from "./utils";
-// import Errors from "./components/Errors";
+import Login from "./graphql/Login.gql";
+import { gqlErrors } from "./utils";
+import Errors from "./components/Errors";
+import UserBoard from "./graphql/UserBoard.gql";
 
-// export default {
-//     components: { Errors },
-//     data() {
-//         return {
-//             email: null,
-//             password: null,
-//             errors: []
-//         };
-//     },
-//     methods: {
-//         async authenticate() {
-//             this.errors = [];
+export default {
+    components: { Errors },
+    data() {
+        return {
+            email: null,
+            password: null,
+            errors: [],
+        };
+    },
+    methods: {
+        async authenticate() {
+            this.errors = [];
+            try {
+                const response = await this.$apollo.mutate({
+                    mutation: Login,
+                    variables: {
+                        email: this.email,
+                        password: this.password,
+                    },
+                });
+                const user = response.data?.login;
 
-//             try {
-//                 const response = await this.$apollo.mutate({
-//                     mutation: Login,
-//                     variables: {
-//                         email: this.email,
-//                         password: this.password
-//                     }
-//                 });
-//                 const user = response.data?.login;
-
-//                 if (user) {
-//                     this.$store.dispatch("setLoggedIn", true);
-//                     this.$store.commit("setUser", user);
-//                     this.$router.push({ name: "board" });
-//                 }
-//             } catch (err) {
-//                 this.errors = gqlErrors(err);
-//             }
-//         }
-//     }
-// };
-//
+                if (user) {
+                    const firstBoardId = await this.$apollo.mutate({
+                        mutation: UserBoard,
+                        variables: { userId: user.id },
+                    });
+                    // console.log(firstBoardId);
+                    this.$store.dispatch("setLoggedIn", true);
+                    this.$store.commit("setUser", user);
+                    if (firstBoardId.data.userBoard == null) {
+                        this.$router.push({
+                            name: "board",
+                            params: { id: 0 },
+                        });
+                    } else {
+                        this.$router.push({
+                            name: "board",
+                            params: { id: firstBoardId.data.userBoard.id },
+                        });
+                    }
+                }
+            } catch (err) {
+                this.errors = gqlErrors(err);
+            }
+        },
+    },
+};
 </script>
 
 <style scoped>

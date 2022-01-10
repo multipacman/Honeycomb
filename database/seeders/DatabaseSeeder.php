@@ -20,10 +20,10 @@ class DatabaseSeeder extends Seeder
         ModelsUser::factory(10)->create();
 
         $board1 = Board::create([
-            'title' => 'Groceries', 'color'=> 'teal', 'owner_id'=> 1
+            'title' => 'Groceries', 'color'=> 'red', 'owner_id'=> 1
         ]); 
         $board2 = Board::create([
-            'title' => 'Work', 'color'=> 'orange', 'owner_id'=> 2
+            'title' => 'Work', 'color'=> 'yellow', 'owner_id'=> 2
         ]); 
         $board3 = Board::create([
             'title' => 'Hobby', 'color'=> 'indigo', 'owner_id'=> 1
