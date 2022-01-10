@@ -8,6 +8,7 @@ import Dashboard from "./Dashboard.vue";
 Vue.use(VueRouter);
 
 const routes = [
+    { path: "/", name: "home", component: Dashboard },
     { path: "/board/:id", name: "board", component: Board },
     { path: "/login", name: "login", component: Login },
     { path: "/register", name: "register", component: Register },

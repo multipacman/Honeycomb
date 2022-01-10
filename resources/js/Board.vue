@@ -113,7 +113,7 @@ export default {
 
             if (response.data?.logout?.id) {
                 this.$store.dispatch("logout");
-                // this.$store.dispatch("setLoggedIn", false);
+                this.$store.dispatch("setLoggedIn", false);
             }
         },
         updateQueryCache(event) {
