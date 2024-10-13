@@ -5691,8 +5691,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
                 response = _context.sent;
 
                 if ((_response$data = response.data) !== null && _response$data !== void 0 && (_response$data$logout = _response$data.logout) !== null && _response$data$logout !== void 0 && _response$data$logout.id) {
-                  _this.$store.dispatch("logout"); // this.$store.dispatch("setLoggedIn", false);
+                  _this.$store.dispatch("logout");
 
+                  _this.$store.dispatch("setLoggedIn", false);
                 }
 
               case 4:
@@ -5777,6 +5778,8 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
+//
+//
 //
 //
 //
@@ -6915,18 +6918,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
-/* harmony import */ var apollo_boost__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! apollo-boost */ "./node_modules/apollo-boost/lib/bundle.esm.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+/* harmony import */ var apollo_boost__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! apollo-boost */ "./node_modules/apollo-boost/lib/bundle.esm.js");
 /* harmony import */ var vue_apollo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-apollo */ "./node_modules/vue-apollo/dist/vue-apollo.esm.js");
+/* harmony import */ var js_cookie__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! js-cookie */ "./node_modules/js-cookie/dist/js.cookie.mjs");
 
 
 
-vue__WEBPACK_IMPORTED_MODULE_1__["default"].use(vue_apollo__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
+vue__WEBPACK_IMPORTED_MODULE_2__["default"].use(vue_apollo__WEBPACK_IMPORTED_MODULE_0__["default"]);
 var csrfToken = document.querySelector('meta[name="csrf-token"]').content;
-var apolloClient = new apollo_boost__WEBPACK_IMPORTED_MODULE_2__["default"]({
+var token = js_cookie__WEBPACK_IMPORTED_MODULE_1__["default"].get("XSRF-TOKEN");
+var apolloClient = new apollo_boost__WEBPACK_IMPORTED_MODULE_3__["default"]({
   uri: "http://localhost:8000/graphql",
   headers: {
-    "X-CSRF-TOKEN": csrfToken
+    "X-CSRF-TOKEN": csrfToken // "Access-Control-Allow-Credentials": true,
+    // authorization: `Bearer ${token}`,
+    // "X-XSRF-TOKEN": token,
+
   },
   credentials: "include",
   onError: function onError(err) {
@@ -7035,6 +7044,10 @@ __webpack_require__.r(__webpack_exports__);
 
 vue__WEBPACK_IMPORTED_MODULE_4__["default"].use(vue_router__WEBPACK_IMPORTED_MODULE_5__["default"]);
 var routes = [{
+  path: "/",
+  name: "home",
+  component: _Dashboard_vue__WEBPACK_IMPORTED_MODULE_3__["default"]
+}, {
   path: "/board/:id",
   name: "board",
   component: _Board_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
@@ -32902,9 +32915,152 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._v("Hellow")])
+  return _c(
+    "div",
+    { staticClass: "relative h-full bg-white overflow-hidden" },
+    [
+      _c("div", { staticClass: "max-w-7xl mx-auto" }, [
+        _c(
+          "div",
+          {
+            staticClass:
+              "relative z-10 pb-8 py-28 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32",
+          },
+          [
+            _vm._m(0),
+            _vm._v(" "),
+            _c(
+              "main",
+              {
+                staticClass:
+                  "mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28",
+              },
+              [
+                _c("div", { staticClass: "sm:text-center lg:text-left" }, [
+                  _vm._m(1),
+                  _vm._v(" "),
+                  _c(
+                    "p",
+                    {
+                      staticClass:
+                        "mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0",
+                    },
+                    [
+                      _vm._v(
+                        "\n                        Honeycomb is a Kanban Board management system. It\n                        specializes in organizing tasks into cards which\n                        belong to specific given board names.\n                    "
+                      ),
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start",
+                    },
+                    [
+                      _c(
+                        "div",
+                        { staticClass: "rounded-md shadow" },
+                        [
+                          _c(
+                            "router-link",
+                            {
+                              staticClass:
+                                "w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-yellow-500 hover:bg-opacity-75 md:py-4 md:text-lg md:px-10",
+                              attrs: { to: { name: "login" } },
+                            },
+                            [
+                              _vm._v(
+                                "\n                                Login/Register\n                            "
+                              ),
+                            ]
+                          ),
+                        ],
+                        1
+                      ),
+                    ]
+                  ),
+                ]),
+              ]
+            ),
+          ]
+        ),
+      ]),
+      _vm._v(" "),
+      _vm._m(2),
+    ]
+  )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass:
+          "mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28",
+      },
+      [
+        _c(
+          "h1",
+          {
+            staticClass:
+              "text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl",
+          },
+          [
+            _c("span", { staticClass: "block text-yellow-500 xl:inline" }, [
+              _vm._v("Honeycomb"),
+            ]),
+          ]
+        ),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "h1",
+      {
+        staticClass:
+          "text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl",
+      },
+      [
+        _c("span", { staticClass: "block xl:inline" }, [
+          _vm._v("Organize your work"),
+        ]),
+        _c("br"),
+        _vm._v(" "),
+        _c("span", { staticClass: "block text-yellow-500 xl:inline" }, [
+          _vm._v("in cards"),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2" },
+      [
+        _c("img", {
+          staticClass:
+            "h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full",
+          attrs: {
+            src: "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80",
+            alt: "",
+          },
+        }),
+      ]
+    )
+  },
+]
 render._withStripped = true
 
 
@@ -32939,7 +33095,10 @@ var render = function () {
           _vm._v(" "),
           _c(
             "div",
-            { staticClass: "w-full sm:shadow-xl sm:bg-white sm:py-8 sm:px-12" },
+            {
+              staticClass:
+                "rounded-md w-full sm:shadow-xl sm:bg-white sm:py-8 sm:px-12",
+            },
             [
               _c("Errors", { attrs: { errors: _vm.errors } }),
               _vm._v(" "),
@@ -33029,7 +33188,7 @@ var render = function () {
                   _c(
                     "router-link",
                     {
-                      staticClass: "text-blue-600 hover:underline",
+                      staticClass: "text-yellow-600 hover:underline",
                       attrs: { to: { name: "register" } },
                     },
                     [_vm._v("Sign up for an account")]
@@ -33052,7 +33211,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "text-3xl text-blue-700 font-bold mb-10" },
+      { staticClass: "text-3xl text-yellow-500 font-bold mb-10" },
       [_c("span", [_vm._v("Honeycomb")])]
     )
   },
@@ -33065,7 +33224,7 @@ var staticRenderFns = [
         "button",
         {
           staticClass:
-            "rounded-sm px-4 py-2 text-sam bg-green-500 font-bold outline-none focus:outline-none hover:bg-opacity-75 w-full text-white disabled:opacity-25",
+            "rounded-sm px-4 py-2 text-sam bg-yellow-500 font-bold outline-none focus:outline-none hover:bg-opacity-75 w-full text-white disabled:opacity-25",
           attrs: { type: "submit" },
         },
         [_vm._v("\n                        Login\n                    ")]
@@ -33228,7 +33387,7 @@ var render = function () {
                   _c(
                     "router-link",
                     {
-                      staticClass: "text-blue-600 hover:underline",
+                      staticClass: "text-yellow-600 hover:underline",
                       attrs: { to: { name: "login" } },
                     },
                     [_vm._v("Log in")]
@@ -33264,7 +33423,7 @@ var staticRenderFns = [
         "button",
         {
           staticClass:
-            "rounded-md px-4 py-2 text-sam bg-yellow-500 font-bold outline-none focus:outline-none hover:bg-opacity-75 w-full text-white disabled:opacity-25",
+            "rounded-sm px-4 py-2 text-sam bg-yellow-500 font-bold outline-none focus:outline-none hover:bg-opacity-75 w-full text-white disabled:opacity-25",
           attrs: { type: "submit" },
         },
         [_vm._v("\n                        Signup\n                    ")]
@@ -55506,6 +55665,155 @@ var SYMBOL_ITERATOR = typeof Symbol === 'function' && Symbol.iterator != null ? 
 var SYMBOL_ASYNC_ITERATOR = typeof Symbol === 'function' && Symbol.asyncIterator != null ? Symbol.asyncIterator : '@@asyncIterator'; // istanbul ignore next (See: 'https://github.com/graphql/graphql-js/issues/2317')
 
 var SYMBOL_TO_STRING_TAG = typeof Symbol === 'function' && Symbol.toStringTag != null ? Symbol.toStringTag : '@@toStringTag';
+
+
+/***/ }),
+
+/***/ "./node_modules/js-cookie/dist/js.cookie.mjs":
+/*!***************************************************!*\
+  !*** ./node_modules/js-cookie/dist/js.cookie.mjs ***!
+  \***************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ api)
+/* harmony export */ });
+/*! js-cookie v3.0.5 | MIT */
+/* eslint-disable no-var */
+function assign (target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i];
+    for (var key in source) {
+      target[key] = source[key];
+    }
+  }
+  return target
+}
+/* eslint-enable no-var */
+
+/* eslint-disable no-var */
+var defaultConverter = {
+  read: function (value) {
+    if (value[0] === '"') {
+      value = value.slice(1, -1);
+    }
+    return value.replace(/(%[\dA-F]{2})+/gi, decodeURIComponent)
+  },
+  write: function (value) {
+    return encodeURIComponent(value).replace(
+      /%(2[346BF]|3[AC-F]|40|5[BDE]|60|7[BCD])/g,
+      decodeURIComponent
+    )
+  }
+};
+/* eslint-enable no-var */
+
+/* eslint-disable no-var */
+
+function init (converter, defaultAttributes) {
+  function set (name, value, attributes) {
+    if (typeof document === 'undefined') {
+      return
+    }
+
+    attributes = assign({}, defaultAttributes, attributes);
+
+    if (typeof attributes.expires === 'number') {
+      attributes.expires = new Date(Date.now() + attributes.expires * 864e5);
+    }
+    if (attributes.expires) {
+      attributes.expires = attributes.expires.toUTCString();
+    }
+
+    name = encodeURIComponent(name)
+      .replace(/%(2[346B]|5E|60|7C)/g, decodeURIComponent)
+      .replace(/[()]/g, escape);
+
+    var stringifiedAttributes = '';
+    for (var attributeName in attributes) {
+      if (!attributes[attributeName]) {
+        continue
+      }
+
+      stringifiedAttributes += '; ' + attributeName;
+
+      if (attributes[attributeName] === true) {
+        continue
+      }
+
+      // Considers RFC 6265 section 5.2:
+      // ...
+      // 3.  If the remaining unparsed-attributes contains a %x3B (";")
+      //     character:
+      // Consume the characters of the unparsed-attributes up to,
+      // not including, the first %x3B (";") character.
+      // ...
+      stringifiedAttributes += '=' + attributes[attributeName].split(';')[0];
+    }
+
+    return (document.cookie =
+      name + '=' + converter.write(value, name) + stringifiedAttributes)
+  }
+
+  function get (name) {
+    if (typeof document === 'undefined' || (arguments.length && !name)) {
+      return
+    }
+
+    // To prevent the for loop in the first place assign an empty array
+    // in case there are no cookies at all.
+    var cookies = document.cookie ? document.cookie.split('; ') : [];
+    var jar = {};
+    for (var i = 0; i < cookies.length; i++) {
+      var parts = cookies[i].split('=');
+      var value = parts.slice(1).join('=');
+
+      try {
+        var found = decodeURIComponent(parts[0]);
+        jar[found] = converter.read(value, found);
+
+        if (name === found) {
+          break
+        }
+      } catch (e) {}
+    }
+
+    return name ? jar[name] : jar
+  }
+
+  return Object.create(
+    {
+      set,
+      get,
+      remove: function (name, attributes) {
+        set(
+          name,
+          '',
+          assign({}, attributes, {
+            expires: -1
+          })
+        );
+      },
+      withAttributes: function (attributes) {
+        return init(this.converter, assign({}, this.attributes, attributes))
+      },
+      withConverter: function (converter) {
+        return init(assign({}, this.converter, converter), this.attributes)
+      }
+    },
+    {
+      attributes: { value: Object.freeze(defaultAttributes) },
+      converter: { value: Object.freeze(converter) }
+    }
+  )
+}
+
+var api = init(defaultConverter, { path: '/' });
+/* eslint-enable no-var */
+
+
 
 
 /***/ })

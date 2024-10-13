@@ -13,7 +13,7 @@ class Logout
      */
     public function __invoke($_, array $args): ?User
     {
-        $guard = Auth::guard(config(['sanctum.guard', 'web']));
+        $guard = Auth::guard(config(['sanctum.guard', 'api']));
         
         $user = $guard->user();
         $guard->logout();

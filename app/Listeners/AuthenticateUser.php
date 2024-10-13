@@ -19,7 +19,7 @@ class AuthenticateUser
 
     public function handle(Registered $event)
     {
-        $guard = Auth::guard(config('sanctum.guard', 'web'));
+        $guard = Auth::guard(config(['sanctum.guard', 'api']));
 
         $guard->login($event->user);
     }
